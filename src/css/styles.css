@@ -995,6 +995,15 @@ ul, ol {
 }
 
 @media (max-width: 768px) {
+    /* Ensure Paralucent font on mobile */
+    body {
+        font-family: var(--font-text);
+    }
+    
+    h1, h2, h3, h4 {
+        font-family: var(--font-display);
+    }
+    
     h1 {
         font-size: 36px;
     }
@@ -1010,6 +1019,22 @@ ul, ol {
     
     .mobile-menu-btn {
         display: block;
+    }
+    
+    /* Mobile menu call button - white text */
+    .mobile-menu .btn,
+    .mobile-menu .btn-primary {
+        font-family: var(--font-text);
+        font-size: 16px;
+        color: #ffffff !important;
+        background-color: var(--primary);
+    }
+    
+    .mobile-menu .btn-primary:hover,
+    .mobile-menu .btn-primary:active,
+    .mobile-menu .btn-primary:focus {
+        color: #ffffff !important;
+        background-color: var(--primary-dark);
     }
     
     .hero-content {
@@ -1075,6 +1100,15 @@ ul, ol {
 }
 
 @media (max-width: 480px) {
+    /* Ensure Paralucent font on small mobile */
+    body {
+        font-family: var(--font-text);
+    }
+    
+    h1, h2, h3, h4 {
+        font-family: var(--font-display);
+    }
+    
     .container {
         padding: 0 16px;
     }
@@ -1086,13 +1120,10 @@ ul, ol {
     .contact-form-wrapper {
         padding: 24px;
     }
-}
-
-/* Mobile Call Button - White Text */
-.mobile-menu .btn-primary {
-    color: var(--white) !important;
-}
-
-.mobile-menu .btn-primary:hover {
-    color: var(--white) !important;
+    
+    /* Mobile call button white text on small screens */
+    .mobile-menu .btn-primary {
+        color: #ffffff !important;
+        font-family: var(--font-text);
+    }
 }
