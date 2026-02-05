@@ -8,9 +8,9 @@ eleventyExcludeFromCollections: true
 {%- if not page.data.excludeFromSitemap %}
     <url>
         <loc>{{ site.url }}{{ page.url }}</loc>
-        <lastmod>{{ page.date.toISOString().split('T')[0] }}</lastmod>
-        <changefreq>{% if page.url == "/" %}weekly{% else %}monthly{% endif %}</changefreq>
-        <priority>{% if page.url == "/" %}1.0{% elif "local-seo" in page.url or "web-design" in page.url or "aeo" in page.url or "geo" in page.url %}0.8{% else %}0.7{% endif %}</priority>
+        <lastmod>{{ page.date | sitemapDate }}</lastmod>
+        <changefreq>{{ page.url | sitemapChangefreq }}</changefreq>
+        <priority>{{ page.url | sitemapPriority }}</priority>
     </url>
 {%- endif %}
 {%- endfor %}
