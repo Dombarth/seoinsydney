@@ -867,6 +867,20 @@ a.service-card:hover {
     color: var(--primary);
 }
 
+/* Page Updated Line */
+.page-updated {
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--white);
+    border-top: 1px solid var(--border);
+}
+
+.page-updated p {
+    font-size: 14px;
+    color: var(--text-tertiary);
+    margin: 0;
+}
+
 /* Footer */
 .footer {
     padding: 60px 0 0;
