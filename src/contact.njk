@@ -82,11 +82,11 @@ description: Contact SEO in Sydney. Get in touch to discuss SEO services for you
             
             <div class="contact-form-wrapper">
                 <h2>Send a Message</h2>
-                <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                    <input type="hidden" name="form-name" value="contact">
-                    <p class="hidden" style="display:none;">
-                        <label>Don't fill this out: <input name="bot-field"></label>
-                    </p>
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="b29aaef9-0f0f-4782-8e48-d436341019d1">
+                    <input type="hidden" name="subject" value="New Contact from SEOinSydney.com">
+                    <input type="hidden" name="redirect" value="https://seoinsydney.com/contact/?success=true">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
