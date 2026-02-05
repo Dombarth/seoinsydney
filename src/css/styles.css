@@ -1,6 +1,6 @@
 /* SEO in Sydney - Clean, Professional Design */
 
-/* Paralucent Textbook Font - Homepage Only */
+/* Paralucent Textbook Font - Site-wide */
 @font-face {
     font-family: 'Paralucent';
     src: url('/assets/fonts/ParalucentText-Book.woff2') format('woff2');
@@ -29,8 +29,8 @@
     --radius-lg: 18px;
     --radius-xl: 28px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
-    --font-text: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
+    --font-display: 'Paralucent', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+    --font-text: 'Paralucent', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
 }
 
 * {
@@ -120,7 +120,7 @@ ul, ol {
     gap: 8px;
     padding: 12px 24px;
     border-radius: 980px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     transition: var(--transition);
@@ -228,7 +228,7 @@ ul, ol {
 }
 
 .nav-links a {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     color: var(--text-primary);
     opacity: 0.8;
@@ -242,7 +242,7 @@ ul, ol {
 }
 
 .nav-cta {
-    font-size: 12px;
+    font-size: 16px;
     padding: 8px 16px;
 }
 
@@ -318,7 +318,7 @@ ul, ol {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--text-primary);
 }
 
@@ -466,7 +466,7 @@ ul, ol {
 }
 
 .service-card p {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 0;
 }
 
@@ -526,7 +526,7 @@ ul, ol {
 }
 
 .process-step p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -561,7 +561,7 @@ ul, ol {
 
 .pricing-note {
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     color: var(--text-secondary);
     max-width: 600px;
     margin: 0 auto;
@@ -643,7 +643,7 @@ ul, ol {
 
 .faq-answer p {
     padding: 0 0 24px 0;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.6;
 }
 
@@ -730,7 +730,7 @@ ul, ol {
 
 .contact-detail p {
     margin: 0;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .contact-form-wrapper {
@@ -756,7 +756,7 @@ ul, ol {
 }
 
 .form-group label {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--text-primary);
 }
@@ -767,7 +767,7 @@ ul, ol {
     padding: 14px 16px;
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    font-size: 15px;
+    font-size: 16px;
     font-family: var(--font-text);
     background-color: var(--white);
     transition: var(--transition);
@@ -804,7 +804,7 @@ ul, ol {
 
 .legal-content li {
     margin-bottom: 8px;
-    font-size: 15px;
+    font-size: 16px;
     color: var(--text-secondary);
 }
 
@@ -872,14 +872,14 @@ ul, ol {
 }
 
 .footer-brand p {
-    font-size: 14px;
+    font-size: 16px;
     margin: 16px 0 0;
     max-width: 280px;
 }
 
 .footer-links h4,
 .footer-contact h4 {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -902,7 +902,7 @@ ul, ol {
 .footer-links a,
 .footer-contact a,
 .footer-contact span {
-    font-size: 13px;
+    font-size: 16px;
     color: var(--text-secondary);
     display: flex;
     align-items: center;
@@ -923,7 +923,7 @@ ul, ol {
 }
 
 .footer-bottom p {
-    font-size: 12px;
+    font-size: 16px;
     margin: 0;
 }
 
@@ -933,7 +933,7 @@ ul, ol {
 }
 
 .footer-legal a {
-    font-size: 12px;
+    font-size: 16px;
     color: var(--text-secondary);
     text-decoration: none;
 }
@@ -1088,31 +1088,11 @@ ul, ol {
     }
 }
 
-/* Homepage-specific styles with Paralucent font */
-.page-home h1,
-.page-home h2,
-.page-home h3,
-.page-home h4 {
-    font-family: 'Paralucent', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+/* Mobile Call Button - White Text */
+.mobile-menu .btn-primary {
+    color: var(--white) !important;
 }
 
-.page-home .hero h1 {
-    font-family: 'Paralucent', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
-    font-weight: 400;
-    letter-spacing: -0.03em;
-}
-
-.page-home .section-header h2 {
-    font-family: 'Paralucent', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
-    font-weight: 400;
-}
-
-.page-home .content-block h2 {
-    font-family: 'Paralucent', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
-    font-weight: 400;
-}
-
-.page-home .cta-content h2 {
-    font-family: 'Paralucent', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
-    font-weight: 400;
+.mobile-menu .btn-primary:hover {
+    color: var(--white) !important;
 }
