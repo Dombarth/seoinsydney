@@ -1,5 +1,14 @@
 /* SEO in Sydney - Clean, Professional Design */
 
+/* Paralucent Textbook Font - Homepage Only */
+@font-face {
+    font-family: 'Paralucent';
+    src: url('/assets/fonts/ParalucentText-Book.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --primary: #0071e3;
     --primary-dark: #0077ed;
@@ -1077,4 +1086,33 @@ ul, ol {
     .contact-form-wrapper {
         padding: 24px;
     }
+}
+
+/* Homepage-specific styles with Paralucent font */
+.page-home h1,
+.page-home h2,
+.page-home h3,
+.page-home h4 {
+    font-family: 'Paralucent', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+}
+
+.page-home .hero h1 {
+    font-family: 'Paralucent', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+}
+
+.page-home .section-header h2 {
+    font-family: 'Paralucent', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.page-home .content-block h2 {
+    font-family: 'Paralucent', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.page-home .cta-content h2 {
+    font-family: 'Paralucent', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+    font-weight: 400;
 }
