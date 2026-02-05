@@ -1,0 +1,91 @@
+---
+layout: base.njk
+title: About
+description: About SEO in Sydney. Information about our SEO services approach and how we work with Sydney businesses.
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "{{ site.url }}/about/"
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero page-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>About</h1>
+                <p class="hero-subtitle">Information about our approach to SEO services for Sydney businesses.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Our Approach</h2>
+            <p>We provide SEO services to businesses in Sydney. Our approach focuses on technical excellence, clear communication, and measurable outcomes.</p>
+            <p>We work with businesses that understand SEO as a long-term investment rather than a quick fix. Search visibility improvements take time, and we prefer clients who are prepared for realistic timelines.</p>
+        </div>
+    </div>
+</section>
+
+<!-- How We Work Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>How We Work</h2>
+            <p>Our process begins with understanding your business, current website condition, and competitive landscape. This informs a practical strategy focused on achievable improvements.</p>
+            <p>We explain our recommendations in clear terms. SEO involves technical complexity, but you should understand what we're doing and why.</p>
+            <p>Reporting focuses on meaningful metrics. Rankings are one factor, but traffic quality, user behaviour, and business outcomes matter more.</p>
+        </div>
+    </div>
+</section>
+
+<!-- What We Believe Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>What We Believe</h2>
+            <ul class="content-list">
+                <li><strong>Technical foundations matter.</strong> Many SEO issues stem from website problems that should be fixed before content work begins.</li>
+                <li><strong>Quality over quantity.</strong> Few well-optimised pages outperform many thin pages.</li>
+                <li><strong>Transparency is essential.</strong> You should understand what we're doing and see the results.</li>
+                <li><strong>No guarantees.</strong> Anyone guaranteeing specific rankings is being dishonest. We can improve your position, but search engines make the final decisions.</li>
+                <li><strong>Long-term thinking.</strong> Sustainable SEO builds gradually. Shortcuts often create problems later.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Get in Touch</h2>
+            <p>If you'd like to discuss SEO services for your Sydney business, we're happy to have an initial conversation about your situation and whether we might be a good fit.</p>
+            <p>Phone: <a href="tel:{{ site.phone | phoneLink }}">{{ site.phone }}</a></p>
+            <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        </div>
+    </div>
+</section>

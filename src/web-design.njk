@@ -1,0 +1,167 @@
+---
+layout: base.njk
+title: Web Design Sydney
+description: Web design services for Sydney businesses. Fast, mobile-first websites built for search visibility and user experience.
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Web Design Sydney",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "{{ site.name }}",
+        "telephone": "{{ site.phone }}",
+        "url": "{{ site.url }}"
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Sydney"
+    },
+    "serviceType": "Web Design Services"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Web Design Sydney",
+            "item": "{{ site.url }}/web-design/"
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero service-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Web Design Sydney</h1>
+                <p class="hero-subtitle">Website design services for Sydney businesses. Fast, accessible websites built with search visibility and user experience as primary considerations.</p>
+                <div class="hero-ctas">
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                    <a href="/contact" class="btn btn-secondary btn-large">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Web Design and SEO Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Web Design and SEO</h2>
+            <p>Website design decisions directly impact search visibility. How a site is built affects page speed, mobile usability, crawlability, and content structure—all factors that influence search engine rankings.</p>
+            <p>Many businesses operate websites where SEO was an afterthought. This creates technical debt that limits the effectiveness of content and link-building efforts.</p>
+            <p>Building websites with SEO considerations from the start avoids these limitations and provides a stronger foundation for ongoing optimisation.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Technical Requirements Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Technical Requirements for Modern Websites</h2>
+            <p>Modern websites need to meet specific technical standards to perform well in search:</p>
+            <ul class="content-list">
+                <li><strong>Core Web Vitals:</strong> Google's metrics for loading performance, interactivity, and visual stability</li>
+                <li><strong>Mobile-First Design:</strong> Websites must work well on mobile devices, which Google uses as the primary index</li>
+                <li><strong>Page Speed:</strong> Fast loading times affect both user experience and search rankings</li>
+                <li><strong>Accessibility:</strong> Websites should be usable by people with disabilities and assistive technologies</li>
+                <li><strong>Security:</strong> HTTPS encryption is expected for all websites</li>
+                <li><strong>Structured Data:</strong> Schema markup helps search engines understand page content</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Design Approach Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Design Approach</h2>
+            <p>Effective website design balances multiple considerations:</p>
+            <ul class="content-list">
+                <li><strong>User Experience:</strong> Clear navigation, readable content, and intuitive interactions</li>
+                <li><strong>Business Goals:</strong> Design that supports conversions and customer actions</li>
+                <li><strong>Brand Identity:</strong> Visual design that reflects your business appropriately</li>
+                <li><strong>Technical Performance:</strong> Code quality and hosting that delivers fast load times</li>
+                <li><strong>Maintainability:</strong> Systems that allow content updates without technical expertise</li>
+            </ul>
+            <p>Prioritising visual complexity over these fundamentals often produces websites that look impressive but perform poorly in search and conversions.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Website Types Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Website Types</h2>
+            <p>Different business needs require different website approaches:</p>
+            <ul class="content-list">
+                <li><strong>Business Websites:</strong> Company information, services, and contact details for lead generation</li>
+                <li><strong>E-commerce:</strong> Online stores with product catalogues and checkout functionality</li>
+                <li><strong>Professional Services:</strong> Portfolio and credential-focused sites for consultants and agencies</li>
+                <li><strong>Local Business:</strong> Location-focused sites for businesses serving geographic areas</li>
+            </ul>
+            <p>Each type has specific SEO requirements and optimal design patterns.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Website Development Process</h2>
+            <p>Website projects typically follow this structure:</p>
+            <ul class="content-list">
+                <li><strong>Discovery:</strong> Understanding business requirements, target audience, and competitive landscape</li>
+                <li><strong>Planning:</strong> Site architecture, content strategy, and technical specifications</li>
+                <li><strong>Design:</strong> Visual design and user interface development</li>
+                <li><strong>Development:</strong> Building the website with proper technical implementation</li>
+                <li><strong>Testing:</strong> Quality assurance across devices and browsers</li>
+                <li><strong>Launch:</strong> Deployment and initial performance monitoring</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Discuss Your Website Needs</h2>
+            <p>We can assess your current website or discuss requirements for a new project.</p>
+            <div class="cta-buttons">
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+                <a href="/contact" class="btn btn-outline-white btn-large">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

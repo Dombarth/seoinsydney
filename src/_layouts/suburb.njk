@@ -1,0 +1,221 @@
+---
+layout: base.njk
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "SEO {{ suburb }}",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "{{ site.name }}",
+        "telephone": "{{ site.phone }}",
+        "url": "{{ site.url }}"
+    },
+    "areaServed": {
+        "@type": "Place",
+        "name": "{{ suburb }}, Sydney, NSW, Australia"
+    },
+    "serviceType": "SEO Services"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SEO {{ suburb }}",
+            "item": "{{ site.url }}{{ page.url }}"
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What SEO services are available in {{ suburb }}?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO services in {{ suburb }} include technical SEO audits, local SEO optimisation, content strategy, and ongoing search visibility management. Services are tailored to businesses operating in or targeting the {{ suburb }} area of Sydney."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How competitive is SEO in {{ suburb }}?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{{ suburb }} has varying levels of SEO competition depending on the industry. {{ competitionContext }} Understanding the local competitive landscape is essential for developing an effective SEO strategy."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How much does SEO cost for a {{ suburb }} business?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO costs for {{ suburb }} businesses depend on factors including competition level, website condition, and scope of work required. Monthly retainers typically range from $1,500 to $5,000 for small to medium businesses in Sydney."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero suburb-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>SEO {{ suburb }}</h1>
+                <p class="hero-subtitle">{{ heroText }}</p>
+                <div class="hero-ctas">
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                    <a href="/contact" class="btn btn-secondary btn-large">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Suburb Context Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>{{ suburb }} Business Context</h2>
+            {{ suburbContext | safe }}
+        </div>
+    </div>
+</section>
+
+<!-- SEO Services Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>SEO Services for {{ suburb }} Businesses</h2>
+            <p>Businesses in {{ suburb }} benefit from SEO strategies that consider both local search behaviour and broader Sydney market dynamics. Key services include:</p>
+            <ul class="content-list">
+                <li><strong>Local SEO:</strong> Optimisation for "{{ suburb }}" and "near me" searches relevant to your business</li>
+                <li><strong>Technical SEO:</strong> Website performance and structure improvements</li>
+                <li><strong>Content Strategy:</strong> Development of content that addresses local search intent</li>
+                <li><strong>Competitive Analysis:</strong> Understanding how {{ suburb }} businesses rank for key terms</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Competition Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>SEO Competition in {{ suburb }}</h2>
+            {{ competitionSection | safe }}
+        </div>
+    </div>
+</section>
+
+<!-- Website SEO Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Website SEO for {{ suburb }} Businesses</h2>
+            <p>Regardless of location, website technical quality affects search performance. For {{ suburb }} businesses, this means ensuring your website meets modern standards for:</p>
+            <ul class="content-list">
+                <li>Mobile responsiveness and page speed</li>
+                <li>Clear site structure and navigation</li>
+                <li>Proper indexation and crawlability</li>
+                <li>Schema markup for local business information</li>
+            </ul>
+            <p>Many businesses in {{ suburb }} operate websites that were built without SEO considerations. Technical improvements often provide quick wins while longer-term content and authority work progresses.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Cost Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>SEO Cost Considerations</h2>
+            <p>SEO investment for {{ suburb }} businesses varies based on several factors:</p>
+            <ul class="content-list">
+                <li>Competition level in your specific industry</li>
+                <li>Current website condition and technical debt</li>
+                <li>Geographic scope ({{ suburb }}-only versus broader Sydney)</li>
+                <li>Existing content and authority to build upon</li>
+            </ul>
+            <p>We provide transparent pricing based on an assessment of your specific situation rather than generic packages.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>FAQ: SEO in {{ suburb }}</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What SEO services are available in {{ suburb }}?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>SEO services in {{ suburb }} include technical SEO audits, local SEO optimisation, content strategy, and ongoing search visibility management. Services are tailored to businesses operating in or targeting the {{ suburb }} area of Sydney.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How competitive is SEO in {{ suburb }}?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>{{ competitionContext }} Understanding the local competitive landscape is essential for developing an effective SEO strategy.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How much does SEO cost for a {{ suburb }} business?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>SEO costs for {{ suburb }} businesses depend on factors including competition level, website condition, and scope of work required. Monthly retainers typically range from $1,500 to $5,000 for small to medium businesses in Sydney.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <p>For comprehensive information about <a href="/" class="cta-link">SEO Sydney</a> services and how they apply to businesses across the metropolitan area, visit our main service page.</p>
+            <div class="cta-buttons">
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+                <a href="/contact" class="btn btn-outline-white btn-large">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

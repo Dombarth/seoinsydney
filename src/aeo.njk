@@ -1,0 +1,165 @@
+---
+layout: base.njk
+title: AEO Sydney - Answer Engine Optimisation
+description: Answer Engine Optimisation services in Sydney. Optimise your content to appear in featured snippets, AI overviews, and direct answer boxes.
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "AEO Sydney - Answer Engine Optimisation",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "{{ site.name }}",
+        "telephone": "{{ site.phone }}",
+        "url": "{{ site.url }}"
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Sydney"
+    },
+    "serviceType": "Answer Engine Optimisation Services"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "AEO Sydney",
+            "item": "{{ site.url }}/aeo/"
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero service-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Answer Engine Optimisation (AEO)</h1>
+                <p class="hero-subtitle">Optimise your content to appear in featured snippets, AI overviews, and direct answer boxes in search results.</p>
+                <div class="hero-ctas">
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                    <a href="/contact" class="btn btn-secondary btn-large">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What is AEO Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>What is Answer Engine Optimisation?</h2>
+            <p>Answer Engine Optimisation (AEO) focuses on structuring content to appear in direct answer formats in search results. This includes featured snippets, knowledge panels, and AI-generated answer boxes.</p>
+            <p>Search engines increasingly provide direct answers to user queries rather than simply listing links. AEO adapts content to be selected for these prominent positions.</p>
+            <p>The goal is to have your content be the source that search engines extract and display when users ask questions related to your expertise or services.</p>
+        </div>
+    </div>
+</section>
+
+<!-- How AEO Works Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>How AEO Works</h2>
+            <p>Search engines select content for direct answers based on several factors:</p>
+            <ul class="content-list">
+                <li><strong>Question-Answer Formatting:</strong> Content that directly addresses common questions in clear, concise language</li>
+                <li><strong>Structured Data:</strong> Schema markup that helps search engines understand content relationships</li>
+                <li><strong>Authority:</strong> Content from sources deemed trustworthy and authoritative on the topic</li>
+                <li><strong>Extractability:</strong> Content formatted in ways that can be easily extracted and displayed</li>
+                <li><strong>Accuracy:</strong> Factually correct information that aligns with consensus sources</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- AEO vs Traditional SEO Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>AEO vs Traditional SEO</h2>
+            <p>AEO builds on traditional SEO but adds specific considerations:</p>
+            <ul class="content-list">
+                <li><strong>Content Structure:</strong> Traditional SEO focuses on keywords; AEO focuses on question-answer patterns</li>
+                <li><strong>Format:</strong> AEO requires content in formats search engines can extract (lists, tables, definitions)</li>
+                <li><strong>Precision:</strong> AEO rewards concise, specific answers over comprehensive but lengthy content</li>
+                <li><strong>Schema:</strong> AEO relies more heavily on structured data markup</li>
+            </ul>
+            <p>Effective AEO complements rather than replaces traditional SEO work. The foundational elements of technical SEO and content quality remain important.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Snippet Types Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Types of Direct Answers</h2>
+            <p>Search engines display direct answers in several formats:</p>
+            <ul class="content-list">
+                <li><strong>Paragraph Snippets:</strong> Brief text answers to definitional or explanatory queries</li>
+                <li><strong>List Snippets:</strong> Numbered or bulleted lists for process or collection queries</li>
+                <li><strong>Table Snippets:</strong> Data presented in table format for comparison or specification queries</li>
+                <li><strong>AI Overviews:</strong> Synthesised answers drawing from multiple sources</li>
+                <li><strong>Knowledge Panels:</strong> Entity information displayed prominently for brand or topic searches</li>
+            </ul>
+            <p>Different content types and query patterns suit different snippet formats. Content strategy should consider which formats align with your target queries.</p>
+        </div>
+    </div>
+</section>
+
+<!-- AEO Services Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>AEO Services</h2>
+            <p>Answer Engine Optimisation work includes:</p>
+            <ul class="content-list">
+                <li><strong>Query Research:</strong> Identifying question-based searches relevant to your business</li>
+                <li><strong>Content Audit:</strong> Assessing existing content for AEO opportunities</li>
+                <li><strong>Content Structuring:</strong> Reformatting content to improve extractability</li>
+                <li><strong>Schema Implementation:</strong> Adding FAQ, HowTo, and other relevant structured data</li>
+                <li><strong>Answer Content Development:</strong> Creating new content designed for direct answer selection</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Discuss AEO for Your Business</h2>
+            <p>We can assess your content for answer engine opportunities and explain potential strategies.</p>
+            <div class="cta-buttons">
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+                <a href="/contact" class="btn btn-outline-white btn-large">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

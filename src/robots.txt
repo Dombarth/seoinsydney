@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://seoinsydney.com/sitemap.xml
+
+# Disallow common CMS paths (not applicable but good practice)
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/

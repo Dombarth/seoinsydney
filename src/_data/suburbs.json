@@ -1,0 +1,88 @@
+{
+  "tier1": {
+    "sydney_core": [
+      {"name": "Sydney CBD", "slug": "sydney-cbd", "region": "Sydney Core"},
+      {"name": "Surry Hills", "slug": "surry-hills", "region": "Sydney Core"},
+      {"name": "Pyrmont", "slug": "pyrmont", "region": "Sydney Core"},
+      {"name": "Ultimo", "slug": "ultimo", "region": "Sydney Core"},
+      {"name": "Darlinghurst", "slug": "darlinghurst", "region": "Sydney Core"},
+      {"name": "Haymarket", "slug": "haymarket", "region": "Sydney Core"},
+      {"name": "Barangaroo", "slug": "barangaroo", "region": "Sydney Core"}
+    ],
+    "inner_west": [
+      {"name": "Newtown", "slug": "newtown", "region": "Inner West"},
+      {"name": "Marrickville", "slug": "marrickville", "region": "Inner West"},
+      {"name": "Leichhardt", "slug": "leichhardt", "region": "Inner West"},
+      {"name": "Balmain", "slug": "balmain", "region": "Inner West"},
+      {"name": "Rozelle", "slug": "rozelle", "region": "Inner West"},
+      {"name": "Glebe", "slug": "glebe", "region": "Inner West"},
+      {"name": "Annandale", "slug": "annandale", "region": "Inner West"}
+    ],
+    "eastern_suburbs": [
+      {"name": "Bondi", "slug": "bondi", "region": "Eastern Suburbs"},
+      {"name": "Bondi Junction", "slug": "bondi-junction", "region": "Eastern Suburbs"},
+      {"name": "Paddington", "slug": "paddington", "region": "Eastern Suburbs"},
+      {"name": "Double Bay", "slug": "double-bay", "region": "Eastern Suburbs"},
+      {"name": "Randwick", "slug": "randwick", "region": "Eastern Suburbs"},
+      {"name": "Coogee", "slug": "coogee", "region": "Eastern Suburbs"},
+      {"name": "Rose Bay", "slug": "rose-bay", "region": "Eastern Suburbs"}
+    ],
+    "parramatta_western_cbd": [
+      {"name": "Parramatta", "slug": "parramatta", "region": "Parramatta & Western CBD"},
+      {"name": "Westmead", "slug": "westmead", "region": "Parramatta & Western CBD"},
+      {"name": "Harris Park", "slug": "harris-park", "region": "Parramatta & Western CBD"},
+      {"name": "Granville", "slug": "granville", "region": "Parramatta & Western CBD"}
+    ],
+    "north_shore": [
+      {"name": "North Sydney", "slug": "north-sydney", "region": "North Shore"},
+      {"name": "Chatswood", "slug": "chatswood", "region": "North Shore"},
+      {"name": "St Leonards", "slug": "st-leonards", "region": "North Shore"},
+      {"name": "Crows Nest", "slug": "crows-nest", "region": "North Shore"},
+      {"name": "Neutral Bay", "slug": "neutral-bay", "region": "North Shore"},
+      {"name": "Mosman", "slug": "mosman", "region": "North Shore"},
+      {"name": "Lane Cove", "slug": "lane-cove", "region": "North Shore"}
+    ]
+  },
+  "tier2": {
+    "northern_beaches": [
+      {"name": "Manly", "slug": "manly", "region": "Northern Beaches"},
+      {"name": "Dee Why", "slug": "dee-why", "region": "Northern Beaches"},
+      {"name": "Brookvale", "slug": "brookvale", "region": "Northern Beaches"},
+      {"name": "Mona Vale", "slug": "mona-vale", "region": "Northern Beaches"}
+    ],
+    "hills_district": [
+      {"name": "Castle Hill", "slug": "castle-hill", "region": "Hills District"},
+      {"name": "Baulkham Hills", "slug": "baulkham-hills", "region": "Hills District"},
+      {"name": "Norwest", "slug": "norwest", "region": "Hills District"}
+    ],
+    "inner_south": [
+      {"name": "Alexandria", "slug": "alexandria", "region": "Inner South"},
+      {"name": "Zetland", "slug": "zetland", "region": "Inner South"},
+      {"name": "Waterloo", "slug": "waterloo", "region": "Inner South"},
+      {"name": "Mascot", "slug": "mascot", "region": "Inner South"},
+      {"name": "Rosebery", "slug": "rosebery", "region": "Inner South"}
+    ],
+    "sutherland_shire": [
+      {"name": "Cronulla", "slug": "cronulla", "region": "Sutherland Shire"},
+      {"name": "Miranda", "slug": "miranda", "region": "Sutherland Shire"},
+      {"name": "Caringbah", "slug": "caringbah", "region": "Sutherland Shire"},
+      {"name": "Sutherland", "slug": "sutherland", "region": "Sutherland Shire"}
+    ]
+  },
+  "tier3": {
+    "western_sydney": [
+      {"name": "Blacktown", "slug": "blacktown", "region": "Western Sydney"},
+      {"name": "Penrith", "slug": "penrith", "region": "Western Sydney"},
+      {"name": "Liverpool", "slug": "liverpool", "region": "Western Sydney"},
+      {"name": "Bankstown", "slug": "bankstown", "region": "Western Sydney"},
+      {"name": "Fairfield", "slug": "fairfield", "region": "Western Sydney"},
+      {"name": "Campbelltown", "slug": "campbelltown", "region": "Western Sydney"}
+    ],
+    "inner_north": [
+      {"name": "Ryde", "slug": "ryde", "region": "Inner North"},
+      {"name": "Macquarie Park", "slug": "macquarie-park", "region": "Inner North"},
+      {"name": "Epping", "slug": "epping", "region": "Inner North"},
+      {"name": "Gladesville", "slug": "gladesville", "region": "Inner North"}
+    ]
+  }
+}

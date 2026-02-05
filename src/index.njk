@@ -1,0 +1,401 @@
+---
+layout: base.njk
+title: SEO Sydney
+description: SEO services in Sydney. Local SEO, website SEO, AEO and GEO services for Sydney businesses. Technical expertise and transparent process.
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}",
+    "telephone": "{{ site.phone }}",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "{{ site.location.city }}",
+        "addressRegion": "{{ site.location.state }}",
+        "addressCountry": "AU"
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Sydney"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}",
+    "telephone": "{{ site.phone }}",
+    "email": "{{ site.email }}",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "{{ site.location.city }}",
+        "addressRegion": "{{ site.location.state }}",
+        "addressCountry": "AU"
+    },
+    "priceRange": "$$",
+    "serviceType": ["SEO", "Local SEO", "Website SEO", "AEO", "GEO"]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ site.url }}"
+    }]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is SEO and how does it work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO (Search Engine Optimisation) is the process of improving a website's visibility in search engine results. It involves technical optimisation, content development, and link building to help search engines understand and rank your website for relevant queries."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does SEO take to show results?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO typically takes 3-6 months to show measurable results, though this varies based on competition, website condition, and industry. Some improvements in indexing and technical performance may be visible within weeks."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is Local SEO?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Local SEO focuses on improving visibility for location-based searches. It includes optimising for 'near me' searches, local business listings, and location-specific content to help businesses connect with customers in their area."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How much does SEO cost in Sydney?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO costs in Sydney vary based on scope and competition. Monthly retainers typically range from $1,500 to $5,000 for small to medium businesses. Project-based work and audits have different pricing structures."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is the difference between AEO and GEO?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AEO (Answer Engine Optimisation) focuses on appearing in featured snippets and direct answer boxes in search results. GEO (Generative Engine Optimisation) focuses on positioning content for AI systems and large language models that generate responses from multiple sources."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>SEO Sydney</h1>
+                <p class="hero-subtitle">Search engine optimisation services for Sydney businesses. Technical SEO, local SEO, and content optimisation to improve your website's visibility in search results.</p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-search"></i>
+                        <span>Technical SEO</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Local SEO</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-robot"></i>
+                        <span>AI Search Ready</span>
+                    </div>
+                </div>
+                <div class="hero-ctas">
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                    <a href="/contact" class="btn btn-secondary btn-large">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/assets/sydney-skyline.jpg" alt="Sydney skyline representing SEO services in Sydney" loading="eager">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What is SEO Section -->
+<section class="content-section" id="about-seo">
+    <div class="container">
+        <div class="content-block">
+            <h2>What is SEO?</h2>
+            <p>Search Engine Optimisation (SEO) is the practice of improving a website's visibility in organic search results. When people search for products, services, or information related to your business, SEO determines whether your website appears in those results.</p>
+            <p>SEO involves three main areas: technical optimisation (how your website is built), content optimisation (what your website says), and authority building (how other websites reference yours). Each area contributes to search engines understanding your website and determining when to show it to searchers.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <h2>SEO Services</h2>
+            <p>Services designed to improve search visibility for Sydney businesses</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Technical SEO</h3>
+                <p>Website structure, page speed, mobile optimisation, and crawlability improvements.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Local SEO</h3>
+                <p>Location-based optimisation for businesses serving specific Sydney areas.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h3>Content SEO</h3>
+                <p>Content structure, keyword research, and information architecture.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AEO & GEO</h3>
+                <p>Answer engine and generative engine optimisation for AI search visibility.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How SEO Works in Sydney Section -->
+<section class="content-section alt-bg" id="sydney-seo">
+    <div class="container">
+        <div class="content-block">
+            <h2>How SEO Works in Sydney</h2>
+            <p>Sydney's competitive business environment creates specific SEO considerations. The density of businesses in areas like the CBD, North Sydney, and Parramatta means search results are often crowded with competitors.</p>
+            <p>Local search queries in Sydney frequently include suburb names or "near me" modifiers. This creates opportunities for businesses to target specific geographic areas rather than competing for broad terms across the entire metropolitan region.</p>
+            <p>Sydney businesses also benefit from the city's economic diversity. Whether operating in professional services, retail, hospitality, or trades, there are established search patterns and user behaviours that inform effective SEO strategies.</p>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="process" id="how-it-works">
+    <div class="container">
+        <div class="section-header">
+            <h2>How It Works</h2>
+            <p>A structured approach to improving search visibility</p>
+        </div>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Audit</h3>
+                <p>Technical analysis of your website's current state, identifying issues and opportunities for improvement.</p>
+            </div>
+            <div class="process-arrow">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-icon">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <h3>Strategy</h3>
+                <p>Development of a prioritised action plan based on your business goals and competitive landscape.</p>
+            </div>
+            <div class="process-arrow">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Implementation</h3>
+                <p>Execution of technical fixes, content improvements, and ongoing optimisation work.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Website SEO Section -->
+<section class="content-section" id="website-seo">
+    <div class="container">
+        <div class="content-block">
+            <h2>Website and Technical SEO</h2>
+            <p>Technical SEO forms the foundation of search visibility. Without proper technical implementation, content and links cannot perform effectively.</p>
+            <p>Key technical factors include:</p>
+            <ul class="content-list">
+                <li>Page speed and Core Web Vitals performance</li>
+                <li>Mobile responsiveness and usability</li>
+                <li>Crawlability and indexation</li>
+                <li>Site structure and internal linking</li>
+                <li>Schema markup and structured data</li>
+                <li>HTTPS security and accessibility</li>
+            </ul>
+            <p>Many Sydney businesses operate websites built years ago that no longer meet modern technical requirements. Addressing these fundamentals often produces measurable improvements before any content work begins.</p>
+        </div>
+    </div>
+</section>
+
+<!-- AEO and GEO Section -->
+<section class="content-section alt-bg" id="aeo-geo">
+    <div class="container">
+        <div class="content-block">
+            <h2>AEO and GEO: AI Search Optimisation</h2>
+            <p>Search is evolving beyond traditional link listings. AI-powered search features like featured snippets, AI overviews, and conversational search assistants are changing how users find information.</p>
+            <p><strong>Answer Engine Optimisation (AEO)</strong> focuses on structuring content to appear in direct answer boxes and featured snippets. This requires clear question-and-answer formatting, concise definitions, and structured data markup.</p>
+            <p><strong>Generative Engine Optimisation (GEO)</strong> addresses how AI systems synthesise information from multiple sources. Content that is factually accurate, clearly attributed, and semantically complete is more likely to be referenced in AI-generated responses.</p>
+            <p>Both AEO and GEO benefit from the same foundational principles: clarity, accuracy, and completeness. Content written for human understanding with proper structure tends to perform well across both traditional and AI search systems.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing" id="pricing">
+    <div class="container">
+        <div class="section-header">
+            <h2>Cost Factors</h2>
+            <p>Understanding what influences SEO pricing</p>
+        </div>
+        <div class="pricing-info">
+            <div class="pricing-block">
+                <h3>What Affects Cost</h3>
+                <ul class="content-list">
+                    <li><strong>Competition level:</strong> More competitive industries require more resources</li>
+                    <li><strong>Website condition:</strong> Sites with technical issues need more initial work</li>
+                    <li><strong>Scope:</strong> Local versus national targeting affects complexity</li>
+                    <li><strong>Content needs:</strong> New content creation versus optimising existing pages</li>
+                    <li><strong>Timeline:</strong> Faster results typically require more intensive work</li>
+                </ul>
+            </div>
+            <div class="pricing-block">
+                <h3>Typical Engagement Types</h3>
+                <ul class="content-list">
+                    <li><strong>SEO Audit:</strong> One-time technical analysis and recommendations</li>
+                    <li><strong>Project Work:</strong> Defined scope with clear deliverables</li>
+                    <li><strong>Monthly Retainer:</strong> Ongoing optimisation and monitoring</li>
+                    <li><strong>Consultation:</strong> Advisory services for in-house teams</li>
+                </ul>
+            </div>
+        </div>
+        <p class="pricing-note">Pricing discussions begin with understanding your specific situation. Contact us to discuss your requirements.</p>
+    </div>
+</section>
+
+<!-- Suburbs Section -->
+<section class="content-section" id="suburbs">
+    <div class="container">
+        <div class="content-block">
+            <h2>SEO Services Across Sydney</h2>
+            <p>We work with businesses throughout the Sydney metropolitan area. Each suburb has distinct characteristics that influence local search behaviour and competitive dynamics.</p>
+            <p>Key areas we serve include:</p>
+            <div class="suburb-links">
+                <p><a href="/parramatta">Parramatta</a> · <a href="/surry-hills">Surry Hills</a> · <a href="/north-sydney">North Sydney</a> · <a href="/bondi">Bondi</a> · <a href="/newtown">Newtown</a> · <a href="/chatswood">Chatswood</a> · <a href="/pyrmont">Pyrmont</a> · <a href="/marrickville">Marrickville</a> · <a href="/alexandria">Alexandria</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Common questions about SEO services</p>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is SEO and how does it work?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>SEO (Search Engine Optimisation) is the process of improving a website's visibility in search engine results. It involves technical optimisation, content development, and link building to help search engines understand and rank your website for relevant queries.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long does SEO take to show results?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>SEO typically takes 3-6 months to show measurable results, though this varies based on competition, website condition, and industry. Some improvements in indexing and technical performance may be visible within weeks.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is Local SEO?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Local SEO focuses on improving visibility for location-based searches. It includes optimising for "near me" searches, local business listings, and location-specific content to help businesses connect with customers in their area.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How much does SEO cost in Sydney?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>SEO costs in Sydney vary based on scope and competition. Monthly retainers typically range from $1,500 to $5,000 for small to medium businesses. Project-based work and audits have different pricing structures.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is the difference between AEO and GEO?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>AEO (Answer Engine Optimisation) focuses on appearing in featured snippets and direct answer boxes in search results. GEO (Generative Engine Optimisation) focuses on positioning content for AI systems and large language models that generate responses from multiple sources.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Closing Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Discuss Your SEO Requirements</h2>
+            <p>We can assess your current situation and explain what would be involved in improving your search visibility.</p>
+            <div class="cta-buttons">
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+                <a href="/contact" class="btn btn-outline-white btn-large">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

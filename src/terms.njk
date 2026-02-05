@@ -1,0 +1,94 @@
+---
+layout: base.njk
+title: Terms of Service
+description: Terms of Service for SEO in Sydney. Terms and conditions for using our website and services.
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Terms of Service",
+            "item": "{{ site.url }}/terms/"
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero page-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Terms of Service</h1>
+                <p class="hero-subtitle">Terms and conditions for using our website and services.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Terms Content -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block legal-content">
+            <p><strong>Last updated:</strong> February 2026</p>
+            
+            <h2>Agreement to Terms</h2>
+            <p>By accessing or using the {{ site.name }} website at {{ site.url }} ("the website"), you agree to be bound by these terms of service. If you do not agree to these terms, please do not use the website.</p>
+            
+            <h2>Services</h2>
+            <p>{{ site.name }} provides SEO and digital marketing services to businesses. Specific services, deliverables, and terms are defined in individual service agreements with clients.</p>
+            
+            <h2>Website Use</h2>
+            <p>The website is provided for informational purposes. You may use the website to:</p>
+            <ul>
+                <li>Learn about our services</li>
+                <li>Contact us regarding potential services</li>
+                <li>Access resources we make available</li>
+            </ul>
+            <p>You may not use the website for any unlawful purpose or in any way that could damage, disable, or impair the website.</p>
+            
+            <h2>Intellectual Property</h2>
+            <p>The content on this website, including text, images, and design, is owned by {{ site.name }} or used with permission. You may not reproduce, distribute, or create derivative works without our written consent.</p>
+            
+            <h2>No Guarantees</h2>
+            <p>Search engine optimisation involves factors outside our control, including search engine algorithms and competitor actions. We do not guarantee specific rankings, traffic levels, or business outcomes.</p>
+            <p>Information on this website is provided for general guidance and does not constitute professional advice for your specific situation.</p>
+            
+            <h2>Third-Party Links</h2>
+            <p>The website may contain links to third-party websites. We are not responsible for the content, accuracy, or practices of linked websites.</p>
+            
+            <h2>Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law, {{ site.name }} shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the website or our services.</p>
+            
+            <h2>Indemnification</h2>
+            <p>You agree to indemnify and hold harmless {{ site.name }} from any claims, damages, or expenses arising from your use of the website or violation of these terms.</p>
+            
+            <h2>Governing Law</h2>
+            <p>These terms are governed by the laws of New South Wales, Australia. Any disputes shall be resolved in the courts of New South Wales.</p>
+            
+            <h2>Changes to Terms</h2>
+            <p>We may update these terms from time to time. Continued use of the website after changes constitutes acceptance of the updated terms.</p>
+            
+            <h2>Service Agreements</h2>
+            <p>These website terms are separate from any service agreements entered into with clients. Service agreements contain their own terms and conditions that apply to the provision of services.</p>
+            
+            <h2>Contact</h2>
+            <p>For questions about these terms, contact us at:</p>
+            <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+            Phone: <a href="tel:{{ site.phone | phoneLink }}">{{ site.phone }}</a></p>
+        </div>
+    </div>
+</section>

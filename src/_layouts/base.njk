@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | {{ site.name }}</title>
+    <meta name="description" content="{{ description }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ title }} | {{ site.name }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="{{ site.locale }}">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- JSON-LD Schema -->
+    {% block schema %}{% endblock %}
+</head>
+<body>
+    {% include "partials/header.njk" %}
+    
+    <main>
+        {{ content | safe }}
+    </main>
+    
+    {% include "partials/footer.njk" %}
+    
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="/js/main.js" defer></script>
+</body>
+</html>

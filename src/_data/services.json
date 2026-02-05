@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Local SEO",
+    "slug": "local-seo",
+    "title": "Local SEO Sydney",
+    "description": "Local SEO services for Sydney businesses. Improve visibility in local search results and connect with customers in your area.",
+    "icon": "fa-map-marker-alt"
+  },
+  {
+    "name": "Web Design",
+    "slug": "web-design",
+    "title": "Web Design Sydney",
+    "description": "Website design services for Sydney businesses. Fast, mobile-first websites built for search visibility and user experience.",
+    "icon": "fa-laptop-code"
+  },
+  {
+    "name": "AEO",
+    "slug": "aeo",
+    "title": "AEO Sydney - Answer Engine Optimisation",
+    "description": "Answer Engine Optimisation services in Sydney. Optimise your content to appear in AI-generated answers and featured snippets.",
+    "icon": "fa-robot"
+  },
+  {
+    "name": "GEO",
+    "slug": "geo",
+    "title": "GEO Sydney - Generative Engine Optimisation",
+    "description": "Generative Engine Optimisation services in Sydney. Position your business for visibility in AI search systems and LLM recommendations.",
+    "icon": "fa-brain"
+  }
+]

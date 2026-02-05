@@ -1,0 +1,159 @@
+---
+layout: base.njk
+title: Local SEO Sydney
+description: Local SEO services for Sydney businesses. Improve visibility in local search results, Google Maps, and location-based queries for your area.
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Local SEO Sydney",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "{{ site.name }}",
+        "telephone": "{{ site.phone }}",
+        "url": "{{ site.url }}"
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Sydney"
+    },
+    "serviceType": "Local SEO Services"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Local SEO Sydney",
+            "item": "{{ site.url }}/local-seo/"
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero service-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Local SEO Sydney</h1>
+                <p class="hero-subtitle">Local SEO services to improve your visibility in location-based searches. Help Sydney customers find your business when searching for services in their area.</p>
+                <div class="hero-ctas">
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                    <a href="/contact" class="btn btn-secondary btn-large">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What is Local SEO Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>What is Local SEO?</h2>
+            <p>Local SEO focuses on improving visibility for searches with local intent. When someone searches for "plumber near me" or "cafe in Surry Hills," local SEO determines which businesses appear in those results.</p>
+            <p>Local search results differ from standard organic results. They often include map listings, business information panels, and results weighted toward geographic proximity to the searcher.</p>
+            <p>For businesses serving specific geographic areas, local SEO is often more valuable than broader search optimisation because it connects you with customers actively looking for services in your location.</p>
+        </div>
+    </div>
+</section>
+
+<!-- How Local SEO Works Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>How Local SEO Works</h2>
+            <p>Local search ranking depends on three primary factors: relevance, distance, and prominence.</p>
+            <ul class="content-list">
+                <li><strong>Relevance:</strong> How well your business matches what the searcher is looking for</li>
+                <li><strong>Distance:</strong> How close your business is to the searcher's location or the location specified in their search</li>
+                <li><strong>Prominence:</strong> How well-known and authoritative your business appears online</li>
+            </ul>
+            <p>Local SEO work addresses all three factors through business listing optimisation, citation building, review management, and local content development.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Local SEO Services Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Local SEO Services</h2>
+            <p>Local SEO for Sydney businesses typically includes:</p>
+            <ul class="content-list">
+                <li><strong>Business Profile Optimisation:</strong> Complete and accurate business information across platforms</li>
+                <li><strong>Citation Building:</strong> Consistent business listings across directories and local sites</li>
+                <li><strong>Review Strategy:</strong> Systems for gathering and responding to customer reviews</li>
+                <li><strong>Local Content:</strong> Website content addressing local search intent and geographic terms</li>
+                <li><strong>Schema Markup:</strong> Structured data helping search engines understand your location and services</li>
+                <li><strong>Local Link Building:</strong> Connections with other local businesses and community organisations</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Sydney Local SEO Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Local SEO in Sydney</h2>
+            <p>Sydney's size and density create specific local SEO considerations. The metropolitan area spans dozens of suburbs, each with distinct search behaviour and competitive dynamics.</p>
+            <p>Businesses operating in multiple locations need strategies that address each service area without creating duplicate content issues. Businesses in competitive suburbs face different challenges than those in less contested areas.</p>
+            <p>Understanding Sydney's geographic search patterns—how people search by suburb, region, or "near me" terms—informs effective local SEO strategy.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Business Types Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Businesses That Benefit from Local SEO</h2>
+            <p>Local SEO is particularly valuable for:</p>
+            <ul class="content-list">
+                <li><strong>Service-area businesses:</strong> Trades, home services, and mobile services operating across Sydney</li>
+                <li><strong>Physical locations:</strong> Retail, hospitality, health, and professional services with customer-facing premises</li>
+                <li><strong>Multi-location businesses:</strong> Chains and franchises with multiple Sydney locations</li>
+                <li><strong>Professional services:</strong> Lawyers, accountants, and consultants serving local clients</li>
+            </ul>
+            <p>Any business where customers search with location intent can benefit from local SEO investment.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Discuss Your Local SEO Needs</h2>
+            <p>We can assess your current local search visibility and explain what would be involved in improving it.</p>
+            <div class="cta-buttons">
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+                <a href="/contact" class="btn btn-outline-white btn-large">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

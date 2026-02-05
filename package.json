@@ -1,0 +1,24 @@
+{
+  "name": "seoinsydney",
+  "version": "1.0.0",
+  "description": "SEO services in Sydney - Static website built with Eleventy",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve",
+    "start": "npm run serve",
+    "clean": "rimraf _site"
+  },
+  "keywords": [
+    "seo",
+    "sydney",
+    "eleventy",
+    "static-site"
+  ],
+  "author": "SEO in Sydney",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "rimraf": "^5.0.5"
+  }
+}

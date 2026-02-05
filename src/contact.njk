@@ -1,0 +1,132 @@
+---
+layout: base.njk
+title: Contact
+description: Contact SEO in Sydney. Get in touch to discuss SEO services for your Sydney business.
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact",
+            "item": "{{ site.url }}/contact/"
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero page-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Contact</h1>
+                <p class="hero-subtitle">Get in touch to discuss SEO services for your Sydney business.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Information Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>We're available to discuss your SEO requirements and answer questions about our services.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h3>Phone</h3>
+                            <p><a href="tel:{{ site.phone | phoneLink }}">{{ site.phone }}</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h3>Email</h3>
+                            <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h3>Location</h3>
+                            <p>{{ site.location.city }}, {{ site.location.state }}, {{ site.location.country }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-wrapper">
+                <h2>Send a Message</h2>
+                <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden" style="display:none;">
+                        <label>Don't fill this out: <input name="bot-field"></label>
+                    </p>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone (optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="website">Website URL (optional)</label>
+                        <input type="url" id="website" name="website" placeholder="https://example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What to Expect Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>What to Expect</h2>
+            <p>When you contact us, we'll:</p>
+            <ul class="content-list">
+                <li>Respond within one business day</li>
+                <li>Ask questions to understand your business and current situation</li>
+                <li>Provide an honest assessment of whether we can help</li>
+                <li>Explain our process and what working together would involve</li>
+            </ul>
+            <p>There's no obligation. We're happy to have an initial conversation to determine if we're a good fit for your needs.</p>
+        </div>
+    </div>
+</section>
