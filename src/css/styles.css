@@ -195,7 +195,7 @@ ul, ol {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    height: 70px;
 }
 
 .logo {
@@ -206,7 +206,7 @@ ul, ol {
 }
 
 .logo img {
-    height: 36px;
+    height: 50px;
     width: auto;
 }
 
@@ -258,7 +258,7 @@ ul, ol {
 .mobile-menu {
     display: none;
     position: fixed;
-    top: 60px;
+    top: 70px;
     left: 0;
     right: 0;
     background-color: var(--white);
@@ -1010,6 +1010,11 @@ ul, ol {
     
     h2 {
         font-size: 28px;
+    }
+    
+    /* Mobile logo - keep it prominent */
+    .logo img {
+        height: 44px;
     }
     
     .nav-links,
