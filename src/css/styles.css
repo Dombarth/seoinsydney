@@ -436,11 +436,21 @@ ul, ol {
     padding: 32px 24px;
     text-align: center;
     transition: var(--transition);
+    text-decoration: none;
+    display: block;
+}
+
+a.service-card {
+    color: inherit;
 }
 
 .service-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow);
+}
+
+a.service-card:hover {
+    color: inherit;
 }
 
 .service-icon {
