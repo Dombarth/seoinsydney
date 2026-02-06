@@ -1,0 +1,256 @@
+---
+layout: base.njk
+title: SEO Audit
+fullTitle: "SEO Audit: Website Analysis and Technical Review"
+description: A comprehensive SEO audit identifies technical issues, content gaps, backlink problems, and keyword opportunities. We conduct a full website analysis before beginning any SEO campaign.
+bodyClass: page-service
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "SEO Audit",
+    "description": "Comprehensive website analysis covering technical SEO, content quality, backlink health, and keyword opportunities for businesses in Sydney.",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "{{ site.name }}",
+        "url": "{{ site.url }}",
+        "telephone": "{{ site.phone }}"
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Sydney"
+    },
+    "url": "{{ site.url }}/seo-audit/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}/seo-audit/"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SEO Audit",
+            "item": "{{ site.url }}/seo-audit/"
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is included in an SEO audit?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A comprehensive SEO audit includes a technical crawl analysis, on-page content review, backlink profile assessment, keyword gap analysis, competitor benchmarking, Core Web Vitals testing, mobile usability check, and a prioritised list of recommendations."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does an SEO audit take?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A thorough SEO audit typically takes one to two weeks depending on the size and complexity of the website. Larger websites with thousands of pages require more crawl analysis and content review time."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you offer free SEO audits?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We offer a complimentary initial SEO audit for prospective clients. This provides a clear picture of your website's current standing before any commitment is made."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero hero-compact">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>SEO Audit</h1>
+                <p class="hero-subtitle">An SEO audit is a systematic analysis of a website's technical health, content quality, backlink profile, and keyword positioning. It identifies issues that are limiting search visibility and provides a prioritised roadmap for improvement.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why An Audit Matters Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Why an SEO Audit Matters</h2>
+            <p>Many websites have technical problems, content gaps, or backlink issues that are silently limiting their search performance. These problems are not always visible to the website owner because they exist at the code level, in the server configuration, or in the backlink profile rather than on the visible pages.</p>
+            <p>An SEO audit brings these issues to the surface. It provides a factual baseline of where a website currently stands and what needs to change for rankings to improve.</p>
+            <p>This is particularly important if a website has had previous SEO work done. Inherited backlink profiles may contain toxic links, previous content changes may have created duplicate content issues, and technical modifications may have introduced crawl barriers.</p>
+        </div>
+    </div>
+</section>
+
+<!-- What We Analyse Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>What We Analyse</h2>
+            <h3>Technical Infrastructure</h3>
+            <p>We conduct a full crawl of the website to identify technical issues that affect how search engines discover, access, and index pages. This includes:</p>
+            <ul class="content-list">
+                <li>Crawl errors, broken links, and redirect chains</li>
+                <li>XML sitemap accuracy and robots.txt configuration</li>
+                <li>HTTPS implementation and mixed content issues</li>
+                <li>Core Web Vitals performance (LCP, INP, CLS)</li>
+                <li>Mobile usability and responsive design testing</li>
+                <li>Page speed analysis for desktop and mobile</li>
+                <li>Structured data validation</li>
+                <li>Canonical tag implementation</li>
+                <li>Hreflang and language targeting (where applicable)</li>
+            </ul>
+
+            <h3>On-Page Content</h3>
+            <p>We review the content on each important page to assess:</p>
+            <ul class="content-list">
+                <li>Title tags and meta descriptions — accuracy, length, keyword relevance</li>
+                <li>Heading structure — proper H1, H2, H3 hierarchy</li>
+                <li>Content depth — whether pages fully address their target topic</li>
+                <li>Duplicate content — pages competing for the same keywords</li>
+                <li>Thin content — pages with insufficient substance to rank</li>
+                <li>Keyword targeting — alignment between content and search intent</li>
+                <li>Internal linking — structure and distribution of links between pages</li>
+            </ul>
+
+            <h3>Backlink Profile</h3>
+            <p>We analyse the website's external link profile to assess:</p>
+            <ul class="content-list">
+                <li>Total referring domains and the quality distribution</li>
+                <li>Toxic or spammy backlinks that could trigger penalties</li>
+                <li>Anchor text distribution — natural vs over-optimised</li>
+                <li>Link velocity — how links are being acquired over time</li>
+                <li>Competitor backlink comparison — where competitors have links that you do not</li>
+            </ul>
+
+            <h3>Keyword Positioning</h3>
+            <p>We assess current keyword rankings and identify:</p>
+            <ul class="content-list">
+                <li>Keywords currently ranking in positions 1-10, 11-20, and 21-100</li>
+                <li>Keywords with high impression counts but low click-through rates</li>
+                <li>Keyword gaps — terms your competitors rank for that you do not</li>
+                <li>Cannibalisation — multiple pages competing for the same keyword</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Audit Deliverables Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Audit Deliverables</h2>
+            <p>The audit is delivered as a documented report that includes:</p>
+            <ul class="content-list">
+                <li><strong>Executive summary:</strong> A plain-language overview of the website's current state and the most critical issues</li>
+                <li><strong>Technical findings:</strong> Every technical issue identified with severity ratings and recommended fixes</li>
+                <li><strong>Content assessment:</strong> Page-by-page analysis of content quality and keyword targeting</li>
+                <li><strong>Backlink analysis:</strong> Link profile health, toxic link identification, and disavow recommendations if needed</li>
+                <li><strong>Keyword opportunity map:</strong> Target keywords ranked by priority based on search volume, competition, and commercial intent</li>
+                <li><strong>Prioritised action plan:</strong> A sequenced list of recommendations ordered by impact and effort</li>
+            </ul>
+            <p>The report is designed to be actionable regardless of whether you engage us for ongoing SEO work. It can be implemented by your internal team or any other SEO provider.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Audit Process</h2>
+            <p>The audit follows a structured process:</p>
+            <ul class="content-list">
+                <li><strong>Step 1 — Access setup:</strong> We request read-only access to Google Search Console and Google Analytics. We also require access to the website's CMS for on-page review.</li>
+                <li><strong>Step 2 — Technical crawl:</strong> We run a full site crawl using professional crawling tools to map the website structure and identify technical issues.</li>
+                <li><strong>Step 3 — Manual review:</strong> A senior SEO specialist manually reviews the website's key pages, content structure, and user experience.</li>
+                <li><strong>Step 4 — Backlink analysis:</strong> We pull and analyse the complete backlink profile using multiple data sources for accuracy.</li>
+                <li><strong>Step 5 — Keyword research:</strong> We identify current rankings, keyword gaps, and prioritise target keywords based on commercial value.</li>
+                <li><strong>Step 6 — Report compilation:</strong> All findings are compiled into a structured report with prioritised recommendations.</li>
+                <li><strong>Step 7 — Walkthrough call:</strong> We present the findings in a call and answer any questions about the recommendations.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is included in an SEO audit?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>A comprehensive SEO audit includes a technical crawl analysis, on-page content review, backlink profile assessment, keyword gap analysis, competitor benchmarking, Core Web Vitals testing, mobile usability check, and a prioritised list of recommendations.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long does an SEO audit take?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>A thorough SEO audit typically takes one to two weeks depending on the size and complexity of the website. Larger websites with thousands of pages require more crawl analysis and content review time.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do you offer free SEO audits?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes. We offer a complimentary initial SEO audit for prospective clients. This provides a clear picture of your website's current standing before any commitment is made.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Closing Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Request a Free SEO Audit</h2>
+            <p>Understanding where your website currently stands is the first step toward improving its search visibility. Contact us to request a complimentary audit of your website.</p>
+            <div class="cta-buttons">
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+                <a href="/contact" class="btn btn-outline-white btn-large">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

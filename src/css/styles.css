@@ -867,6 +867,130 @@ a.service-card:hover {
     color: var(--primary);
 }
 
+/* Compact Hero (Blog & Service Pages) */
+.hero-compact {
+    padding: 60px 0 40px;
+    background-color: var(--white);
+}
+
+.hero-compact .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.hero-compact .hero-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-compact .hero-subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+/* Blog List */
+.blog-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    background-color: var(--gray-light);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    transition: var(--transition);
+}
+
+.blog-card:hover {
+    box-shadow: var(--shadow);
+}
+
+.blog-card h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.blog-card h2 a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.blog-card h2 a:hover {
+    color: var(--primary);
+}
+
+.blog-card p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+}
+
+.blog-read-more {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.blog-read-more:hover {
+    text-decoration: underline;
+}
+
+/* Blog Article Content */
+.blog-article {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-article h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.blog-article h3 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+
+.blog-article p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+}
+
+.blog-article ul,
+.blog-article ol {
+    margin: 16px 0 24px 24px;
+    color: var(--text-secondary);
+}
+
+.blog-article li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+}
+
+.blog-article strong {
+    color: var(--text-primary);
+}
+
+.blog-article a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.blog-article a:hover {
+    color: var(--primary-dark);
+}
+
 /* Page Updated Line */
 .page-updated {
     padding: 20px 0;

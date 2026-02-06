@@ -1,0 +1,100 @@
+---
+layout: base.njk
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ title }}",
+    "description": "{{ description }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "datePublished": "{% if datePublished %}{{ datePublished }}{% else %}{{ site.datePublished }}{% endif %}",
+    "dateModified": "{% if dateModified %}{{ dateModified }}{% else %}{{ site.dateModified }}{% endif %}",
+    "author": {
+        "@type": "Organization",
+        "name": "{{ site.name }}",
+        "url": "{{ site.url }}"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.name }}",
+        "url": "{{ site.url }}",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ site.logo }}"
+        }
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+    },
+    "inLanguage": "en-AU"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Resources",
+            "item": "{{ site.url }}/blog/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "{{ title }}",
+            "item": "{{ site.url }}{{ page.url }}"
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<section class="hero hero-compact">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>{{ title }}</h1>
+                {% if subtitle %}
+                <p class="hero-subtitle">{{ subtitle }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content-section blog-content">
+    <div class="container">
+        <div class="content-block blog-article">
+            {{ content | safe }}
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Discuss Your SEO Requirements</h2>
+            <p>If you have questions about any of the topics covered in this article, or want to discuss how they apply to your business, get in touch.</p>
+            <div class="cta-buttons">
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+                <a href="/contact" class="btn btn-outline-white btn-large">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

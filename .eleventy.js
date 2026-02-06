@@ -24,6 +24,13 @@ module.exports = function(eleventyConfig) {
     return str.replace(/"/g, '\\"').replace(/\n/g, '\\n');
   });
 
+  // Blog collection
+  eleventyConfig.addCollection("blog", function(collectionApi) {
+    return collectionApi.getFilteredByTag("blog").sort(function(a, b) {
+      return a.date - b.date;
+    });
+  });
+
   // Generate sitemap collection
   eleventyConfig.addCollection("sitemap", function(collectionApi) {
     return collectionApi.getAll().filter(item => {
@@ -38,9 +45,12 @@ module.exports = function(eleventyConfig) {
       url.includes("local-seo") ||
       url.includes("web-design") ||
       url.includes("aeo") ||
-      url.includes("geo")
+      url.includes("geo") ||
+      url.includes("seo-audit") ||
+      url.includes("keyword-research")
     ) return "0.8";
-    if (url === "/about/" || url === "/contact/") return "0.7";
+    if (url === "/about/" || url === "/contact/" || url === "/blog/") return "0.7";
+    if (url.startsWith("/blog/") && url !== "/blog/") return "0.6";
     if (
       url === "/privacy/" ||
       url === "/terms/" ||
@@ -56,8 +66,11 @@ module.exports = function(eleventyConfig) {
       url.includes("local-seo") ||
       url.includes("web-design") ||
       url.includes("aeo") ||
-      url.includes("geo")
+      url.includes("geo") ||
+      url.includes("seo-audit") ||
+      url.includes("keyword-research")
     ) return "monthly";
+    if (url.startsWith("/blog/")) return "monthly";
     if (url === "/privacy/" || url === "/terms/") return "yearly";
     return "monthly";
   });
