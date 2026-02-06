@@ -11,17 +11,28 @@ description: Generative Engine Optimisation services in Sydney. Position your bu
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "GEO Sydney - Generative Engine Optimisation",
+    "description": "{{ description }}",
+    "url": "{{ site.url }}{{ page.url }}",
     "provider": {
         "@type": "LocalBusiness",
         "name": "{{ site.name }}",
         "telephone": "{{ site.phone }}",
-        "url": "{{ site.url }}"
+        "url": "{{ site.url }}",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "{{ site.location.latitude }}",
+            "longitude": "{{ site.location.longitude }}"
+        }
     },
     "areaServed": {
         "@type": "City",
         "name": "Sydney"
     },
-    "serviceType": "Generative Engine Optimisation Services"
+    "serviceType": "Generative Engine Optimisation Services",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+    }
 }
 </script>
 <script type="application/ld+json">

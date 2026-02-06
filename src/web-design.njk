@@ -11,17 +11,28 @@ description: Web design services for Sydney businesses. Custom website design an
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Web Design Sydney",
+    "description": "{{ description }}",
+    "url": "{{ site.url }}{{ page.url }}",
     "provider": {
         "@type": "LocalBusiness",
         "name": "{{ site.name }}",
         "telephone": "{{ site.phone }}",
-        "url": "{{ site.url }}"
+        "url": "{{ site.url }}",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "{{ site.location.latitude }}",
+            "longitude": "{{ site.location.longitude }}"
+        }
     },
     "areaServed": {
         "@type": "City",
         "name": "Sydney"
     },
-    "serviceType": "Web Design Services"
+    "serviceType": "Web Design Services",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+    }
 }
 </script>
 <script type="application/ld+json">

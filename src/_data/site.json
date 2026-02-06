@@ -9,8 +9,13 @@
     "city": "Sydney",
     "state": "NSW",
     "country": "Australia",
-    "region": "Sydney Metropolitan Area"
+    "region": "Sydney Metropolitan Area",
+    "latitude": "-33.8688",
+    "longitude": "151.2093"
   },
   "language": "en-AU",
-  "locale": "en_AU"
+  "locale": "en_AU",
+  "datePublished": "2025-06-01",
+  "dateModified": "2026-02-05",
+  "foundingDate": "2014"
 }

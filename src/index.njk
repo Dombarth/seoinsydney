@@ -10,11 +10,30 @@ bodyClass: page-home
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}",
+    "inLanguage": "en-AU",
+    "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.name }}",
+        "url": "{{ site.url }}",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ site.logo }}"
+        }
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
     "@type": "Organization",
     "name": "{{ site.name }}",
     "url": "{{ site.url }}",
     "logo": "{{ site.logo }}",
     "telephone": "{{ site.phone }}",
+    "foundingDate": "{{ site.foundingDate }}",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "{{ site.location.city }}",
@@ -24,7 +43,23 @@ bodyClass: page-home
     "areaServed": {
         "@type": "City",
         "name": "Sydney"
-    }
+    },
+    "knowsAbout": [
+        "Search Engine Optimisation",
+        "Local SEO",
+        "Technical SEO",
+        "Answer Engine Optimisation",
+        "Generative Engine Optimisation",
+        "Website Design",
+        "Web Development",
+        "Content Strategy",
+        "Link Building",
+        "Google Business Profile Optimisation",
+        "Schema Markup",
+        "Core Web Vitals",
+        "SEO Audits",
+        "Keyword Research"
+    ]
 }
 </script>
 <script type="application/ld+json">
@@ -36,14 +71,27 @@ bodyClass: page-home
     "logo": "{{ site.logo }}",
     "image": "{{ site.logo }}",
     "telephone": "{{ site.phone }}",
+    "foundingDate": "{{ site.foundingDate }}",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "{{ site.location.city }}",
         "addressRegion": "{{ site.location.state }}",
         "addressCountry": "AU"
     },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "{{ site.location.latitude }}",
+        "longitude": "{{ site.location.longitude }}"
+    },
     "priceRange": "$$",
-    "serviceType": ["SEO", "Local SEO", "Website SEO", "AEO", "GEO"]
+    "serviceType": ["SEO", "Local SEO", "Website SEO", "AEO", "GEO", "Web Design"],
+    "knowsAbout": [
+        "Search Engine Optimisation",
+        "Local SEO",
+        "Technical SEO",
+        "Answer Engine Optimisation",
+        "Generative Engine Optimisation"
+    ]
 }
 </script>
 <script type="application/ld+json">

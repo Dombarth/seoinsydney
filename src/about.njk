@@ -2,10 +2,68 @@
 layout: base.njk
 title: About SEOinSydney
 fullTitle: "About SEOinSydney: Our SEO Approach"
-description: About SEO in Sydney. Information about our SEO services approach and how we work with Sydney businesses.
+description: About SEO in Sydney. Over twelve years of SEO experience working with Sydney businesses. In-house team, no lock-in contracts, transparent monthly reporting.
 ---
 
 {% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About SEOinSydney",
+    "url": "{{ site.url }}/about/",
+    "mainEntity": {
+        "@type": "Organization",
+        "name": "{{ site.name }}",
+        "url": "{{ site.url }}",
+        "logo": "{{ site.logo }}",
+        "telephone": "{{ site.phone }}",
+        "foundingDate": "{{ site.foundingDate }}",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "{{ site.location.city }}",
+            "addressRegion": "{{ site.location.state }}",
+            "addressCountry": "AU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "{{ site.location.latitude }}",
+            "longitude": "{{ site.location.longitude }}"
+        },
+        "knowsAbout": [
+            "Search Engine Optimisation",
+            "Local SEO",
+            "Technical SEO",
+            "On-Page SEO",
+            "Off-Page SEO",
+            "Link Building",
+            "Content Strategy",
+            "Keyword Research",
+            "SEO Audits",
+            "Google Algorithm Updates",
+            "Core Web Vitals",
+            "Schema Markup",
+            "Answer Engine Optimisation",
+            "Generative Engine Optimisation",
+            "Google Business Profile Optimisation",
+            "Website Design",
+            "Web Development",
+            "WordPress SEO",
+            "Shopify SEO",
+            "Ecommerce SEO"
+        ],
+        "areaServed": {
+            "@type": "City",
+            "name": "Sydney"
+        },
+        "numberOfEmployees": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 10
+        }
+    }
+}
+</script>
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -34,7 +92,7 @@ description: About SEO in Sydney. Information about our SEO services approach an
         <div class="hero-content">
             <div class="hero-text">
                 <h1>About SEOinSydney</h1>
-                <p class="hero-subtitle">Over twelve years of SEO experience working with Sydney businesses across a wide range of industries.</p>
+                <p class="hero-subtitle">Over twelve years of SEO experience working with Sydney businesses across a wide range of industries. In-house team. No lock-in contracts. Transparent monthly reporting.</p>
             </div>
         </div>
     </div>
@@ -52,8 +110,54 @@ description: About SEO in Sydney. Information about our SEO services approach an
     </div>
 </section>
 
-<!-- In House Team Section -->
+<!-- SEO Methodology Section — NEW: Demonstrates topic-by-topic expertise depth -->
 <section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Our SEO Methodology</h2>
+            <p>Our approach to search engine optimisation is structured around four phases that we apply to every client regardless of industry or website size.</p>
+            <ul class="content-list">
+                <li><strong>Phase 1 — Technical Audit and Foundation:</strong> We begin with a comprehensive crawl of your website using tools like Screaming Frog, Ahrefs and Google Search Console. This identifies indexation issues, broken links, redirect chains, duplicate content, missing meta data, slow page speeds and Core Web Vitals failures. We also audit your existing backlink profile to identify toxic links that may be suppressing your rankings. If your site has been penalised or has accumulated low quality links from a previous agency, we submit a disavow file and clean up the link profile before doing anything else.</li>
+                <li><strong>Phase 2 — Keyword Research and Content Mapping:</strong> We conduct keyword research focused on commercial intent terms that are likely to generate actual business enquiries rather than informational traffic. We map keywords to existing pages where possible and identify content gaps where new pages are needed. Each page targets a specific search intent to avoid cannibalisation.</li>
+                <li><strong>Phase 3 — On-Page Optimisation and Content:</strong> We optimise existing pages for their target keywords including title tags, meta descriptions, heading structure, internal linking and content depth. Where new content is needed we write it in-house, ensuring it meets both search engine requirements and provides genuine value to the reader. We do not use AI-generated content without human review and editing.</li>
+                <li><strong>Phase 4 — Off-Page Authority and Ongoing Management:</strong> We build high quality backlinks through manual outreach, digital PR and relevant directory submissions. Link building is ongoing and focuses on relevance and authority rather than volume. We monitor rankings, traffic and conversions on a weekly basis and adjust strategy as needed based on data.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Algorithm Expertise Section — NEW: Demonstrates deep knowledge of search systems -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Staying Current With Search Algorithm Changes</h2>
+            <p>Google makes thousands of changes to its search algorithms each year. Most are minor, but core updates and system changes like the Helpful Content Update, link spam updates and Discover core updates can significantly affect rankings overnight.</p>
+            <p>Our team actively monitors algorithm changes and their impacts. When a core update rolls out we assess all client sites for volatility, identify any patterns in ranking changes and adjust strategies accordingly. We track these updates through Google's official blog, Search Central documentation, patent filings and analysis of ranking data across our client base.</p>
+            <p>This ongoing attention to search system changes is one of the reasons we limit each specialist to fifteen accounts. Reacting quickly to algorithm changes requires time and attention that is not possible when managing forty or fifty clients.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Industries Section — NEW: Demonstrates breadth of expertise -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Industries We Work With</h2>
+            <p>Over twelve years we have developed SEO strategies for businesses across a wide range of industries. Each industry has its own competitive dynamics, search patterns and compliance considerations.</p>
+            <ul class="content-list">
+                <li><strong>Trades and Home Services:</strong> Plumbers, electricians, builders, landscapers and similar service-area businesses. These campaigns focus heavily on <a href="/local-seo">local SEO</a> and "near me" search terms.</li>
+                <li><strong>Professional Services:</strong> Lawyers, accountants, financial advisors, consultants. These industries are competitive and require careful attention to E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) signals.</li>
+                <li><strong>Medical and Health:</strong> Dentists, physiotherapists, GPs, specialists. Medical SEO requires compliance with YMYL (Your Money or Your Life) guidelines and careful content accuracy.</li>
+                <li><strong>Ecommerce:</strong> Online retailers on Shopify, WooCommerce and custom platforms. Ecommerce SEO involves product page optimisation, category structure, technical SEO at scale and managing large crawl budgets.</li>
+                <li><strong>Hospitality:</strong> Restaurants, cafes, bars, hotels. Heavy focus on local search visibility, Google Business Profile and review management.</li>
+                <li><strong>B2B:</strong> Business-to-business services including SaaS, manufacturing and wholesale. These campaigns typically target longer sales cycles with informational and consideration-stage content.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- In House Team Section -->
+<section class="content-section">
     <div class="container">
         <div class="content-block">
             <h2>In House Sydney Based Team</h2>
@@ -65,13 +169,31 @@ description: About SEO in Sydney. Information about our SEO services approach an
 </section>
 
 <!-- How We Work Section -->
-<section class="content-section">
+<section class="content-section alt-bg">
     <div class="container">
         <div class="content-block">
             <h2>How We Work</h2>
             <p>Our process begins with understanding your business, current website condition, and competitive landscape. This informs a practical strategy focused on achievable improvements.</p>
             <p>Before we begin any SEO campaign we carry out a full SEO audit of your website which includes a technical audit, backlink audit, on page review and keyword research. This is especially important if you've had previous SEO work done because in many cases we find low quality backlinks, spammy directory listings and in some cases actual Google penalties that the previous agency never disclosed.</p>
             <p>Reporting focuses on meaningful metrics. Every client receives a monthly report that breaks down exactly what work was carried out including keyword research, on page optimisation, link building, content writing and technical SEO. The report includes how many hours were spent on each task and what the results were.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Tools and Platforms Section — NEW: Demonstrates technical expertise -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Tools and Platforms</h2>
+            <p>We work across all major CMS platforms and use industry-standard tools for analysis and reporting.</p>
+            <ul class="content-list">
+                <li><strong>CMS Platforms:</strong> WordPress, Shopify, WooCommerce, Wix, Squarespace, Webflow and custom-built websites</li>
+                <li><strong>SEO Analysis:</strong> Ahrefs, Screaming Frog, Google Search Console, Google Analytics 4</li>
+                <li><strong>Local SEO:</strong> Google Business Profile, BrightLocal, citation management tools</li>
+                <li><strong>Technical:</strong> PageSpeed Insights, Core Web Vitals monitoring, schema validation tools</li>
+                <li><strong>Reporting:</strong> Custom reports built from live data, not automated template PDFs</li>
+            </ul>
+            <p>Our familiarity with these platforms means we can diagnose and resolve technical issues quickly regardless of how your website was built.</p>
         </div>
     </div>
 </section>
