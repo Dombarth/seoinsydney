@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Intersection Observer for scroll animations
-    const animateElements = document.querySelectorAll('.service-card, .process-step, .content-block');
+    const animateElements = document.querySelectorAll('.service-card, .process-step, .content-block:not(.blog-article)');
     
     if (animateElements.length > 0 && 'IntersectionObserver' in window) {
         const observerOptions = {
