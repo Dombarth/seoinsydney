@@ -19,6 +19,12 @@
   status = 301
   force = true
 
+# Redirect favicon.ico to favicon.png (browsers auto-request .ico)
+[[redirects]]
+  from = "/favicon.ico"
+  to = "/favicon.png"
+  status = 200
+
 [[redirects]]
   from = "/*"
   to = "/404.html"
