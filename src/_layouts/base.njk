@@ -27,7 +27,6 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="{{ site.locale }}">
     <meta property="og:image" content="{{ site.logo }}">
-    <meta property="og:site_name" content="{{ site.name }}">
     <meta property="article:published_time" content="{% if datePublished %}{{ datePublished }}{% else %}{{ site.datePublished }}{% endif %}">
     <meta property="article:modified_time" content="{% if dateModified %}{{ dateModified }}{% else %}{{ site.dateModified }}{% endif %}">
     
@@ -49,11 +48,6 @@
         "datePublished": "{% if datePublished %}{{ datePublished }}{% else %}{{ site.datePublished }}{% endif %}",
         "dateModified": "{% if dateModified %}{{ dateModified }}{% else %}{{ site.dateModified }}{% endif %}",
         "inLanguage": "en-AU",
-        "isPartOf": {
-            "@type": "WebSite",
-            "name": "{{ site.name }}",
-            "url": "{{ site.url }}"
-        },
         "publisher": {
             "@type": "Organization",
             "name": "{{ site.name }}",
