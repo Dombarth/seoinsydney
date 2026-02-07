@@ -14,22 +14,13 @@ layout: base.njk
         "@type": "LocalBusiness",
         "name": "{{ site.name }}",
         "telephone": "{{ site.phone }}",
-        "url": "{{ site.url }}",
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "{{ site.location.latitude }}",
-            "longitude": "{{ site.location.longitude }}"
-        }
+        "url": "{{ site.url }}"
     },
     "areaServed": {
         "@type": "Place",
         "name": "{{ suburb }}, Sydney, NSW, Australia"
     },
-    "serviceType": "SEO Services",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "{{ site.url }}{{ page.url }}"
-    }
+    "serviceType": "SEO Services"
 }
 </script>
 <script type="application/ld+json">
@@ -52,47 +43,13 @@ layout: base.njk
     ]
 }
 </script>
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-        {
-            "@type": "Question",
-            "name": "What SEO services are available in {{ suburb }}?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "SEO services available in the area include technical SEO audits, local SEO optimisation, content strategy, and ongoing search visibility management. Services are tailored to the local business environment and competitive landscape."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "How competitive is SEO in {{ suburb }}?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "{{ competitionContext }} Understanding the local competitive landscape is essential for developing an effective strategy."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "How much does SEO cost for a business in {{ suburb }}?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "SEO costs depend on factors including competition level, website condition, and scope of work required. Monthly retainers typically start from $1,200 for local SEO campaigns."
-            }
-        }
-    ]
-}
-</script>
 {% endblock %}
 
-<!-- Hero Section -->
 <section class="hero suburb-hero">
     <div class="container">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>SEO {{ suburb }}</h1>
-                <p class="hero-subtitle">SEOinSydney provides search engine optimisation services for businesses in {{ suburb }}. Our approach covers technical SEO, local search optimisation, content strategy, and ongoing visibility management tailored to the local market.</p>
                 <div class="hero-ctas">
                     <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-primary btn-large">
                         <i class="fas fa-phone"></i> {{ site.phone }}
@@ -106,119 +63,17 @@ layout: base.njk
     </div>
 </section>
 
-<!-- Suburb Context Section -->
 <section class="content-section">
     <div class="container">
         <div class="content-block">
-            <h2>Local Business Environment</h2>
-            {{ suburbContext | safe }}
+            {{ content | safe }}
         </div>
     </div>
 </section>
 
-<!-- SEO Services Section -->
-<section class="content-section alt-bg">
-    <div class="container">
-        <div class="content-block">
-            <h2>SEO Services for Local Businesses</h2>
-            <p>Businesses in the area benefit from SEO strategies that consider both local search behaviour and broader metropolitan market dynamics. Key services include:</p>
-            <ul class="content-list">
-                <li><strong><a href="/local-seo">Local SEO</a>:</strong> Optimisation for location-based and "near me" searches relevant to your business</li>
-                <li><strong>Technical SEO:</strong> Website performance and structure improvements</li>
-                <li><strong>Content Strategy:</strong> Development of content that addresses local search intent</li>
-                <li><strong>Competitive Analysis:</strong> Understanding how local businesses rank for key terms</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<!-- Competition Section -->
-<section class="content-section">
-    <div class="container">
-        <div class="content-block">
-            <h2>Local SEO Competition</h2>
-            {{ competitionSection | safe }}
-        </div>
-    </div>
-</section>
-
-<!-- Website SEO Section -->
-<section class="content-section alt-bg">
-    <div class="container">
-        <div class="content-block">
-            <h2>Website SEO for Local Businesses</h2>
-            <p>Regardless of location, website technical quality affects search performance. For local businesses, this means ensuring your website meets modern standards for:</p>
-            <ul class="content-list">
-                <li>Mobile responsiveness and page speed</li>
-                <li>Clear site structure and navigation</li>
-                <li>Proper indexation and crawlability</li>
-                <li>Schema markup for local business information</li>
-            </ul>
-            <p>Many businesses in the area operate websites that were built without SEO considerations. Our <a href="/web-design">web design services</a> address these technical requirements, providing measurable improvements while longer-term content and authority work progresses.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Cost Section -->
-<section class="content-section">
-    <div class="container">
-        <div class="content-block">
-            <h2>SEO Cost Considerations</h2>
-            <p>SEO investment for local businesses varies based on several factors:</p>
-            <ul class="content-list">
-                <li>Competition level in your specific industry</li>
-                <li>Current website condition and technical debt</li>
-                <li>Geographic scope of your target market</li>
-                <li>Existing content and authority to build upon</li>
-            </ul>
-            <p>Our SEO packages start from $1,200 per month. We provide transparent pricing based on an assessment of your specific situation rather than generic packages.</p>
-        </div>
-    </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="faq">
-    <div class="container">
-        <div class="section-header">
-            <h2>Frequently Asked Questions</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>What SEO services are available in {{ suburb }}?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>SEO services available in the area include technical SEO audits, local SEO optimisation, content strategy, and ongoing search visibility management. Services are tailored to the local business environment and competitive landscape.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>How competitive is SEO in {{ suburb }}?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>{{ competitionContext }} Understanding the local competitive landscape is essential for developing an effective strategy.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>How much does SEO cost for a business in {{ suburb }}?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>SEO costs depend on factors including competition level, website condition, and scope of work required. Monthly retainers typically start from $1,200 for local SEO campaigns. We provide a clear cost breakdown before any work begins.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CTA Section -->
 <section class="cta">
     <div class="container">
         <div class="cta-content">
-            <p>For comprehensive information about <a href="/" class="cta-link">SEO Sydney</a> services and how they apply to businesses across the metropolitan area, visit our main service page.</p>
             <div class="cta-buttons">
                 <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-white btn-large">
                     <i class="fas fa-phone"></i> {{ site.phone }}
