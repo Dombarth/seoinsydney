@@ -1,5 +1,5 @@
 ---
-layout: bondi-custom.njk
+layout: base.njk
 title: SEO Bondi
 fullTitle: "SEO Bondi | Local SEO Services for Bondi Businesses"
 description: Drive more traffic to your Bondi business with tailored SEO strategies. On-page optimisation, off-page optimisation, local SEO, technical audits, link building and generative engine optimisation. No lock-in contracts. Free SEO audit.
@@ -70,23 +70,6 @@ bodyClass: bondi-page
 </script>
 {% endblock %}
 
-<nav class="bondi-nav">
-  <div class="bondi-wrap">
-    <a href="/" class="bondi-nav-logo">
-      <img src="/assets/seo-in-sydney-logo.png" alt="SEOinSydney" class="bondi-logo-img">
-      <span>SEO<b>in</b>Sydney</span>
-    </a>
-    <div class="bondi-nav-links">
-      <a href="/#services">Services</a>
-      <a href="/">SEO Sydney</a>
-      <a href="/blog/">Resources</a>
-      <a href="/about">About</a>
-      <a href="tel:{{ site.phone | phoneLink }}" class="bondi-nav-phone">{{ site.phone }}</a>
-      <a href="/contact" class="bondi-nav-btn">Free SEO Audit</a>
-    </div>
-  </div>
-</nav>
-
 <div class="bondi-bc">
   <div class="bondi-wrap"><a href="/">Home</a> &rsaquo; <a href="/">SEO Sydney</a> &rsaquo; SEO Bondi</div>
 </div>
@@ -103,10 +86,9 @@ bodyClass: bondi-page
         <span><span class="bondi-ck">✓</span> Sydney-Based SEO Specialists</span>
       </div>
       <div class="bondi-hero-btns">
-        <a href="#contact" class="bondi-btn bondi-btn-primary">Get Your Free SEO Audit →</a>
-        <a href="#services" class="bondi-btn bondi-btn-ghost">Our SEO Services</a>
+        <a href="tel:{{ site.phone | phoneLink }}" class="bondi-btn bondi-btn-primary">Call {{ site.phone }}</a>
+        <a href="#contact" class="bondi-btn bondi-btn-ghost">Get Your Free SEO Audit →</a>
       </div>
-      <p class="bondi-phone">Call <a href="tel:{{ site.phone | phoneLink }}">{{ site.phone }}</a></p>
     </div>
     <div>
       <div class="bondi-hf" id="contact">
@@ -391,12 +373,6 @@ bodyClass: bondi-page
     <a href="/contact" class="bondi-btn bondi-btn-primary">Get Your Free SEO Audit →</a>
   </div>
 </section>
-
-<footer class="bondi-footer">
-  <div class="bondi-wrap">
-    <p>&copy; 2026 SEOinSydney. All rights reserved. <a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Service</a></p>
-  </div>
-</footer>
 
 <script>
 document.querySelectorAll('.bondi-faq-q').forEach(function(q){
