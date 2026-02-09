@@ -1177,10 +1177,19 @@ a.service-card:hover {
     font-size: 18px;
     font-weight: 800;
     color: var(--bondi-primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .bondi-nav-logo b {
     color: var(--bondi-accent);
+}
+
+.bondi-logo-img {
+    height: 36px;
+    width: auto;
+    display: block;
 }
 
 .bondi-nav-links {
@@ -1211,6 +1220,16 @@ a.service-card:hover {
 .bondi-nav-btn:hover {
     background: var(--bondi-accent-hover);
     text-decoration: none !important;
+}
+
+.bondi-nav-phone {
+    color: var(--bondi-text);
+    font-weight: 600;
+}
+
+.bondi-nav-phone:hover {
+    color: var(--bondi-accent);
+    text-decoration: none;
 }
 
 .bondi-bc {
@@ -1349,6 +1368,21 @@ a.service-card:hover {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+}
+
+.bondi-phone {
+    margin-top: 14px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.bondi-phone a {
+    color: #93c5fd;
+    font-weight: 600;
+}
+
+.bondi-phone a:hover {
+    color: #bfdbfe;
 }
 
 .bondi-hf {
@@ -1852,6 +1886,10 @@ a.service-card:hover {
 
     .bondi-nav-links {
         display: none;
+    }
+
+    .bondi-logo-img {
+        height: 30px;
     }
 }
 
