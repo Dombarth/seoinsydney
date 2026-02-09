@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en-AU">
+    <title>{% if fullTitle %}{{ fullTitle }}{% else %}{{ title }}{% endif %}</title>
+    <meta name="description" content="{{ description }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="alternate" hreflang="en-AU" href="{{ site.url }}{{ page.url }}">
+    
+    <!-- Geo Meta Tags — Australian Locality Signals -->
+    <meta name="geo.region" content="AU-NSW">
+    <meta name="geo.placename" content="Sydney, NSW, Australia">
+    <meta name="geo.position" content="{{ site.location.latitude }};{{ site.location.longitude }}">
+    <meta name="ICBM" content="{{ site.location.latitude }}, {{ site.location.longitude }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{% if fullTitle %}{{ fullTitle }}{% else %}{{ title }}{% endif %}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="{{ site.locale }}">
+    <meta property="og:image" content="{{ site.logo }}">
+    <meta property="article:published_time" content="{% if datePublished %}{{ datePublished }}{% else %}{{ site.datePublished }}{% endif %}">
+    <meta property="article:modified_time" content="{% if dateModified %}{{ dateModified }}{% else %}{{ site.dateModified }}{% endif %}">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- WebPage Schema — Applied to All Pages -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "{% if fullTitle %}{{ fullTitle }}{% else %}{{ title }}{% endif %}",
+        "description": "{{ description }}",
+        "url": "{{ site.url }}{{ page.url }}",
+        "datePublished": "{% if datePublished %}{{ datePublished }}{% else %}{{ site.datePublished }}{% endif %}",
+        "dateModified": "{% if dateModified %}{{ dateModified }}{% else %}{{ site.dateModified }}{% endif %}",
+        "inLanguage": "en-AU",
+        "publisher": {
+            "@type": "Organization",
+            "name": "{{ site.name }}",
+            "url": "{{ site.url }}",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{{ site.logo }}"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ site.url }}{{ page.url }}"
+        }
+    }
+    </script>
+    
+    <!-- Page-Specific JSON-LD Schema -->
+    {% block schema %}{% endblock %}
+</head>
+<body class="{{ bodyClass }}">
+    <main>
+        {{ content | safe }}
+    </main>
+    
+    <script src="/js/main.js" defer></script>
+</body>
+</html>

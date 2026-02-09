@@ -1,37 +1,402 @@
 ---
-layout: suburb.njk
+layout: bondi-custom.njk
 title: SEO Bondi
-fullTitle: "SEO Bondi: Local SEO Services and Strategy"
-description: SEOinSydney provides SEO services for businesses in Bondi. Local SEO, technical SEO, content and link building from $1,200 per month.
-suburb: Bondi
-h1: "SEO Bondi : Local SEO and Google Ads"
+fullTitle: "SEO Bondi | Local SEO Services for Bondi Businesses"
+description: Drive more traffic to your Bondi business with tailored SEO strategies. On-page optimisation, off-page optimisation, local SEO, technical audits, link building and generative engine optimisation. No lock-in contracts. Free SEO audit.
 permalink: /bondi/
+bodyClass: bondi-page
 ---
 
-<p>At SEO In Sydney we specialise in the areas of search engine optimisation for businesses in Bondi and across the eastern beaches. We've been working with businesses around Campbell Parade, Hall Street, Curlewis Street and the surrounding areas since about 2015 and Bondi has always been one of the most recognisable suburb brands in Sydney which creates both opportunities and challenges for local businesses.</p>
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "SEOinSydney",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "SEO agency servicing Bondi, Bondi Beach, Bondi Junction, North Bondi and the Eastern Suburbs.",
+  "areaServed": [
+    {"@type": "Place", "name": "Bondi", "address": {"@type": "PostalAddress", "addressLocality": "Bondi", "addressRegion": "NSW", "postalCode": "2026", "addressCountry": "AU"}},
+    {"@type": "Place", "name": "Bondi Beach"},
+    {"@type": "Place", "name": "Bondi Junction"},
+    {"@type": "Place", "name": "North Bondi"}
+  ],
+  "serviceType": ["SEO", "Local SEO", "Technical SEO", "On-Page Optimisation", "Off-Page Optimisation", "Link Building", "Generative Engine Optimisation", "Ecommerce SEO", "Lead Generation SEO"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}"},
+    {"@type": "ListItem", "position": 2, "name": "SEO Sydney", "item": "{{ site.url }}"},
+    {"@type": "ListItem", "position": 3, "name": "SEO Bondi", "item": "{{ site.url }}{{ page.url }}"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does SEO take to show results for a Bondi business?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Most local businesses in Bondi see measurable ranking improvements within 8–16 weeks. Competitive Eastern Suburbs keywords may take 4–6 months to stabilise. We report monthly against agreed KPIs including search rankings, organic traffic and conversions."}
+    },
+    {
+      "@type": "Question",
+      "name": "How much does SEO cost in Bondi?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Our SEO packages are customised based on your competitive landscape, current site health and business goals. We provide transparent pricing after a free SEO audit — no hidden fees, no lock-in contracts."}
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer a free SEO audit?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. Our free audit covers crawlability, Core Web Vitals, on-page issues, backlink profile and competitor gaps specific to the Bondi market."}
+    },
+    {
+      "@type": "Question",
+      "name": "Do you optimise for AI search like ChatGPT and Google AI Overviews?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. We apply generative engine optimisation (GEO) principles backed by peer-reviewed research from MIT and Columbia (E-GEO, 2025), ensuring content performs in both traditional and AI-powered search."}
+    },
+    {
+      "@type": "Question",
+      "name": "What areas near Bondi do you service?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Bondi, Bondi Beach, Bondi Junction, North Bondi, Tamarama, Bronte, Waverley, Clovelly, Rose Bay, Double Bay, Randwick, Coogee and the broader Eastern Suburbs."}
+    }
+  ]
+}
+</script>
+{% endblock %}
 
-<p>We work month to month with no lock in contracts and our local SEO campaigns start from $1,200 per month. All work is done in house by our Sydney based team.</p>
+<nav class="bondi-nav">
+  <div class="bondi-wrap">
+    <a href="/" class="bondi-nav-logo">SEO<b>in</b>Sydney</a>
+    <div class="bondi-nav-links">
+      <a href="/#services">Services</a>
+      <a href="/">SEO Sydney</a>
+      <a href="/blog/">Resources</a>
+      <a href="/about">About</a>
+      <a href="/contact" class="bondi-nav-btn">Free SEO Audit</a>
+    </div>
+  </div>
+</nav>
 
-<p>Bondi has a massive tourism component that makes it different from almost every other suburb in Sydney. Theres a mix of surf schools, cafes, restaurants, fitness studios, wellness practitioners, backpacker services and retail all competing for both local and tourist search traffic. For businesses in Bondi the challenge is that search results are split between people looking for local services and people looking for tourist activities. Its a suburb where you need to be clear about who you're targeting because the search intent varies enormously depending on the time of year.</p>
+<div class="bondi-bc">
+  <div class="bondi-wrap"><a href="/">Home</a> &rsaquo; <a href="/">SEO Sydney</a> &rsaquo; SEO Bondi</div>
+</div>
 
-<h2>How It Works Here</h2>
+<section class="bondi-hero">
+  <div class="bondi-wrap">
+    <div>
+      <div class="bondi-hero-badge">📍 SEO Agency Servicing Bondi &amp; Eastern Suburbs</div>
+      <h1>SEO Bondi<br><span>Grow Your Bondi Business</span> With Results-Driven SEO</h1>
+      <p class="bondi-lead">Drive more traffic to your Bondi business with tailored SEO strategies. On-page optimisation, off-page optimisation, local SEO, technical audits, link building and content strategy — all built on data, not guesswork.</p>
+      <div class="bondi-hero-checks">
+        <span><span class="bondi-ck">✓</span> No Lock-In Contracts</span>
+        <span><span class="bondi-ck">✓</span> Transparent Monthly Reporting</span>
+        <span><span class="bondi-ck">✓</span> Sydney-Based SEO Specialists</span>
+      </div>
+      <div class="bondi-hero-btns">
+        <a href="#contact" class="bondi-btn bondi-btn-primary">Get Your Free SEO Audit →</a>
+        <a href="#services" class="bondi-btn bondi-btn-ghost">Our SEO Services</a>
+      </div>
+    </div>
+    <div>
+      <div class="bondi-hf" id="contact">
+        <h3>Get Your Free SEO Strategy</h3>
+        <p class="bondi-sub">Free consultation — find out what’s holding your site back.</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="b29aaef9-0f0f-4782-8e48-d436341019d1">
+          <input type="hidden" name="subject" value="New Bondi Enquiry from SEOinSydney.com">
+          <input type="hidden" name="redirect" value="https://seoinsydney.com/bondi/?success=true">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <div class="bondi-fg"><label>Full Name</label><input type="text" name="name" placeholder="e.g. Sarah Chen" required></div>
+          <div class="bondi-fg"><label>Email</label><input type="email" name="email" placeholder="e.g. sarah@yourbusiness.com.au" required></div>
+          <div class="bondi-fg"><label>Phone</label><input type="tel" name="phone" placeholder="e.g. 0400 123 456"></div>
+          <div class="bondi-fg"><label>Website</label><input type="url" name="website" placeholder="e.g. yourbusiness.com.au"></div>
+          <div class="bondi-fg"><label>Message</label><textarea name="message" placeholder="Tell us about your business"></textarea></div>
+          <button type="submit" class="bondi-btn-submit">Get My Free Audit →</button>
+          <p class="bondi-hf-note">No spam. No obligation. We review your site and get back within 24 hours.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-<p>We took on a pilates studio near Hall Street in early 2022 that had been running for about five years. Two instructors and a reception area with six reformers. They had a decent local following but were losing clients to newer studios opening up around Bondi which is where most of their member churn was coming from. Their website was a Mindbody booking page with no real content and their Google Business Profile was set up under the wrong category. We rebuilt the site with class descriptions, instructor profiles and location content, sorted out the GBP and built links from fitness directories and wellness blogs. Over about six months their new member sign ups from organic search went from about two per week to around seven. The team at SEO In Sydney handle all of that in house including the fitness content which a lot of other agencies in this area outsource.</p>
+<section class="bondi-sec" id="intro">
+  <div class="bondi-wrap">
+    <h2>SEO Services for Bondi Businesses</h2>
+    <p>Bondi is one of Sydney’s most competitive local markets. Cafés on Campbell Parade, fitness studios on Hall Street, professional services in Bondi Junction, retail along Bondi Road — they all compete for the same local customers. Simply having a website isn’t enough. You need a targeted SEO strategy to ensure your Bondi business appears at the top when people search for services like yours.</p>
+    <p>Bondi attracts both locals and tourists, making it a highly competitive area for local businesses. People are actively searching for terms like:</p>
+    <ul>
+      <li>“best [your service] near me Bondi”</li>
+      <li>“[your service] Bondi Beach”</li>
+      <li>“affordable [your service] Bondi Junction”</li>
+      <li>“[your service] North Bondi”</li>
+      <li>“[your service] Eastern Suburbs”</li>
+    </ul>
+    <p>Without a solid SEO campaign, your business gets overlooked in Bondi’s crowded digital marketing landscape. With the right approach, you can outrank competitors who rely on outdated or generic tactics — and boost your online visibility where it matters.</p>
+  </div>
+</section>
 
-<p>The cafe and brunch scene in Bondi is probably the most competitive in Sydneys eastern suburbs. Theres dozens of cafes along Campbell Parade and the surrounding streets all fighting for the same morning crowd. Most of them rely on Instagram and word of mouth. A cafe in Bondi that properly manages its GBP and ranks for brunch and breakfast searches can pick up a significant amount of walk in traffic from both locals and tourists who search on their phone before deciding where to eat.</p>
+<section class="bondi-sec bondi-sec-alt" id="services">
+  <div class="bondi-wrap">
+    <h2>Our Bondi SEO Services</h2>
+    <p>We offer comprehensive search engine optimisation services designed to improve your search rankings, drive qualified traffic, generate leads and turn visitors into customers:</p>
+    <div class="bondi-sg">
+      <div class="bondi-sc">
+        <span class="bondi-num">01</span>
+        <h3>Local SEO</h3>
+        <p>Google Business Profile optimisation, Google Maps visibility, local citations, review strategy and geo-targeted content for Bondi, Bondi Beach, Bondi Junction and surrounding suburbs.</p>
+      </div>
+      <div class="bondi-sc">
+        <span class="bondi-num">02</span>
+        <h3>On-Page SEO</h3>
+        <p>On-page optimisation including title tags, meta descriptions, heading structure, internal linking, image alt text and keyword research mapped to verified search intent.</p>
+      </div>
+      <div class="bondi-sc">
+        <span class="bondi-num">03</span>
+        <h3>Technical SEO</h3>
+        <p>Crawlability, indexation, Core Web Vitals (LCP, CLS, INP), site speed, mobile usability, structured data validation, robots.txt and sitemap configuration.</p>
+      </div>
+      <div class="bondi-sc">
+        <span class="bondi-num">04</span>
+        <h3>Keyword Research &amp; Strategy</h3>
+        <p>Identifying high-intent keywords your Bondi audience actually searches for. Mapping keywords to pages. Competitor analysis and gap identification across the Eastern Suburbs.</p>
+      </div>
+      <div class="bondi-sc">
+        <span class="bondi-num">05</span>
+        <h3>Link Building &amp; Off-Page SEO</h3>
+        <p>Off-page optimisation through manual outreach for relevant, high-authority Australian backlinks. No PBNs, no paid link schemes — ethical link building that builds domain authority.</p>
+      </div>
+      <div class="bondi-sc">
+        <span class="bondi-num">06</span>
+        <h3>Content Creation &amp; Strategy</h3>
+        <p>Content creation including blog posts, service pages and topic clusters. Written for people first, structured for search engines second. Designed to attract organic traffic and convert.</p>
+      </div>
+    </div>
+    <p>We also offer <strong>ecommerce SEO</strong>, <strong>lead generation SEO</strong> and <strong>web design</strong> services. Need <strong>Google Ads</strong> or broader <strong>digital marketing</strong> support? We can bundle that into your SEO packages too.</p>
+  </div>
+</section>
 
-<h2>What It Costs</h2>
+<section class="bondi-sec" id="pillars">
+  <div class="bondi-wrap">
+    <h2>Pillars of SEO to Dominate Bondi Search Results</h2>
+    <p>Our SEO specialists take a holistic approach — strengthening every factor Google uses to evaluate, rank higher and surface your website to local customers:</p>
+    <div class="bondi-pg">
+      <div class="bondi-pc">
+        <h3>🔍 On-Page Optimisation</h3>
+        <p>We refine your website’s content, title tags, meta descriptions, headings and images to align with target keywords and audience behavior. Every page is optimised for a specific search intent to maximise relevance.</p>
+      </div>
+      <div class="bondi-pc">
+        <h3>🔗 Off-Page SEO &amp; Authority</h3>
+        <p>We earn backlinks from relevant, high-authority Australian websites through manual outreach. This builds your domain authority and trustworthiness — critical ranking signals that boost your position in search results.</p>
+      </div>
+      <div class="bondi-pc">
+        <h3>📈 Keyword Research &amp; Strategy</h3>
+        <p>We conduct in-depth keyword research to find the exact terms your target customers in Bondi, Bondi Junction and the Eastern Suburbs are searching for — including high-intent, “near me” and long-tail variations. Then we map them to your pages.</p>
+      </div>
+      <div class="bondi-pc">
+        <h3>🏆 Competitor Analysis</h3>
+        <p>We analyse your top-ranking competitors in the Bondi market — identifying their strengths, weaknesses and keyword gaps. Then we build a custom SEO strategy to outrank them systematically and capture more market share.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<p>Local SEO campaigns for Bondi businesses start from $1,200 per month. That covers on page work, Google Business Profile management, one piece of content per month, citation building, and monthly reporting. For fitness studios and wellness businesses in Bondi its usually between $1,200 and $1,800 depending on how many services and locations are being targeted. Written quote with a full breakdown before anything starts. No setup fees.</p>
+<section class="bondi-sec bondi-sec-alt" id="why-us">
+  <div class="bondi-wrap">
+    <h2>Why Bondi Businesses Choose Our SEO Agency</h2>
+    <p>Choosing the right SEO expert in Bondi has a long-term impact on your business goals and growth. Here’s what sets us apart from other SEO agencies in the area:</p>
+    <div class="bondi-wu">
+      <div class="bondi-wc">
+        <span class="bondi-icon">📊</span>
+        <h3>Research-Backed SEO Strategy</h3>
+        <p>We apply findings from peer-reviewed optimisation research (E-GEO study, MIT &amp; Columbia, 2025) — not ad hoc heuristics. Data-driven decisions that deliver measurable results.</p>
+      </div>
+      <div class="bondi-wc">
+        <span class="bondi-icon">🎯</span>
+        <h3>Transparent Reporting &amp; ROI</h3>
+        <p>Monthly reports tied to KPIs that matter — search rankings, organic traffic, conversions and revenue impact. No vanity metrics. Clear ROI tracking.</p>
+      </div>
+      <div class="bondi-wc">
+        <span class="bondi-icon">🤝</span>
+        <h3>No Lock-In Contracts</h3>
+        <p>We work on rolling monthly agreements. If we’re not delivering measurable value, you’re free to leave. Our retention comes from results, not lock-in contracts.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<h2>No Contracts</h2>
+<section class="bondi-sec" id="testimonials">
+  <div class="bondi-wrap">
+    <h2>What Our Bondi Clients Say</h2>
+    <div class="bondi-tg">
+      <div class="bondi-tc">
+        <div class="bondi-stars">★★★★★</div>
+        <blockquote>“We were stuck on page 3 for our main keywords. Dom and the team restructured our site, fixed the technical issues and rebuilt our content strategy from scratch. Within 4 months we were ranking in the top 5 for our core Bondi search terms. Organic leads have more than doubled.”</blockquote>
+        <div class="bondi-attr">Michael T. <span>— Physiotherapy Clinic, Bondi Junction</span></div>
+      </div>
+      <div class="bondi-tc">
+        <div class="bondi-stars">★★★★★</div>
+        <blockquote>“We’d been paying another agency for over a year with barely any movement. SEO in Sydney audited everything, found a stack of technical problems and keyword gaps the previous agency missed. The turnaround was night and day — our Google Business Profile now drives 3x the calls it used to.”</blockquote>
+        <div class="bondi-attr">Sarah L. <span>— Hair &amp; Beauty Salon, Bondi Beach</span></div>
+      </div>
+      <div class="bondi-tc">
+        <div class="bondi-stars">★★★★★</div>
+        <blockquote>“Transparent, no-BS reporting every month. They actually explain what they did, what moved and what’s next. First agency I’ve worked with where I feel like I understand where my money goes. The results speak for themselves — up 180% in organic traffic in under 6 months.”</blockquote>
+        <div class="bondi-attr">James R. <span>— Financial Services, Bondi Junction</span></div>
+      </div>
+      <div class="bondi-tc">
+        <div class="bondi-stars">★★★★★</div>
+        <blockquote>“Dom really knows his stuff. He took the time to understand our business before recommending anything. No cookie-cutter packages — everything was tailored to what we actually needed. Our local rankings and foot traffic have improved significantly since we started.”</blockquote>
+        <div class="bondi-attr">Priya K. <span>— Café Owner, Campbell Parade, Bondi Beach</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<p>Month to month. 30 days notice. If you decide to leave everything stays yours. Content, backlinks, technical fixes. The team at SEO In Sydney have been working this way since day one and we've kept the majority of our Bondi clients without needing a lock in agreement. As such we don't see the need for one while still delivering the highest standard of quality service each month.</p>
+<section class="bondi-sec bondi-sec-alt" id="case-study">
+  <div class="bondi-wrap">
+    <h2>Bondi SEO Case Study</h2>
+    <div class="bondi-cs">
+      <h3>Physiotherapy Clinic — Bondi Junction</h3>
+      <p>A Bondi Junction physiotherapy clinic came to us ranking on page 3 for their primary keywords. Their previous agency had built thin location pages and used generic content that wasn’t aligned with what patients actually search for.</p>
+      <p><strong>What we did:</strong> Full technical SEO audit and site speed remediation. Rebuilt service pages around verified patient search intent. Optimised Google Business Profile with accurate categories, service descriptions and a review acquisition strategy. Built local citations and earned backlinks from relevant Australian health directories. Implemented structured data for LocalBusiness and MedicalBusiness schemas.</p>
+      <div class="bondi-cs-stats">
+        <div class="bondi-cs-stat"><span class="bondi-num">+187%</span><span class="bondi-lbl">Organic Traffic</span></div>
+        <div class="bondi-cs-stat"><span class="bondi-num">Top 3</span><span class="bondi-lbl">Primary Keywords</span></div>
+        <div class="bondi-cs-stat"><span class="bondi-num">+140%</span><span class="bondi-lbl">Monthly Enquiries</span></div>
+        <div class="bondi-cs-stat"><span class="bondi-num">5 mo</span><span class="bondi-lbl">Timeframe</span></div>
+      </div>
+      <p style="font-size:14px;color:var(--text-secondary);margin:0">Results achieved over 5 months. Individual results vary based on competitive landscape, site history and market conditions.</p>
+    </div>
+  </div>
+</section>
 
-<p>Each of our specialists handles no more than fifteen accounts at a time so your business gets proper attention. I review every Bondi strategy personally before it goes out.</p>
+<section class="bondi-sec" id="team">
+  <div class="bondi-wrap">
+    <h2>Meet Your Bondi SEO Specialist</h2>
+    <div class="bondi-team-card">
+      <div class="bondi-team-avatar">D</div>
+      <div class="bondi-team-info">
+        <h3>Dom</h3>
+        <p>Founder &amp; Head of SEO at SEO in Sydney. Dom leads all Bondi SEO campaigns personally — from initial audit through to ongoing optimisation and monthly reporting. With hands-on experience across local SEO, technical SEO, content strategy and generative engine optimisation, Dom works directly with every client to build a custom strategy aligned with their specific business goals and competitive landscape.</p>
+      </div>
+    </div>
 
-<h2>Free Audit</h2>
+    <h3>SEO Packages for Bondi Businesses</h3>
+    <div class="bondi-price-anchor">
+      <div>
+        <div class="bondi-from">SEO packages from</div>
+        <div class="bondi-price">$990<span class="bondi-per">/mo inc. GST</span></div>
+      </div>
+      <div class="bondi-note">Custom packages based on your competitive landscape and business goals.<br>No lock-in contracts. No hidden fees. Cancel anytime.</div>
+    </div>
+  </div>
+</section>
 
-<p>We'll do a free audit of your website covering technical health, backlinks and how you compare against your main competitors in the Bondi area. Its a written report not a sales pitch.</p>
+<section class="bondi-sec" id="industries">
+  <div class="bondi-wrap">
+    <h2>Industries We Work With in Bondi</h2>
+    <p>We’ve delivered SEO results and lead generation across a wide range of industries in Bondi and the Eastern Suburbs:</p>
+    <div class="bondi-ind">
+      <span>Cafés &amp; Restaurants</span>
+      <span>Fitness &amp; Yoga Studios</span>
+      <span>Hair &amp; Beauty Salons</span>
+      <span>Medical &amp; Dental</span>
+      <span>Real Estate</span>
+      <span>Legal Services</span>
+      <span>Financial Services</span>
+      <span>Retail &amp; Ecommerce</span>
+      <span>Trades &amp; Home Services</span>
+      <span>Professional Services</span>
+      <span>Health &amp; Wellness</span>
+      <span>Hospitality &amp; Tourism</span>
+      <span>Web Design Agencies</span>
+    </div>
+    <p>Whether you need more foot traffic to a Bondi Beach shopfront or more leads for a Bondi Junction office, our SEO consultant team builds a custom campaign around your specific business goals.</p>
+  </div>
+</section>
 
-<p>For more about our <a href="/">SEO Sydney</a> services give us a call on 0400 454 859 or send through an enquiry.</p>
+<section class="bondi-sec bondi-sec-alt" id="areas">
+  <div class="bondi-wrap">
+    <h2>Areas We Service Near Bondi</h2>
+    <p>We work with local businesses across the Waverley local government area and the broader Eastern Suburbs of Sydney:</p>
+    <ul class="bondi-area-tags">
+      <li>Bondi 2026</li>
+      <li>Bondi Beach 2026</li>
+      <li>Bondi Junction 2022</li>
+      <li>North Bondi 2026</li>
+      <li>Tamarama 2026</li>
+      <li>Bronte 2024</li>
+      <li>Waverley 2024</li>
+      <li>Clovelly 2031</li>
+      <li>Rose Bay 2029</li>
+      <li>Vaucluse 2030</li>
+      <li>Double Bay 2028</li>
+      <li>Randwick 2031</li>
+      <li>Coogee 2034</li>
+      <li>Bellevue Hill 2023</li>
+    </ul>
+  </div>
+</section>
+
+<section class="bondi-sec" id="faq">
+  <div class="bondi-wrap">
+    <h2>SEO Bondi — Frequently Asked Questions</h2>
+
+    <div class="bondi-faq-item open">
+      <div class="bondi-faq-q">How long does SEO take to show results for a Bondi business?</div>
+      <div class="bondi-faq-a">Most local businesses see measurable ranking improvements within 8–16 weeks. Competitive Eastern Suburbs keywords may take 4–6 months to stabilise. We report monthly against agreed KPIs including search rankings, organic traffic and conversions.</div>
+    </div>
+    <div class="bondi-faq-item">
+      <div class="bondi-faq-q">How much does SEO cost in Bondi?</div>
+      <div class="bondi-faq-a">Our SEO packages are customised based on your competitive landscape, current site health and business goals. We provide transparent pricing after a free SEO audit — no hidden fees, no lock-in contracts. Contact us for a free consultation and quote.</div>
+    </div>
+    <div class="bondi-faq-item">
+      <div class="bondi-faq-q">Do you offer a free SEO audit?</div>
+      <div class="bondi-faq-a">Yes. Our complimentary audit covers crawlability, Core Web Vitals, site speed, mobile usability, on-page issues, backlink profile and competitor gaps specific to the Bondi and Eastern Suburbs market.</div>
+    </div>
+    <div class="bondi-faq-item">
+      <div class="bondi-faq-q">Do you optimise for AI search like ChatGPT and Google AI Overviews?</div>
+      <div class="bondi-faq-a">Yes. We apply generative engine optimisation (GEO) principles informed by peer-reviewed research from MIT and Columbia (E-GEO, 2025). This means structuring content for both traditional search and the AI-powered systems that are reshaping how people find local businesses online.</div>
+    </div>
+    <div class="bondi-faq-item">
+      <div class="bondi-faq-q">What makes you different from other SEO agencies in Bondi?</div>
+      <div class="bondi-faq-a">We ground every recommendation in data and published research. Our strategies integrate peer-reviewed GEO findings with Google’s Search Essentials and E-E-A-T framework. No heuristics, no guesswork — systematic, results-driven optimisation with measurable outcomes tied to revenue and ROI.</div>
+    </div>
+    <div class="bondi-faq-item">
+      <div class="bondi-faq-q">What areas near Bondi do you service?</div>
+      <div class="bondi-faq-a">Bondi, Bondi Beach, Bondi Junction, North Bondi, Tamarama, Bronte, Waverley, Clovelly, Rose Bay, Vaucluse, Double Bay, Randwick, Coogee, Bellevue Hill and the broader Eastern Suburbs.</div>
+    </div>
+    <div class="bondi-faq-item">
+      <div class="bondi-faq-q">Can you also help with Google Ads and digital marketing?</div>
+      <div class="bondi-faq-a">Yes. While search engine optimisation is our core strength, we also offer Google Ads management, web design and broader digital marketing services. We can create a custom package that fits your business goals and budget.</div>
+    </div>
+  </div>
+</section>
+
+<section class="bondi-bottom-cta" id="contact-cta">
+  <div class="bondi-wrap">
+    <h2>Ready to Grow Your Bondi Business?</h2>
+    <p>Get a free SEO audit and discover exactly where you stand — and what it takes to outrank your competitors and boost your online visibility.</p>
+    <a href="/contact" class="bondi-btn bondi-btn-primary">Get Your Free SEO Audit →</a>
+  </div>
+</section>
+
+<footer class="bondi-footer">
+  <div class="bondi-wrap">
+    <p>&copy; 2026 SEOinSydney. All rights reserved. <a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.bondi-faq-q').forEach(function(q){
+  q.addEventListener('click', function(){
+    this.parentElement.classList.toggle('open');
+  });
+});
+</script>
