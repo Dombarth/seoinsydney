@@ -1279,6 +1279,12 @@ a.service-card:hover {
     color: var(--bondi-white);
 }
 
+.bondi-btn-primary,
+.bondi-btn-primary:visited,
+.bondi-btn-primary i {
+    color: var(--bondi-white) !important;
+}
+
 .bondi-btn-ghost {
     background: transparent;
     color: var(--bondi-white);
