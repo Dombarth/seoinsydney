@@ -1152,6 +1152,18 @@ a.service-card:hover {
     color: var(--bondi-accent-hover);
 }
 
+.bondi-page .btn-primary,
+.bondi-page .btn-primary:visited,
+.bondi-page .btn-primary i {
+    color: #ffffff !important;
+}
+
+.bondi-page .btn-primary:hover,
+.bondi-page .btn-primary:active,
+.bondi-page .btn-primary:focus {
+    color: #ffffff !important;
+}
+
 .bondi-wrap {
     max-width: 1100px;
     margin: 0 auto;
