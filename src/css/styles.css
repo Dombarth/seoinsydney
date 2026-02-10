@@ -352,6 +352,23 @@ ul, ol {
     margin: 0 auto;
 }
 
+.suburb-hero .hero-badge {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.06);
+    color: var(--text-primary);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.suburb-hero .hero-note {
+    font-size: 17px;
+    color: var(--text-secondary);
+    margin-top: 12px;
+}
+
 .service-hero .hero-ctas,
 .page-hero .hero-ctas,
 .suburb-hero .hero-ctas {

@@ -49,7 +49,10 @@ layout: base.njk
     <div class="container">
         <div class="hero-content">
             <div class="hero-text">
+                {% if heroBadge %}<div class="hero-badge">{{ heroBadge }}</div>{% endif %}
                 <h1>{% if h1 %}{{ h1 }}{% else %}SEO {{ suburb }}{% endif %}</h1>
+                {% if heroLead %}<p class="hero-subtitle">{{ heroLead }}</p>{% endif %}
+                {% if heroNote %}<p class="hero-note">{{ heroNote }}</p>{% endif %}
                 <div class="hero-ctas">
                     <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-primary btn-large">
                         <i class="fas fa-phone"></i> {{ site.phone }}
