@@ -43,6 +43,26 @@ layout: base.njk
     ]
 }
 </script>
+{% if faqs %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {% for faq in faqs %}
+        {
+            "@type": "Question",
+            "name": "{{ faq.q }}",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{{ faq.a }}"
+            }
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+    ]
+}
+</script>
+{% endif %}
 {% endblock %}
 
 <section class="hero suburb-hero">
@@ -57,7 +77,7 @@ layout: base.njk
                     <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-primary btn-large">
                         <i class="fas fa-phone"></i> {{ site.phone }}
                     </a>
-                    <a href="/contact" class="btn btn-secondary btn-large">
+                    <a href="/contact/" class="btn btn-secondary btn-large">
                         Get in Touch
                     </a>
                 </div>
@@ -70,6 +90,14 @@ layout: base.njk
     <div class="container">
         <div class="content-block">
             {{ content | safe }}
+
+            {% if faqs %}
+            <h2>Frequently Asked Questions</h2>
+            {% for faq in faqs %}
+            <h3>{{ faq.q }}</h3>
+            <p>{{ faq.a }}</p>
+            {% endfor %}
+            {% endif %}
         </div>
     </div>
 </section>
@@ -81,7 +109,7 @@ layout: base.njk
                 <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-white btn-large">
                     <i class="fas fa-phone"></i> {{ site.phone }}
                 </a>
-                <a href="/contact" class="btn btn-outline-white btn-large">
+                <a href="/contact/" class="btn btn-outline-white btn-large">
                     Contact Us
                 </a>
             </div>
