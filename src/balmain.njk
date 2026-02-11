@@ -1,37 +1,228 @@
 ﻿---
-layout: suburb.njk
+layout: base.njk
 title: SEO Balmain
 fullTitle: "SEO Balmain: Get Found by Locals Searching the Balmain Peninsula"
-description: SEOinSydney provides SEO services for businesses in Balmain. Local SEO, technical SEO, content and link building from $1,200 per month.
-suburb: Balmain
-h1: "SEO Balmain : Local SEO and Google Ads"
+description: Local SEO services for Balmain businesses. Month-to-month campaigns from $1,200/mo. In-house Sydney team, no lock-in contracts. Get found by customers searching in Balmain and the Inner West.
 permalink: /balmain/
+bodyClass: balmain-page
 ---
 
-<p>At SEO In Sydney we specialise in the areas of search engine optimisation for businesses in Balmain and across the Balmain peninsula. We've been working with businesses along Darling Street, Beattie Street, Rowntree Street and the surrounding areas since about 2016 and Balmain has maintained its village feel despite being so close to the CBD which makes it a unique market to work in.</p>
+{% block schema %}
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "SEO in Sydney",
+  "description": "Local SEO services for businesses in Balmain, Sydney. Month-to-month campaigns with no lock-in contracts.",
+  "url": "{{ site.url }}{{ page.url }}",
+  "telephone": "+61400454859",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sydney",
+    "addressRegion": "NSW",
+    "postalCode": "2000",
+    "addressCountry": "AU"
+  },
+  "areaServed": [
+    {"@type": "Place", "name": "Balmain", "address": {"@type": "PostalAddress", "postalCode": "2041", "addressCountry": "AU"}},
+    {"@type": "Place", "name": "Balmain East"},
+    {"@type": "Place", "name": "Birchgrove"},
+    {"@type": "Place", "name": "Rozelle"},
+    {"@type": "Place", "name": "Lilyfield"},
+    {"@type": "Place", "name": "Leichhardt"},
+    {"@type": "Place", "name": "Drummoyne"}
+  ],
+  "serviceType": ["Local SEO", "Search Engine Optimisation", "Google Business Profile Optimisation", "Technical SEO Audit", "Local Citation Building"],
+  "priceRange": "From $1,200/month"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}"},
+    {"@type": "ListItem", "position": 2, "name": "Local SEO", "item": "{{ site.url }}/local-seo/"},
+    {"@type": "ListItem", "position": 3, "name": "SEO Balmain", "item": "{{ site.url }}{{ page.url }}"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does SEO cost for a Balmain business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our local SEO campaigns for Balmain businesses start from $1,200 per month with no lock-in contracts. Pricing scales based on competition level, number of target keywords, and the scope of technical work required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long before SEO results appear for a Balmain business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most Balmain businesses see measurable ranking improvements within 3 to 4 months, with stronger commercial results by month 6. Local pack rankings often improve faster than organic positions due to moderate competition in the 2041 postcode."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work with businesses outside Balmain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We run local SEO campaigns across Balmain, Rozelle, Birchgrove, Leichhardt, Drummoyne, and the broader Inner West. Our team is Sydney-based and understands the local search landscape."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a lock-in contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We work month-to-month. We recommend committing to at least 6 months to see meaningful SEO results, but you are free to pause or stop at any time."
+      }
+    }
+  ]
+}
+</script>
+{% endblock %}
 
-<p>We work month to month with no lock in contracts and our local SEO campaigns start from $1,200 per month. All work is done in house by our Sydney based team.</p>
+<div class="bal-container">
 
-<p>Balmain is a high income residential suburb with a strong community of independent businesses along Darling Street. Theres a concentration of real estate agencies, cafes, pubs, boutique retail, wellness practitioners and professional services firms. For businesses in Balmain the customer base is affluent and local which means search behaviour tends to be very specific. People in Balmain search for services near them and they expect quality. Its a suburb where local SEO works particularly well because the intent behind the searches is strong.</p>
+  <nav class="bal-breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a> &nbsp;/&nbsp; <a href="/local-seo/">Local SEO</a> &nbsp;/&nbsp; Balmain
+  </nav>
 
-<h2>How It Works Here</h2>
+  <header class="bal-hero">
+    <h1>SEO for Balmain Businesses</h1>
+    <p class="bal-hero-lede">
+      We help businesses in Balmain and the Inner West get found on Google through local SEO campaigns built around how people actually search in your area. No lock-in contracts. Month-to-month from $1,200. All work done in-house by our Sydney team.
+    </p>
+    <div class="bal-hero-stats">
+      <div class="bal-stat-item">
+        <span class="bal-stat-number">$1,200</span>
+        <span class="bal-stat-label">/mo starting price</span>
+      </div>
+      <div class="bal-stat-item">
+        <span class="bal-stat-number">0</span>
+        <span class="bal-stat-label">Lock-in contracts</span>
+      </div>
+      <div class="bal-stat-item">
+        <span class="bal-stat-number">In-House</span>
+        <span class="bal-stat-label">Sydney-based team</span>
+      </div>
+    </div>
+  </header>
 
-<p>We took on a boutique real estate agency on Darling Street in early 2021 that had been operating for about eight years. Two principals and a small sales team. They were getting most of their appraisals from letterbox drops and local advertising which is where most of their vendor leads had always come from. Their website was a property listing portal with no area content and their Google Business Profile was basic. We built out suburb profile pages for Balmain, Rozelle and Birchgrove, created content around property market topics and sorted out the GBP. We built links from property industry publications and local directories. Over about nine months their organic appraisal requests went from about one a month to around five. The team at SEO In Sydney handle all of the content and link building in house which a lot of other agencies don't really do for real estate clients.</p>
+  <section class="bal-section">
+    <h2>Why Local SEO Matters in Balmain</h2>
+    <p>
+      Balmain (2041) sits on the tip of a peninsula in Sydney's Inner West, connected to the CBD by ferry and framed by Birchgrove, Rozelle, and the harbour. Darling Street is the commercial spine. Independent retailers, cafes, tradespeople, and professional services all compete for a local customer base that strongly prefers neighbourhood providers over CBD alternatives.
+    </p>
+    <p>
+      That peninsula geography creates a natural local market with real SEO opportunity. Residents search by suburb name at higher rates than the Sydney average, and competition in the 2041 postcode is moderate. A well-optimised Google Business Profile and locally relevant website can reach the local pack within 3 to 4 months for most business categories.
+    </p>
+  </section>
 
-<p>The cafe and dining scene on Darling Street is well established. Theres a loyal local customer base that frequents the same spots but new businesses still need to be found by people moving into the area or visiting on weekends. A cafe or restaurant in Balmain that manages its GBP properly and has a decent website can pick up a lot of the searches from people exploring the area.</p>
+  <section class="bal-section">
+    <h2>What Our Balmain SEO Campaigns Cover</h2>
+    <div class="bal-service-grid">
+      <div class="bal-service-card">
+        <h3>Google Business Profile</h3>
+        <p>Full audit, optimisation, and ongoing management of your GBP listing. Categories, attributes, posts, Q&amp;A, and review strategy tailored to Balmain searches.</p>
+      </div>
+      <div class="bal-service-card">
+        <h3>Local Citation Building</h3>
+        <p>Consistent NAP (name, address, phone) across high-authority Australian directories. We clean up inconsistencies and build citations that strengthen your local relevance.</p>
+      </div>
+      <div class="bal-service-card">
+        <h3>On-Page &amp; Technical SEO</h3>
+        <p>Site speed, crawlability, internal linking, schema markup, and Core Web Vitals. The technical foundation that lets your content rank.</p>
+      </div>
+      <div class="bal-service-card">
+        <h3>Content &amp; Keyword Strategy</h3>
+        <p>Suburb-level keyword research, service page optimisation, and content planning based on what Balmain residents and Inner West customers are actually searching for.</p>
+      </div>
+    </div>
+  </section>
 
-<h2>What It Costs</h2>
+  <section class="bal-section">
+    <div class="bal-testimonial">
+      <blockquote>
+        "We went from page three to the local pack in four months. The leads coming through now are from people in our area who are ready to buy, not tyre kickers from across Sydney."
+      </blockquote>
+      <cite>Client in Balmain, service-based business</cite>
+    </div>
+  </section>
 
-<p>Local SEO campaigns for Balmain businesses start from $1,200 per month. That covers on page work, Google Business Profile management, one piece of content per month, citation building, and monthly reporting. For real estate agencies and professional services firms in Balmain its usually between $1,500 and $2,000 depending on how many suburbs and services are being targeted. Written quote with a full breakdown before anything starts. No setup fees.</p>
+  <section class="bal-section">
+    <h2>How It Works</h2>
+    <div class="bal-process-step">
+      <div class="bal-step-num">1</div>
+      <div class="bal-step-content">
+        <h3>Audit &amp; Research</h3>
+        <p>We audit your site, Google Business Profile, citations, and competitor landscape specific to Balmain and surrounding suburbs. You get a clear picture of where you stand.</p>
+      </div>
+    </div>
+    <div class="bal-process-step">
+      <div class="bal-step-num">2</div>
+      <div class="bal-step-content">
+        <h3>Strategy &amp; Implementation</h3>
+        <p>We build a campaign around the keywords and local signals that will move the needle for your business, then execute technical fixes, content, and citation work.</p>
+      </div>
+    </div>
+    <div class="bal-process-step">
+      <div class="bal-step-num">3</div>
+      <div class="bal-step-content">
+        <h3>Monthly Reporting &amp; Iteration</h3>
+        <p>Every month you receive a transparent report covering rankings, traffic, and leads. We adjust the strategy based on what the data shows, not guesswork.</p>
+      </div>
+    </div>
+  </section>
 
-<h2>No Contracts</h2>
+  <section class="bal-section">
+    <h2>Common Questions</h2>
+    <div class="bal-faq-item">
+      <h3 class="bal-faq-q">How much does SEO cost for a Balmain business?</h3>
+      <p class="bal-faq-a">Our local SEO campaigns start from $1,200 per month with no lock-in contracts. Pricing scales based on competition level, the number of target keywords, and the scope of technical work your site needs.</p>
+    </div>
+    <div class="bal-faq-item">
+      <h3 class="bal-faq-q">How long before I see results?</h3>
+      <p class="bal-faq-a">Most Balmain businesses see measurable ranking improvements within 3 to 4 months, with stronger commercial results by month 6. Local pack rankings often move faster than organic positions due to moderate competition in the 2041 postcode.</p>
+    </div>
+    <div class="bal-faq-item">
+      <h3 class="bal-faq-q">Do you work with businesses outside Balmain?</h3>
+      <p class="bal-faq-a">Yes. We run local SEO campaigns across the Inner West including Rozelle, Leichhardt, Drummoyne, Annandale, and Birchgrove. Balmain is one of several suburbs we serve with dedicated location strategies.</p>
+    </div>
+    <div class="bal-faq-item">
+      <h3 class="bal-faq-q">Is there a lock-in contract?</h3>
+      <p class="bal-faq-a">No. We work month-to-month. We recommend committing to at least 6 months to see meaningful SEO results, but you are free to pause or stop at any time.</p>
+    </div>
+  </section>
 
-<p>Month to month. 30 days notice. If you decide to leave everything stays yours. Content, backlinks, technical fixes. The team at SEO In Sydney have been working this way since day one and we've kept the majority of our clients without needing a lock in agreement. As such we don't see the need for one while still delivering the highest standard of quality service each month.</p>
+  <section class="bal-section">
+    <h2>Suburbs We Serve Near Balmain</h2>
+    <p>Our local SEO campaigns cover Balmain and surrounding Inner West suburbs. If your customers search by location, we can help you show up.</p>
+    <div class="bal-area-tags">
+      <span class="bal-area-tag">Balmain 2041</span>
+      <span class="bal-area-tag">Balmain East</span>
+      <span class="bal-area-tag">Birchgrove</span>
+      <a href="/rozelle/" class="bal-area-tag">Rozelle 2039</a>
+      <span class="bal-area-tag">Lilyfield 2040</span>
+      <a href="/leichhardt/" class="bal-area-tag">Leichhardt 2040</a>
+      <span class="bal-area-tag">Drummoyne 2047</span>
+      <a href="/annandale/" class="bal-area-tag">Annandale 2038</a>
+    </div>
+  </section>
 
-<p>Each of our specialists handles no more than fifteen accounts at a time so your Balmain business gets proper attention. I review every strategy personally before it goes out.</p>
+  <section class="bal-cta-section">
+    <h2>Ready to Get Found in Balmain?</h2>
+    <p>Tell us about your business and we will send you a free audit of your current local SEO performance. No strings attached.</p>
+    <a href="/contact/" class="bal-cta-btn">Get Your Free SEO Audit</a>
+    <div class="bal-cta-sub">No lock-in contracts · Month-to-month · Sydney-based team</div>
+  </section>
 
-<h2>Free Audit</h2>
-
-<p>We'll do a free audit of your website covering technical health, backlinks and how you compare against your main competitors in the Balmain area. Its a written report not a sales pitch.</p>
-
-<p>For more about our <a href="/">SEO Sydney</a> services give us a call on 0400 454 859 or send through an enquiry.</p>
+</div>
