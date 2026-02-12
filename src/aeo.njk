@@ -1,8 +1,8 @@
 ---
 layout: base.njk
 title: AEO Sydney
-fullTitle: "AEO Sydney: Answer Engine Optimisation Services"
-description: Answer Engine Optimisation services in Sydney. Optimise your content to appear in featured snippets, AI overviews, and direct answer boxes.
+fullTitle: "AEO Sydney: Answer Engine Optimisation for Featured Snippets & AI Answers"
+description: Answer Engine Optimisation services in Sydney. Structure your content for featured snippets, AI overviews and direct answer boxes. From $1,200 per month.
 ---
 
 {% block schema %}
@@ -55,6 +55,46 @@ description: Answer Engine Optimisation services in Sydney. Optimise your conten
     ]
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is Answer Engine Optimisation (AEO)?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Answer Engine Optimisation focuses on structuring content so it appears in direct answer formats in search results. This includes featured snippets, knowledge panels, and AI-generated answer boxes. The goal is to have your content selected as the source that search engines display when users ask relevant questions."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How is AEO different from SEO?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Traditional SEO focuses on ranking web pages in organic search results. AEO specifically targets the direct answer positions that appear above or alongside those results. AEO builds on SEO foundations but adds specific work around content structure, question-answer formatting, schema markup, and content extractability."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How much does AEO cost?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AEO work is typically included as part of a broader SEO campaign starting from $1,200 per month. It can also be scoped as a standalone project depending on your existing content and goals. We provide a written quote before work begins."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can any business benefit from AEO?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AEO is most effective for businesses where potential customers ask questions before making decisions. Professional services, health and medical, education, finance, and technical industries tend to see the most benefit because their customers frequently search with question-based queries."
+            }
+        }
+    ]
+}
+</script>
 {% endblock %}
 
 <!-- Hero Section -->
@@ -63,7 +103,7 @@ description: Answer Engine Optimisation services in Sydney. Optimise your conten
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Answer Engine Optimisation (AEO)</h1>
-                <p class="hero-subtitle">Optimise your content to appear in featured snippets, AI overviews, and direct answer boxes in search results.</p>
+                <p class="hero-subtitle">We structure your content to appear in featured snippets, AI overviews and direct answer boxes. When someone asks a question related to your services, your content becomes the answer.</p>
                 <div class="hero-ctas">
                     <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-primary btn-large">
                         <i class="fas fa-phone"></i> {{ site.phone }}
@@ -82,9 +122,9 @@ description: Answer Engine Optimisation services in Sydney. Optimise your conten
     <div class="container">
         <div class="content-block">
             <h2>What is Answer Engine Optimisation?</h2>
-            <p>Answer Engine Optimisation (AEO) focuses on structuring content to appear in direct answer formats in search results. This includes featured snippets, knowledge panels, and AI-generated answer boxes.</p>
-            <p>Search engines increasingly provide direct answers to user queries rather than simply listing links. AEO adapts content to be selected for these prominent positions.</p>
-            <p>The goal is to have your content be the source that search engines extract and display when users ask questions related to your expertise or services.</p>
+            <p>Answer Engine Optimisation focuses on structuring content to appear in direct answer formats in search results. This includes featured snippets, knowledge panels and AI-generated answer boxes.</p>
+            <p>Search engines increasingly provide direct answers to queries rather than simply listing links. AEO adapts your content to be selected for these positions.</p>
+            <p>The practical outcome is that your content becomes the source that search engines extract and display when users ask questions related to your expertise or services.</p>
         </div>
     </div>
 </section>
@@ -98,8 +138,8 @@ description: Answer Engine Optimisation services in Sydney. Optimise your conten
             <ul class="content-list">
                 <li><strong>Question-Answer Formatting:</strong> Content that directly addresses common questions in clear, concise language</li>
                 <li><strong>Structured Data:</strong> Schema markup that helps search engines understand content relationships</li>
-                <li><strong>Authority:</strong> Content from sources deemed trustworthy and authoritative on the topic</li>
-                <li><strong>Extractability:</strong> Content formatted in ways that can be easily extracted and displayed</li>
+                <li><strong>Authority:</strong> Content from sources that are trustworthy and authoritative on the topic</li>
+                <li><strong>Extractability:</strong> Content formatted in ways that can be easily pulled out and displayed</li>
                 <li><strong>Accuracy:</strong> Factually correct information that aligns with consensus sources</li>
             </ul>
         </div>
@@ -115,10 +155,10 @@ description: Answer Engine Optimisation services in Sydney. Optimise your conten
             <ul class="content-list">
                 <li><strong>Content Structure:</strong> Traditional SEO focuses on keywords; AEO focuses on question-answer patterns</li>
                 <li><strong>Format:</strong> AEO requires content in formats search engines can extract (lists, tables, definitions)</li>
-                <li><strong>Precision:</strong> AEO rewards concise, specific answers over comprehensive but lengthy content</li>
-                <li><strong>Schema:</strong> AEO relies more heavily on structured data markup</li>
+                <li><strong>Precision:</strong> AEO rewards concise, specific answers over lengthy content</li>
+                <li><strong>Schema:</strong> AEO relies more heavily on structured data markup (FAQ, HowTo, Q&A)</li>
             </ul>
-            <p>Effective AEO complements rather than replaces traditional <a href="/">SEO Sydney</a> work. The foundational elements of technical SEO and content quality remain important.</p>
+            <p>AEO complements rather than replaces traditional <a href="/">SEO</a> work. Technical SEO and content quality remain the foundation.</p>
         </div>
     </div>
 </section>
@@ -132,11 +172,11 @@ description: Answer Engine Optimisation services in Sydney. Optimise your conten
             <ul class="content-list">
                 <li><strong>Paragraph Snippets:</strong> Brief text answers to definitional or explanatory queries</li>
                 <li><strong>List Snippets:</strong> Numbered or bulleted lists for process or collection queries</li>
-                <li><strong>Table Snippets:</strong> Data presented in table format for comparison or specification queries</li>
+                <li><strong>Table Snippets:</strong> Data in table format for comparison or specification queries</li>
                 <li><strong>AI Overviews:</strong> Synthesised answers drawing from multiple sources</li>
                 <li><strong>Knowledge Panels:</strong> Entity information displayed prominently for brand or topic searches</li>
             </ul>
-            <p>Different content types and query patterns suit different snippet formats. Content strategy should consider which formats align with your target queries.</p>
+            <p>Different content types and query patterns suit different snippet formats. We assess which formats align with your target queries and structure content accordingly.</p>
         </div>
     </div>
 </section>
@@ -145,16 +185,74 @@ description: Answer Engine Optimisation services in Sydney. Optimise your conten
 <section class="content-section">
     <div class="container">
         <div class="content-block">
-            <h2>AEO Services</h2>
-            <p>Answer Engine Optimisation work includes:</p>
+            <h2>What AEO Work Includes</h2>
             <ul class="content-list">
                 <li><strong>Query Research:</strong> Identifying question-based searches relevant to your business</li>
                 <li><strong>Content Audit:</strong> Assessing existing content for AEO opportunities</li>
                 <li><strong>Content Structuring:</strong> Reformatting content to improve extractability</li>
-                <li><strong>Schema Implementation:</strong> Adding FAQ, HowTo, and other relevant structured data</li>
+                <li><strong>Schema Implementation:</strong> Adding FAQ, HowTo and other relevant structured data</li>
                 <li><strong>Answer Content Development:</strong> Creating new content designed for direct answer selection</li>
+                <li><strong>Monitoring:</strong> Tracking which snippets you hold and identifying new opportunities</li>
             </ul>
-            <p>AEO work often pairs with <a href="/geo">Generative Engine Optimisation (GEO)</a>, which focuses on appearing in AI-generated responses rather than traditional featured snippets.</p>
+            <p>AEO work pairs well with <a href="/geo">Generative Engine Optimisation (GEO)</a>, which focuses on appearing in AI-generated responses rather than traditional featured snippets.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Cost Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>AEO Pricing</h2>
+            <p>AEO work is typically included as part of a broader SEO campaign starting from $1,200 per month. It can also be scoped as a standalone project depending on your existing content and goals.</p>
+            <p>Written quote before anything starts. No lock-in contracts. Month to month with 30 days notice.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is Answer Engine Optimisation (AEO)?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>AEO focuses on structuring content so it appears in direct answer formats in search results. This includes featured snippets, knowledge panels, and AI-generated answer boxes. The goal is to have your content selected as the source that search engines display when users ask relevant questions.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How is AEO different from SEO?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Traditional SEO focuses on ranking web pages in organic search results. AEO specifically targets the direct answer positions that appear above or alongside those results. AEO builds on SEO foundations but adds specific work around content structure, question-answer formatting, schema markup, and content extractability.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How much does AEO cost?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>AEO work is typically included as part of a broader SEO campaign starting from $1,200 per month. It can also be scoped as a standalone project depending on your existing content and goals. We provide a written quote before work begins.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can any business benefit from AEO?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>AEO is most effective for businesses where potential customers ask questions before making decisions. Professional services, health and medical, education, finance and technical industries tend to see the most benefit because their customers frequently search with question-based queries.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -163,8 +261,8 @@ description: Answer Engine Optimisation services in Sydney. Optimise your conten
 <section class="cta">
     <div class="container">
         <div class="cta-content">
-            <h2>Discuss AEO for Your Business</h2>
-            <p>We can assess your content for answer engine opportunities and explain potential strategies.</p>
+            <h2>Free Content Audit</h2>
+            <p>We can assess your existing content for answer engine opportunities and explain what would be involved.</p>
             <div class="cta-buttons">
                 <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-white btn-large">
                     <i class="fas fa-phone"></i> {{ site.phone }}

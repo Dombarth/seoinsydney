@@ -1,8 +1,8 @@
 ---
 layout: base.njk
 title: GEO Sydney
-fullTitle: "GEO Sydney: Generative Engine Optimisation Services"
-description: Generative Engine Optimisation services in Sydney. Position your business for visibility in AI search systems and LLM recommendations.
+fullTitle: "GEO Sydney: Generative Engine Optimisation for AI Search"
+description: Generative Engine Optimisation services in Sydney. Position your business for visibility in AI search systems, ChatGPT, Google AI overviews and LLM recommendations.
 ---
 
 {% block schema %}
@@ -55,6 +55,46 @@ description: Generative Engine Optimisation services in Sydney. Position your bu
     ]
 }
 </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is Generative Engine Optimisation (GEO)?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Generative Engine Optimisation addresses how your content appears in AI-generated responses. As AI systems like ChatGPT, Google AI overviews, and Perplexity become common information sources, GEO focuses on making your content a source that these systems reference and recommend."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How is GEO different from AEO?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AEO focuses on appearing in featured snippets and direct answers within traditional search results. GEO focuses on being referenced by generative AI systems that create synthesised responses. AEO optimises for extraction, GEO optimises for reference. Both share foundational elements like clear structure and accurate information."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How much does GEO cost?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "GEO work is typically included as part of a broader SEO campaign starting from $1,200 per month. Standalone GEO projects can be scoped separately depending on your existing content and competitive landscape. Written quote provided before work begins."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is GEO relevant for local businesses?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "GEO is increasingly relevant for local businesses as more people use AI tools to find services. When someone asks ChatGPT or Google AI for recommendations, the businesses that get mentioned are those with clear, accurate, well-structured online presences. Local businesses can benefit from GEO by ensuring their entity information is consistent and their content is authoritative."
+            }
+        }
+    ]
+}
+</script>
 {% endblock %}
 
 <!-- Hero Section -->
@@ -63,7 +103,7 @@ description: Generative Engine Optimisation services in Sydney. Position your bu
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Generative Engine Optimisation (GEO)</h1>
-                <p class="hero-subtitle">Position your business for visibility in AI-powered search systems and large language model recommendations.</p>
+                <p class="hero-subtitle">We position your business for visibility in AI search systems. When someone uses ChatGPT, Google AI overviews or Perplexity to find services, your business needs to be in those responses.</p>
                 <div class="hero-ctas">
                     <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-primary btn-large">
                         <i class="fas fa-phone"></i> {{ site.phone }}
@@ -82,7 +122,7 @@ description: Generative Engine Optimisation services in Sydney. Position your bu
     <div class="container">
         <div class="content-block">
             <h2>What is Generative Engine Optimisation?</h2>
-            <p>Generative Engine Optimisation (GEO) addresses how content appears in AI-generated responses. As AI systems like ChatGPT, Google's AI overviews, and other LLM-powered tools become common information sources, businesses need strategies to be included in these generated responses.</p>
+            <p>Generative Engine Optimisation addresses how content appears in AI-generated responses. As AI systems like ChatGPT, Google AI overviews and Perplexity become common information sources, businesses need strategies to be included in these generated responses.</p>
             <p>Unlike traditional search where users click through to websites, AI systems often synthesise answers from multiple sources. GEO focuses on making your content a source that AI systems reference and recommend.</p>
             <p>This is an emerging discipline that builds on traditional SEO principles while adapting to the specific behaviours of generative AI systems.</p>
         </div>
@@ -101,7 +141,7 @@ description: Generative Engine Optimisation services in Sydney. Position your bu
                 <li><strong>Authority Assessment:</strong> AI systems evaluate source credibility based on training data and retrieval signals</li>
                 <li><strong>Response Generation:</strong> Answers are constructed dynamically based on the query context</li>
             </ul>
-            <p>These differences mean that content must be structured and positioned for AI comprehension and selection.</p>
+            <p>Content must be structured and positioned for AI comprehension and selection.</p>
         </div>
     </div>
 </section>
@@ -111,12 +151,11 @@ description: Generative Engine Optimisation services in Sydney. Position your bu
     <div class="container">
         <div class="content-block">
             <h2>GEO Principles</h2>
-            <p>Effective GEO is built on several key principles:</p>
             <ul class="content-list">
                 <li><strong>Factual Accuracy:</strong> AI systems prefer information that aligns with consensus sources and can be verified</li>
                 <li><strong>Clarity:</strong> Content that is clearly written and unambiguous is more likely to be referenced</li>
                 <li><strong>Authority:</strong> Established brands and credible sources are preferred in AI recommendations</li>
-                <li><strong>Uniqueness:</strong> Original information and perspectives that aren't available elsewhere</li>
+                <li><strong>Uniqueness:</strong> Original information and perspectives that are not available elsewhere</li>
                 <li><strong>Completeness:</strong> Comprehensive coverage of topics that addresses full user intent</li>
             </ul>
         </div>
@@ -133,8 +172,8 @@ description: Generative Engine Optimisation services in Sydney. Position your bu
                 <li><strong>AEO</strong> focuses on appearing in featured snippets and direct answers within traditional search results</li>
                 <li><strong>GEO</strong> focuses on being referenced by generative AI systems that create synthesised responses</li>
             </ul>
-            <p>AEO optimises for extraction—having content pulled into answer boxes. GEO optimises for reference—being a source that AI systems draw upon when generating responses.</p>
-            <p>Both disciplines share foundational elements: clear structure, accurate information, and authoritative positioning. Effective strategy typically addresses both.</p>
+            <p>AEO optimises for extraction — having content pulled into answer boxes. GEO optimises for reference — being a source that AI systems draw upon when generating responses.</p>
+            <p>Both share foundational elements: clear structure, accurate information and authoritative positioning. We typically address both within a single campaign.</p>
         </div>
     </div>
 </section>
@@ -143,27 +182,85 @@ description: Generative Engine Optimisation services in Sydney. Position your bu
 <section class="content-section">
     <div class="container">
         <div class="content-block">
-            <h2>GEO Implementation</h2>
-            <p>GEO work includes:</p>
+            <h2>What GEO Work Includes</h2>
             <ul class="content-list">
                 <li><strong>Entity Establishment:</strong> Building clear, consistent entity representations across the web</li>
                 <li><strong>Content Authority:</strong> Developing content that demonstrates expertise and trustworthiness</li>
                 <li><strong>Information Architecture:</strong> Structuring content for AI comprehension and retrieval</li>
                 <li><strong>Source Diversification:</strong> Ensuring your brand appears across multiple authoritative contexts</li>
                 <li><strong>Fact Verification:</strong> Ensuring all claims are accurate and attributable</li>
+                <li><strong>Schema Markup:</strong> Implementing structured data that AI systems can parse</li>
             </ul>
         </div>
     </div>
 </section>
 
-<!-- Emerging Field Section -->
+<!-- Cost Section -->
 <section class="content-section alt-bg">
     <div class="container">
         <div class="content-block">
-            <h2>An Emerging Discipline</h2>
-            <p>GEO is a new and evolving field. AI systems are changing rapidly, and strategies that work today may need adjustment as these systems develop.</p>
-            <p>What remains consistent is the value of high-quality, accurate content from credible sources. Building genuine authority and creating genuinely useful content remains the foundation of visibility across both traditional and AI-powered search.</p>
-            <p>GEO should be viewed as an extension of sound <a href="/">SEO Sydney</a> practice rather than a replacement for it.</p>
+            <h2>GEO Pricing</h2>
+            <p>GEO work is typically included as part of a broader SEO campaign starting from $1,200 per month. Standalone GEO projects can be scoped separately depending on your existing content and competitive landscape.</p>
+            <p>Written quote before anything starts. No lock-in contracts. Month to month with 30 days notice.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Emerging Field Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>An Evolving Discipline</h2>
+            <p>GEO is a new field. AI systems are changing rapidly and strategies that work today may need adjustment as these systems develop.</p>
+            <p>What remains consistent is the value of high-quality, accurate content from credible sources. Building genuine authority and creating useful content remains the foundation of visibility across both traditional and AI-powered search.</p>
+            <p>GEO should be viewed as an extension of sound <a href="/">SEO</a> practice rather than a replacement for it.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is Generative Engine Optimisation (GEO)?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>GEO addresses how your content appears in AI-generated responses. As AI systems like ChatGPT, Google AI overviews, and Perplexity become common information sources, GEO focuses on making your content a source that these systems reference and recommend.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How is GEO different from AEO?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>AEO focuses on appearing in featured snippets and direct answers within traditional search results. GEO focuses on being referenced by generative AI systems that create synthesised responses. AEO optimises for extraction, GEO optimises for reference. Both share foundational elements like clear structure and accurate information.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How much does GEO cost?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>GEO work is typically included as part of a broader SEO campaign starting from $1,200 per month. Standalone GEO projects can be scoped separately depending on your existing content and competitive landscape. Written quote provided before work begins.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Is GEO relevant for local businesses?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>GEO is increasingly relevant for local businesses as more people use AI tools to find services. When someone asks ChatGPT or Google AI for recommendations, the businesses that get mentioned are those with clear, accurate, well-structured online presences.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -172,8 +269,8 @@ description: Generative Engine Optimisation services in Sydney. Position your bu
 <section class="cta">
     <div class="container">
         <div class="cta-content">
-            <h2>Discuss GEO for Your Business</h2>
-            <p>We can explain how AI search developments might affect your business and discuss relevant strategies.</p>
+            <h2>Free SEO Audit</h2>
+            <p>We can explain how AI search developments affect your business and discuss relevant strategies.</p>
             <div class="cta-buttons">
                 <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-white btn-large">
                     <i class="fas fa-phone"></i> {{ site.phone }}
