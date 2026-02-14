@@ -25,3 +25,16 @@ npm-debug.log*
 # Cache
 .cache/
 .eleventy-cache/
+
+# Reference/research files
+*.pdf
+seo_*.txt
+homepage.txt
+dejan_findings.txt
+how-much-does-seo-cost-in-australia.txt
+how-long-does-seo-take.txt
+how-to-choose-an-seo-agency.txt
+seo-audit.txt
+seo-vs-google-ads.txt
+web-design-sydney.txt
+what-is-technical-seo.txt

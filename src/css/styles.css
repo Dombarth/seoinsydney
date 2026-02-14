@@ -2090,6 +2090,169 @@ a.bal-area-tag:hover {
     color: var(--text-secondary);
 }
 
+/* Breadcrumb */
+.breadcrumb {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 24px 0 0;
+    letter-spacing: 0.3px;
+}
+
+.breadcrumb .container {
+    max-width: 760px;
+}
+
+.breadcrumb a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: var(--primary);
+}
+
+/* Hero Stats Row */
+.hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-family: var(--font-display);
+    font-size: 32px;
+    color: var(--primary);
+    line-height: 1.1;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-top: 4px;
+    letter-spacing: 0.2px;
+}
+
+/* Service Grid (suburb template) */
+.service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+/* Step Number (suburb template) */
+.step-num {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--accent-light);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.step-content h3 {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.step-content p {
+    font-size: 15px;
+    color: var(--text-secondary);
+}
+
+/* Static FAQ Items (non-accordion) */
+.faq-item-static {
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+}
+
+.faq-item-static:last-child {
+    border-bottom: none;
+}
+
+.faq-item-static h3 {
+    font-family: var(--font-text);
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    color: var(--text-primary);
+}
+
+.faq-item-static p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Area Tags (nearby suburbs) */
+.area-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.area-tag {
+    background: var(--accent-light);
+    color: var(--primary);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.15s;
+}
+
+a.area-tag:hover {
+    background: #d0e4d7;
+    color: var(--primary);
+}
+
+/* CTA Sub Text */
+.cta-sub {
+    margin-top: 12px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Testimonial Section */
+.testimonial-block {
+    background: var(--primary);
+    color: var(--white);
+    border-radius: var(--radius);
+    padding: 36px 32px;
+}
+
+.testimonial-block blockquote {
+    font-family: var(--font-display);
+    font-size: 22px;
+    line-height: 1.5;
+    font-style: italic;
+    margin-bottom: 16px;
+    color: var(--white);
+}
+
+.testimonial-block cite {
+    font-style: normal;
+    font-size: 14px;
+    opacity: 0.8;
+    color: var(--white);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .nav-links,
@@ -2186,6 +2349,15 @@ a.bal-area-tag:hover {
 
     .bondi-tg {
         grid-template-columns: 1fr;
+    }
+
+    /* Suburb template responsive */
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-stats {
+        gap: 24px;
     }
 
     /* Balmain responsive */

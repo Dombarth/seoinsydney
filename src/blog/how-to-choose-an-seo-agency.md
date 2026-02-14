@@ -152,7 +152,7 @@ After evaluating multiple agencies, consider the following:
 2. **Understanding:** Which agency asked the most informed questions about your business?
 3. **Transparency:** Which agency was most willing to explain their process, team structure, and reporting?
 4. **Realism:** Which agency set the most realistic expectations about timelines and outcomes?
-5. **Fit:** Which agency felt like the best cultural and communication fit for how you want to work?
+5. **Fit:** Which agency felt like the right cultural and communication fit for how you want to work?
 
 The right agency is one that reduces your uncertainty about what will happen with your SEO investment. They explain clearly, report thoroughly, and set expectations honestly.
 

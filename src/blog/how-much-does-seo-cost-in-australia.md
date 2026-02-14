@@ -126,4 +126,4 @@ SEO costs in Australia range from around $1,000 per month for basic local campai
 
 The most important factor is not the price itself but whether the provider can clearly explain what work will be done, how results will be measured, and what outcomes are realistic for the given budget.
 
-For specific pricing based on your business situation, [contact us](/contact) for a discussion. We provide a clear cost breakdown before any work begins.
+For specific pricing based on your business situation, [get in touch](/contact) for a discussion. A clear cost breakdown is provided before any work begins.
