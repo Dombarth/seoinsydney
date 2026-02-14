@@ -1,5 +1,5 @@
 ---
-title: How to Choose an SEO Agency
+title: "How to Choose an SEO Agency : What to Look For"
 fullTitle: "How to Choose an SEO Agency in Australia"
 description: A practical guide for businesses evaluating SEO agencies, covering what to look for, what questions to ask, red flags to watch for, and how to assess whether an agency is a good fit.
 subtitle: A practical framework for evaluating SEO providers, understanding what to expect, and identifying warning signs before committing to a contract.

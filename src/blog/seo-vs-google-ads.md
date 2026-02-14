@@ -1,5 +1,5 @@
 ---
-title: SEO vs Google Ads
+title: "SEO vs Google Ads : Which Channel Fits Your Business"
 fullTitle: "SEO vs Google Ads: How They Differ and When to Use Each"
 description: An objective comparison of SEO and Google Ads covering how each channel works, their cost structures, timelines, and when each is the appropriate choice for Australian businesses.
 subtitle: An objective comparison of organic search and paid search to help businesses understand when each channel is appropriate.
