@@ -196,11 +196,12 @@ ul, ol {
 }
 
 .nav .container {
-    max-width: 760px;
+    max-width: 1080px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 64px;
+    gap: 40px;
 }
 
 .logo {
@@ -208,6 +209,7 @@ ul, ol {
     align-items: center;
     gap: 8px;
     text-decoration: none;
+    flex-shrink: 0;
 }
 
 .logo img {
@@ -228,7 +230,7 @@ ul, ol {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 28px;
+    gap: 32px;
     margin: 0;
 }
 
@@ -238,6 +240,7 @@ ul, ol {
     color: var(--text-secondary);
     transition: var(--transition);
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -246,7 +249,9 @@ ul, ol {
 
 .nav-cta {
     font-size: 14px;
-    padding: 8px 16px;
+    padding: 10px 20px;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .mobile-menu-btn {
@@ -1036,6 +1041,10 @@ a.service-card:hover {
     padding: 48px 0 0;
     background-color: var(--background);
     border-top: 1px solid var(--border);
+}
+
+.footer .container {
+    max-width: 1080px;
 }
 
 .footer-content {
