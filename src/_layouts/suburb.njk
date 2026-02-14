@@ -144,7 +144,7 @@ layout: base.njk
             <div class="service-grid">
                 <div class="service-card">
                     <h3>Google Business Profile</h3>
-                    <p>Full audit, optimisation, and ongoing management of your GBP listing. Categories, attributes, posts, Q&amp;A, and review strategy tailored to {{ suburb }} searches.</p>
+                    <p>Full audit, optimisation, and ongoing management of your GBP listing. Categories, attributes, posts, Q&amp;A, and review strategy tailored to local searches.</p>
                 </div>
                 <div class="service-card">
                     <h3>Local Citation Building</h3>
@@ -156,7 +156,7 @@ layout: base.njk
                 </div>
                 <div class="service-card">
                     <h3>Content &amp; Keyword Strategy</h3>
-                    <p>Suburb-level keyword research, service page optimisation, and content planning based on what {{ suburb }} customers are actually searching for.</p>
+                    <p>Suburb-level keyword research, service page optimisation, and content planning based on what local customers are actually searching for.</p>
                 </div>
             </div>
         </div>
@@ -172,7 +172,7 @@ layout: base.njk
                     <div class="step-num">1</div>
                     <div class="step-content">
                         <h3>Audit &amp; Research</h3>
-                        <p>I audit your site, Google Business Profile, citations, and competitor landscape specific to {{ suburb }} and surrounding suburbs. You get a clear picture of where you stand.</p>
+                        <p>I audit your site, Google Business Profile, citations, and competitor landscape specific to your area and surrounding suburbs. You get a clear picture of where you stand.</p>
                     </div>
                 </div>
                 <div class="process-step">
@@ -214,10 +214,9 @@ layout: base.njk
 <section class="content-section">
     <div class="container">
         <div class="content-block">
-            <h2>Suburbs Near {{ suburb }}</h2>
-            <p>Local SEO campaigns cover {{ suburb }} and surrounding suburbs. If your customers search by location, I can help you show up.</p>
+            <h2>Nearby Suburbs</h2>
+            <p>Local SEO campaigns cover this area and surrounding suburbs. If your customers search by location, I can help you show up.</p>
             <div class="area-tags">
-                <span class="area-tag">{{ suburb }}{% if postcode %} {{ postcode }}{% endif %}</span>
                 {% for ns in nearbySuburbs %}
                 {% if ns.slug %}
                 <a href="/{{ ns.slug }}/" class="area-tag">{{ ns.name }}{% if ns.postcode %} {{ ns.postcode }}{% endif %}</a>
@@ -234,8 +233,8 @@ layout: base.njk
 <section class="cta">
     <div class="container">
         <div class="cta-content">
-            <h2>Ready to Get Found in {{ suburb }}?</h2>
-            <p>Tell us about your business and we will send you a free audit of your current local SEO performance.</p>
+            <h2>Ready to Get Found Locally?</h2>
+            <p>Tell me about your business and I will send you a free audit of your current local SEO performance.</p>
             <div class="cta-buttons">
                 <a href="/contact/" class="btn btn-white btn-large">
                     Get Your Free SEO Audit
