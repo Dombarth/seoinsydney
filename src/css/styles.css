@@ -2368,6 +2368,24 @@ a.area-tag:hover {
     .bal-hero-stats {
         gap: 24px;
     }
+
+    /* Mobile typography for suburb pages */
+    .content-block h2 {
+        font-size: 24px;
+    }
+
+    .content-block h3 {
+        font-size: 15px;
+    }
+
+    .service-card h3 {
+        font-size: 15px;
+    }
+
+    .process-step h3,
+    .step-content h3 {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 480px) {
