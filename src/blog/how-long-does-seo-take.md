@@ -1,5 +1,5 @@
----
-title: "How Long Does SEO Take : Realistic Timelines for Results"
+﻿---
+title: "How Long Does SEO Take: Realistic Timelines for Results"
 fullTitle: "How Long Does SEO Take to Show Results"
 description: A realistic guide to SEO timelines covering what to expect in the first 3, 6, and 12 months of a campaign, and the factors that determine how quickly results appear.
 subtitle: What to expect at each stage of an SEO campaign, from initial technical improvements through to sustained organic traffic growth.

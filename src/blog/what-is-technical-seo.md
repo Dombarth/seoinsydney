@@ -1,5 +1,5 @@
----
-title: "What Is Technical SEO : A Complete Beginner's Guide"
+﻿---
+title: "What Is Technical SEO: A Complete Beginner's Guide"
 fullTitle: "What Is Technical SEO and Why Does It Matter"
 description: A comprehensive reference guide to technical SEO covering site speed, Core Web Vitals, crawlability, indexation, structured data, mobile optimisation, and how technical foundations affect search rankings.
 subtitle: A reference guide to the technical foundations that determine whether a website can be properly crawled, indexed, and ranked by search engines.

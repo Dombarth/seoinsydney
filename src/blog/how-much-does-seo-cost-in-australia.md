@@ -1,5 +1,5 @@
----
-title: "How Much Does SEO Cost in Australia : Pricing Breakdown"
+﻿---
+title: "How Much Does SEO Cost in Australia: Pricing Breakdown"
 fullTitle: "How Much Does SEO Cost in Australia"
 description: A factual breakdown of SEO pricing in Australia covering monthly retainers, project-based pricing, hourly rates, and the factors that determine what businesses should expect to pay.
 subtitle: A reference guide to SEO pricing structures, cost factors, and what Australian businesses should expect when investing in search engine optimisation.
