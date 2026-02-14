@@ -163,6 +163,21 @@ layout: base.njk
     </div>
 </section>
 
+{% if testimonialQuote %}
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <div class="testimonial-block">
+                <blockquote>
+                    "{{ testimonialQuote }}"
+                </blockquote>
+                <cite>{{ testimonialCite }}</cite>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
 <section class="content-section">
     <div class="container">
         <div class="content-block">
