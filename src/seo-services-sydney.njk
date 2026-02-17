@@ -1,0 +1,314 @@
+---
+layout: base.njk
+title: "SEO Services Sydney"
+fullTitle: "SEO Services Sydney: Get More Leads From Google Search"
+description: "SEO services for Sydney businesses. Technical SEO, content strategy, link building and local SEO. Month-to-month from $1,200. Free SEO audit to show where you stand."
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "SEO Services Sydney",
+    "description": "{{ description }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "{{ site.name }}",
+        "telephone": "{{ site.phone }}",
+        "url": "{{ site.url }}",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "{{ site.location.latitude }}",
+            "longitude": "{{ site.location.longitude }}"
+        }
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Sydney"
+    },
+    "serviceType": "SEO Services",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SEO Services Sydney",
+            "item": "{{ site.url }}/seo-services-sydney/"
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How much do SEO services cost in Sydney?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO services in Sydney start from $1,200 per month for small business campaigns. Larger or more competitive projects range from $2,000 to $5,000+ per month. One-off SEO audits start at $1,500. I provide a written quote before any work begins so you know exactly what you're paying for."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does SEO take to show results?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most Sydney businesses see meaningful ranking improvements within three to six months. Some technical fixes can show results in weeks. Content and link building typically need four to six months to move the needle. I track progress monthly so you can see what's working."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you guarantee first page rankings?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Anyone guaranteeing specific rankings is either guessing or using tactics that risk penalties. What I do guarantee is transparent work, monthly reporting, and a campaign built around your business goals. If something isn't working I'll tell you and we'll change approach."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What's included in monthly SEO services?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Monthly SEO includes technical optimisation, content creation or improvement, link building, Google Business Profile management where relevant, and monthly reporting. The exact mix depends on what your site needs most. I work on one thing at a time rather than spreading effort thin across everything."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero service-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>SEO Services Sydney</h1>
+                <p class="hero-subtitle">I help Sydney businesses get more leads from Google search. Technical SEO, content strategy, link building and local SEO. Month-to-month, no lock-in contracts.</p>
+                <div class="hero-ctas">
+                    <a href="/contact" class="btn btn-primary btn-large">
+                        Free SEO Audit
+                    </a>
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What SEO Services Include Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>What SEO Services Include</h2>
+            <p>SEO covers everything that affects whether your site appears in Google search results. I work across three main areas:</p>
+            
+            <h3>Technical SEO</h3>
+            <p>Technical SEO is the foundation. If Google can't crawl your site properly, content and links won't matter. Technical work includes site speed optimisation, mobile usability, crawl budget optimisation, schema markup, XML sitemaps, and fixing errors that prevent indexing. Most Sydney business sites I see have at least a few technical issues holding them back.</p>
+            
+            <h3>Content and Keywords</h3>
+            <p>Content is what ranks. I figure out what your potential customers are actually searching for, then create or improve pages to match those searches. This isn't about stuffing keywords into paragraphs. It's about having pages that answer the questions people ask Google. A plumber in Parramatta needs different content than a lawyer in the CBD, even though both want more search traffic.</p>
+            
+            <h3>Links and Authority</h3>
+            <p>Links from other sites tell Google your site is worth ranking. I build links through content outreach, local business connections, and industry relationships. Not directories, not spammy guest posts, not PBNs. Actual links from real sites that send traffic as well as pass authority.</p>
+        </div>
+    </div>
+</section>
+
+<!-- How SEO Campaigns Work Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>How SEO Campaigns Work</h2>
+            <p>Every campaign starts with an audit. I look at your current rankings, technical setup, content, and backlink profile. Then I work out what's going to move the needle fastest for your specific situation.</p>
+            
+            <p>Some sites need technical fixes first. A site that takes six seconds to load or has broken pages isn't going to rank well regardless of content quality. Other sites are technically fine but have thin content or weak link profiles. The audit tells me where to focus.</p>
+            
+            <p>From there it's monthly work. I pick the highest-impact tasks each month, do them, track results, and adjust. You get a report at the end of each month showing what was done and what moved. If something isn't working I'll say so and we'll try something else.</p>
+            
+            <p>Campaigns are month-to-month. No lock-in contracts. If you want to stop you give 30 days notice. Most clients stay because they're seeing results, not because they're locked in.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SEO for Sydney Businesses Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>SEO for Sydney Businesses</h2>
+            <p>Sydney has its own search dynamics. Competition is high in most industries. The CBD, North Sydney, Parramatta and other commercial centres each have different search patterns and competitor landscapes.</p>
+            
+            <p>Local SEO matters for any business serving customers in specific areas. A dentist in Chatswood doesn't need to rank across all of Sydney, they need to rank for people searching in Chatswood and nearby suburbs. A commercial lawyer in the CBD has different requirements again.</p>
+            
+            <p>I've worked with businesses across the CBD, inner west, eastern suburbs, north shore, northern beaches, Parramatta, Hills District and western Sydney. Understanding how people search by suburb, region and "near me" terms in each area informs the approach I take.</p>
+            
+            <p>For businesses with physical locations, Google Business Profile optimisation is part of the mix. For service-area businesses like trades, I focus on service pages and local content that targets the areas you actually work in.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Service Types Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Types of SEO Services</h2>
+            
+            <h3><a href="/local-seo">Local SEO</a></h3>
+            <p>For businesses that serve customers in specific geographic areas. Includes Google Business Profile optimisation, local citations, review management, and location-based content. Essential for retail, hospitality, health services, trades and any business where customers search with location intent.</p>
+            
+            <h3><a href="/seo-audit">SEO Audits</a></h3>
+            <p>One-off technical and content audits that identify what's holding your site back. You get a prioritised list of issues and recommendations. Some businesses use this as a starting point then implement fixes themselves. Others have me implement the fixes as part of ongoing work.</p>
+            
+            <h3><a href="/keyword-research">Keyword Research</a></h3>
+            <p>Understanding what your potential customers actually search for. Not just obvious terms but the long-tail phrases that often convert better. I use a mix of tools and manual analysis to find opportunities your competitors are missing.</p>
+            
+            <h3><a href="/technical-seo-services">Technical SEO</a></h3>
+            <p>Site speed, mobile optimisation, crawl efficiency, schema markup, and fixing technical issues that prevent ranking. Technical SEO is often the quickest win for sites that have good content but poor performance.</p>
+            
+            <h3><a href="/ecommerce-seo-sydney">Ecommerce SEO</a></h3>
+            <p>Product page optimisation, category structure, faceted navigation handling, and schema for products and reviews. Ecommerce SEO has specific requirements around duplicate content, pagination and product feeds.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Industries Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Industries I Work With</h2>
+            <p>SEO principles are similar across industries but the specifics differ. A law firm needs different content and link strategies than a restaurant or a trade business. I've worked across:</p>
+            <ul class="content-list">
+                <li><a href="/seo-for-lawyers-sydney">Lawyers and legal services</a></li>
+                <li><a href="/seo-for-dentists-sydney">Dentists and healthcare</a></li>
+                <li><a href="/seo-for-tradies-sydney">Trades and home services</a></li>
+                <li><a href="/seo-for-real-estate-sydney">Real estate and property</a></li>
+                <li><a href="/seo-for-small-business-sydney">Small business across all sectors</a></li>
+                <li><a href="/seo-for-ecommerce-sydney">Ecommerce and online retail</a></li>
+            </ul>
+            <p>Each industry has different search behaviour, competition levels, and content requirements. I research what's actually working in your specific market rather than applying a generic approach.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>SEO Pricing</h2>
+            <p>Monthly SEO campaigns start from $1,200 per month for small business. Larger or more competitive projects range from $2,000 to $5,000+ per month depending on scope.</p>
+            
+            <p>One-off SEO audits start at $1,500. This includes technical analysis, content review, competitor comparison, and a prioritised action plan.</p>
+            
+            <p>All work is done by me in Sydney. I don't outsource to offshore teams. Content is written locally, link building is done manually, and technical work is handled directly.</p>
+            
+            <p>No setup fees. No lock-in contracts. Month-to-month with 30 days notice to cancel. Written quote before any work starts so you know exactly what you're getting.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Results Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>What Results Look Like</h2>
+            <p>SEO results aren't instant. Anyone promising first page rankings in weeks is either targeting worthless keywords or using tactics that risk penalties.</p>
+            
+            <p>Real results look like this:</p>
+            <ul class="content-list">
+                <li>More organic traffic month over month</li>
+                <li>Higher rankings for commercially valuable keywords</li>
+                <li>More enquiries and leads from search</li>
+                <li>Better visibility in local search and maps</li>
+                <li>Improved site speed and user experience</li>
+            </ul>
+            
+            <p>I track rankings, traffic and conversions monthly. You see what's working and what isn't. If a campaign isn't delivering after a reasonable timeframe I'll tell you straight up rather than stringing it along.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How much do SEO services cost in Sydney?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>SEO services in Sydney start from $1,200 per month for small business campaigns. Larger or more competitive projects range from $2,000 to $5,000+ per month. One-off SEO audits start at $1,500. I provide a written quote before any work begins so you know exactly what you're paying for.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long does SEO take to show results?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Most Sydney businesses see meaningful ranking improvements within three to six months. Some technical fixes can show results in weeks. Content and link building typically need four to six months to move the needle. I track progress monthly so you can see what's working.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do you guarantee first page rankings?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>No. Anyone guaranteeing specific rankings is either guessing or using tactics that risk penalties. What I do guarantee is transparent work, monthly reporting, and a campaign built around your business goals. If something isn't working I'll tell you and we'll change approach.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What's included in monthly SEO services?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Monthly SEO includes technical optimisation, content creation or improvement, link building, Google Business Profile management where relevant, and monthly reporting. The exact mix depends on what your site needs most. I work on one thing at a time rather than spreading effort thin across everything.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Free SEO Audit</h2>
+            <p>I can assess your current search visibility and provide a written report on what would be involved in improving it. No obligation, no sales pitch. Just a clear picture of where you stand.</p>
+            <div class="cta-buttons">
+                <a href="/contact" class="btn btn-white btn-large">
+                    Request Free Audit
+                </a>
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-outline-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

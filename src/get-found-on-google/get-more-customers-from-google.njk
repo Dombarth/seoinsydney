@@ -1,0 +1,329 @@
+---
+layout: base.njk
+title: "Get More Customers From Google"
+fullTitle: "Get More Customers From Google: A Practical Guide for Sydney Businesses"
+description: "How to attract more customers through Google search without paying for ads. Organic search strategies that work for local businesses. Free advice from a Sydney SEO consultant."
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Get More Customers From Google",
+    "description": "{{ description }}",
+    "step": [
+        {
+            "@type": "HowToStep",
+            "name": "Understand how people search",
+            "text": "Find out what your potential customers actually type into Google when looking for your services."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Create pages that match those searches",
+            "text": "Build or improve pages on your website that directly answer what people are searching for."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Optimise your Google Business Profile",
+            "text": "Set up and maintain your Google Business Profile to appear in local search and maps."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Build authority through links and content",
+            "text": "Earn links from other websites and create content that establishes your expertise."
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Get Found on Google",
+            "item": "{{ site.url }}/get-found-on-google/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Get More Customers From Google",
+            "item": "{{ site.url }}/get-found-on-google/get-more-customers-from-google/"
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How can I get more customers from Google without paying for ads?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Focus on organic search visibility. Create pages that match what people search for, optimise your Google Business Profile, build links from other websites, and ensure your site is technically sound. This takes time but produces lasting results without per-click costs."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does it take to get customers from Google?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "New websites typically take three to six months to see meaningful organic traffic. Established sites can see improvements faster. Google Business Profile optimisation can produce results in weeks. The timeline depends on competition and how much work is needed."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What's the difference between organic and paid Google results?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Paid results (Google Ads) appear at the top with an 'Ad' label. You pay each time someone clicks. Organic results are the regular listings below ads. You don't pay for clicks, but you need SEO work to appear there. Organic takes longer but has no per-click cost."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do I need SEO to get customers from Google?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Some businesses get customers without formal SEO, usually because they have strong brand recognition or are in low-competition niches. Most businesses benefit from intentional SEO work that helps them appear for relevant searches ahead of competitors."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero service-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Get More Customers From Google</h1>
+                <p class="hero-subtitle">You want more people finding your business through Google search. Not ads, just regular search results. Here's how that works.</p>
+                <div class="hero-ctas">
+                    <a href="/contact" class="btn btn-primary btn-large">
+                        Get Help With This
+                    </a>
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How Google Search Works Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>How Getting Customers From Google Works</h2>
+            <p>When someone searches for a service you offer, Google shows results it thinks are most relevant and useful. Appearing in those results brings visitors to your site. Some of those visitors become customers.</p>
+            
+            <p>The process looks like this:</p>
+            <ol class="content-list">
+                <li>Someone searches for something related to your business</li>
+                <li>Your website appears in the results</li>
+                <li>They click through to your site</li>
+                <li>They find what they need and contact you</li>
+            </ol>
+            
+            <p>Getting more customers from Google means improving each step. More visibility in search, more clicks, more conversions on your site.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Understand Search Intent Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Step 1: Understand How People Search</h2>
+            <p>Before you can appear in search results, you need to know what people are actually searching for. This isn't always obvious.</p>
+            
+            <p>Someone looking for a plumber might search:</p>
+            <ul class="content-list">
+                <li>"plumber near me"</li>
+                <li>"emergency plumber Sydney"</li>
+                <li>"blocked drain repair cost"</li>
+                <li>"how to fix a leaking tap"</li>
+            </ul>
+            
+            <p>Each search has different intent. "Near me" means they want someone local now. "Cost" means they're comparing prices. "How to" means they might try to fix it themselves.</p>
+            
+            <p>Your potential customers are searching in ways you might not expect. Keyword research finds these searches so you can create pages that match them.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Create Matching Pages Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Step 2: Create Pages That Match Those Searches</h2>
+            <p>Google shows pages that answer what the searcher is looking for. If someone searches "dentist Parramatta" and your page clearly shows you're a dentist in Parramatta, you have a chance to appear.</p>
+            
+            <p>What this means in practice:</p>
+            <ul class="content-list">
+                <li><strong>Service pages:</strong> A page for each main service you offer, describing what it is and who it's for</li>
+                <li><strong>Location pages:</strong> Pages showing where you operate, for businesses serving specific areas</li>
+                <li><strong>Informational content:</strong> Articles answering questions your customers ask, capturing research-stage searches</li>
+                <li><strong>Clear titles and descriptions:</strong> Page titles that match what people search, meta descriptions that encourage clicks</li>
+            </ul>
+            
+            <p>The content needs to be genuinely useful. Thin pages with minimal information don't rank well. Write enough to actually answer the question or explain the service.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Google Business Profile Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Step 3: Optimise Your Google Business Profile</h2>
+            <p>For local businesses, Google Business Profile is essential. This is what appears in Google Maps and the local pack at the top of search results.</p>
+            
+            <p>Setting up your profile properly:</p>
+            <ul class="content-list">
+                <li>Claim or create your listing at <a href="https://business.google.com" target="_blank" rel="noopener">business.google.com</a></li>
+                <li>Fill out every section completely and accurately</li>
+                <li>Choose the right business categories</li>
+                <li>Add photos of your business, work, and team</li>
+                <li>Get reviews from customers and respond to them</li>
+                <li>Post updates about your services or offers</li>
+            </ul>
+            
+            <p>A well-optimised Google Business Profile can bring in customers even if your website doesn't rank well. It's often the fastest way to start appearing in local search results.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Build Authority Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Step 4: Build Authority</h2>
+            <p>Google prefers websites that seem trustworthy and authoritative. For competitive searches, having good content isn't enough. You also need signals that your site is worth ranking.</p>
+            
+            <p>Authority comes from:</p>
+            <ul class="content-list">
+                <li><strong>Links from other websites:</strong> When reputable sites link to yours, it signals trust. Not all links are equal. One link from a relevant industry site is worth more than dozens from random directories.</li>
+                <li><strong>Content depth:</strong> Sites with substantial, useful content tend to rank better than thin sites. This doesn't mean writing more words for the sake of it. It means covering topics thoroughly.</li>
+                <li><strong>User signals:</strong> If people stay on your site, visit multiple pages, and don't bounce back to search results, that's a positive signal.</li>
+                <li><strong>Brand mentions:</strong> Being mentioned online, even without links, can contribute to authority.</li>
+            </ul>
+            
+            <p>Building authority takes time. It's not something you can rush with shortcuts. Consistent effort over months produces results.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Technical Foundation Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Step 5: Get the Technical Basics Right</h2>
+            <p>Your site needs to work well for both visitors and search engines. Technical issues can hold back even great content.</p>
+            
+            <p>Key technical factors:</p>
+            <ul class="content-list">
+                <li><strong>Site speed:</strong> Slow sites frustrate visitors and rank worse. Aim for under 3 seconds load time.</li>
+                <li><strong>Mobile usability:</strong> Your site needs to work well on phones. Google uses mobile-first indexing.</li>
+                <li><strong>Crawlability:</strong> Search engines need to be able to find and access your pages.</li>
+                <li><strong>Security:</strong> HTTPS is expected. Sites without it get warnings in browsers.</li>
+                <li><strong>Clear structure:</strong> Logical navigation and internal linking help both visitors and search engines.</li>
+            </ul>
+            
+            <p>Most technical issues are fixable. The first step is knowing what's wrong.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Getting Help Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Getting Help</h2>
+            <p>Getting more customers from Google is achievable for most businesses, but it requires consistent effort in the right areas. The specific approach depends on your industry, competition, and current situation.</p>
+            
+            <p>I help Sydney businesses figure out what will actually move the needle for them. Sometimes it's technical fixes. Sometimes it's content. Sometimes it's local SEO. The right approach depends on the situation.</p>
+            
+            <p>If you want to understand what would help your specific business, call me on {{ site.phone }} or use the contact form below. I can look at your current situation and explain what would make a difference.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How can I get more customers from Google without paying for ads?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Focus on organic search visibility. Create pages that match what people search for, optimise your Google Business Profile, build links from other websites, and ensure your site is technically sound. This takes time but produces lasting results without per-click costs.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long does it take to get customers from Google?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>New websites typically take three to six months to see meaningful organic traffic. Established sites can see improvements faster. Google Business Profile optimisation can produce results in weeks. The timeline depends on competition and how much work is needed.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What's the difference between organic and paid Google results?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Paid results (Google Ads) appear at the top with an 'Ad' label. You pay each time someone clicks. Organic results are the regular listings below ads. You don't pay for clicks, but you need SEO work to appear there. Organic takes longer but has no per-click cost.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do I need SEO to get customers from Google?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Some businesses get customers without formal SEO, usually because they have strong brand recognition or are in low-competition niches. Most businesses benefit from intentional SEO work that helps them appear for relevant searches ahead of competitors.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Want More Customers Finding You on Google?</h2>
+            <p>I can assess your current situation and explain exactly what would help your business appear in more relevant searches.</p>
+            <div class="cta-buttons">
+                <a href="/contact" class="btn btn-white btn-large">
+                    Get Free Assessment
+                </a>
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-outline-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

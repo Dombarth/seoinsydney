@@ -1,0 +1,264 @@
+---
+layout: base.njk
+title: "SEO for Dentists Sydney"
+fullTitle: "SEO for Dentists Sydney: Get More Patients From Google Search"
+description: "SEO services for Sydney dental practices. Rank for 'dentist near me' searches, optimise your Google Business Profile, and attract more local patients. Month-to-month from $1,200."
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "SEO for Dentists Sydney",
+    "description": "{{ description }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "{{ site.name }}",
+        "telephone": "{{ site.phone }}",
+        "url": "{{ site.url }}",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "{{ site.location.latitude }}",
+            "longitude": "{{ site.location.longitude }}"
+        }
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Sydney"
+    },
+    "serviceType": "Dental SEO Services",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SEO Services Sydney",
+            "item": "{{ site.url }}/seo-services-sydney/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SEO for Dentists",
+            "item": "{{ site.url }}/seo-for-dentists-sydney/"
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How does SEO help dental practices?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO helps dental practices appear in search results when potential patients search for dentists in their area. This includes 'dentist near me' searches, suburb-specific searches like 'dentist Parramatta', and service searches like 'teeth whitening Sydney'. Better visibility means more website visits and more new patient enquiries."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How much does dental SEO cost?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO for dental practices starts from $1,200 per month for single-location practices. Multi-location practices or those in highly competitive areas may need larger campaigns. I provide a fixed quote after assessing your specific situation."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does it take to see results from dental SEO?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most dental practices see meaningful improvements in search visibility within three to six months. Google Business Profile optimisation can show results faster, sometimes within weeks. The timeline depends on your current online presence and local competition."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What does dental SEO include?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dental SEO includes Google Business Profile optimisation, local citation building, service page creation for treatments you offer, technical website improvements, review management, and content that answers patient questions. The specific mix depends on what your practice needs most."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero service-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>SEO for Dentists Sydney</h1>
+                <p class="hero-subtitle">I help Sydney dental practices get more patients from Google search. Local SEO, Google Business Profile optimisation, and content that brings in new patients. Month-to-month.</p>
+                <div class="hero-ctas">
+                    <a href="/contact" class="btn btn-primary btn-large">
+                        Free Dental SEO Audit
+                    </a>
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How Patients Find Dentists Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>How Patients Find Dentists Online</h2>
+            <p>When someone needs a dentist, they usually search Google. The search might be "dentist near me", "dentist [suburb name]", or something specific like "emergency dentist Sydney" or "Invisalign cost".</p>
+            
+            <p>The practices that appear in those searches get the calls. The ones that don't appear, don't. It's that simple.</p>
+            
+            <p>Dental SEO is about making sure your practice appears when potential patients in your area search for the services you offer. Not just for "dentist" but for all the treatments and questions that lead to appointments.</p>
+        </div>
+    </div>
+</section>
+
+<!-- What Dental SEO Includes Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>What Dental SEO Includes</h2>
+            
+            <h3>Google Business Profile Optimisation</h3>
+            <p>Your Google Business Profile is what appears in Maps and local search results. For dental practices, this is often the most important source of new patients. I optimise your profile, help you get more reviews, and post regular updates to keep it active.</p>
+            
+            <h3>Service Pages for Treatments</h3>
+            <p>Patients search for specific treatments: teeth whitening, dental implants, Invisalign, veneers, crowns. Each treatment deserves its own page explaining what it is, who it's for, and what to expect. These pages capture patients researching specific procedures.</p>
+            
+            <h3>Location Pages</h3>
+            <p>If your practice is in Parramatta, you want to appear when someone searches "dentist Parramatta". Location pages target suburb-specific searches and help patients in your area find you.</p>
+            
+            <h3>Content That Answers Patient Questions</h3>
+            <p>Patients research before booking. "How much does Invisalign cost?", "Does teeth whitening damage enamel?", "When should children first see a dentist?" Content answering these questions captures research-stage searches and builds trust before the first appointment.</p>
+            
+            <h3>Technical SEO</h3>
+            <p>Site speed, mobile usability, and technical issues affect whether your site ranks. I fix technical problems that might be holding back your visibility.</p>
+            
+            <h3>Review Management</h3>
+            <p>Reviews affect both your local ranking and whether patients choose you. I help you get more reviews and respond professionally to all of them.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Competition Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Dental SEO Competition in Sydney</h2>
+            <p>Sydney has a lot of dental practices. The CBD, North Sydney, Parramatta, and other major centres have high competition. Smaller suburbs may be less competitive but still require proper optimisation to rank well.</p>
+            
+            <p>What this means for your practice:</p>
+            <ul class="content-list">
+                <li><strong>Established practices</strong> with good online presence have a head start. New practices need more work to catch up.</li>
+                <li><strong>Location matters.</strong> A dentist in Chatswood competes with other Chatswood dentists, not CBD practices.</li>
+                <li><strong>Specialist services</strong> like implants or orthodontics have different competition than general dentistry.</li>
+                <li><strong>Corporate chains</strong> often have dedicated marketing teams. Independent practices need smart SEO to compete.</li>
+            </ul>
+            
+            <p>I research your specific competitive landscape and build a strategy around what will actually work for your practice.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Dental SEO Pricing</h2>
+            <p>SEO for single-location dental practices starts from $1,200 per month. This includes Google Business Profile management, content creation, technical optimisation, and monthly reporting.</p>
+            
+            <p>Multi-location practices or those in highly competitive areas may need larger campaigns. I assess your specific situation and provide a fixed quote before starting.</p>
+            
+            <p>No lock-in contracts. Month-to-month with 30 days notice. You stay because you're seeing results, not because you're locked in.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How does SEO help dental practices?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>SEO helps dental practices appear in search results when potential patients search for dentists in their area. This includes 'dentist near me' searches, suburb-specific searches like 'dentist Parramatta', and service searches like 'teeth whitening Sydney'. Better visibility means more website visits and more new patient enquiries.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How much does dental SEO cost?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>SEO for dental practices starts from $1,200 per month for single-location practices. Multi-location practices or those in highly competitive areas may need larger campaigns. I provide a fixed quote after assessing your specific situation.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long does it take to see results from dental SEO?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Most dental practices see meaningful improvements in search visibility within three to six months. Google Business Profile optimisation can show results faster, sometimes within weeks. The timeline depends on your current online presence and local competition.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What does dental SEO include?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Dental SEO includes Google Business Profile optimisation, local citation building, service page creation for treatments you offer, technical website improvements, review management, and content that answers patient questions. The specific mix depends on what your practice needs most.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Free Dental SEO Audit</h2>
+            <p>I can assess your practice's current search visibility and explain exactly what would help you attract more patients from Google. No obligation, no sales pitch.</p>
+            <div class="cta-buttons">
+                <a href="/contact" class="btn btn-white btn-large">
+                    Request Free Audit
+                </a>
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-outline-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

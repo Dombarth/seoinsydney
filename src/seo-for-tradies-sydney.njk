@@ -1,0 +1,273 @@
+---
+layout: base.njk
+title: "SEO for Tradies Sydney"
+fullTitle: "SEO for Tradies Sydney: Get More Jobs From Google Search"
+description: "SEO services for Sydney tradespeople. Rank for 'plumber near me', 'electrician Sydney' and local searches. Google Business Profile optimisation. Month-to-month from $1,000."
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "SEO for Tradies Sydney",
+    "description": "{{ description }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "{{ site.name }}",
+        "telephone": "{{ site.phone }}",
+        "url": "{{ site.url }}",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "{{ site.location.latitude }}",
+            "longitude": "{{ site.location.longitude }}"
+        }
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Sydney"
+    },
+    "serviceType": "Trade SEO Services",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SEO Services Sydney",
+            "item": "{{ site.url }}/seo-services-sydney/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SEO for Tradies",
+            "item": "{{ site.url }}/seo-for-tradies-sydney/"
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How does SEO help tradespeople get more jobs?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO helps tradies appear in search results when people search for trade services in their area. This includes 'plumber near me', 'electrician [suburb]', and emergency searches like 'emergency plumber Sydney'. Better visibility means more calls from people who need work done now."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How much does SEO for tradies cost?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO for tradespeople starts from $1,000 per month for sole traders and small operations. Larger businesses with multiple locations or services may need more. I keep pricing realistic for trade businesses because I know you're not made of money."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do I need a website for SEO?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A website helps but you can get started with just a Google Business Profile. For serious lead generation, a simple website with your services, service areas, and contact details makes a big difference. I can help you set one up if needed."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long until I see results?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Google Business Profile optimisation can show results within weeks. Website SEO typically takes two to four months for trades because local competition is usually lower than other industries. Emergency service keywords can rank faster."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero service-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>SEO for Tradies Sydney</h1>
+                <p class="hero-subtitle">I help Sydney tradespeople get more jobs from Google. Local SEO, Google Business Profile, and simple websites that bring in calls. Month-to-month, no lock-in.</p>
+                <div class="hero-ctas">
+                    <a href="/contact" class="btn btn-primary btn-large">
+                        Free SEO Assessment
+                    </a>
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How People Find Tradies Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>How People Find Tradies Online</h2>
+            <p>When something breaks or needs doing, people search Google. "Plumber near me", "electrician Parramatta", "emergency locksmith Sydney". The tradies who appear in those results get the calls.</p>
+            
+            <p>Word of mouth still matters, but even referrals Google you first to check reviews and make sure you're legit. Your online presence affects whether they call you or someone else.</p>
+            
+            <p>Trade SEO is about appearing when people in your service area search for what you do. Not fancy marketing, just being visible when someone needs a job done.</p>
+        </div>
+    </div>
+</section>
+
+<!-- What Trade SEO Includes Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>What Trade SEO Includes</h2>
+            
+            <h3>Google Business Profile</h3>
+            <p>This is the big one for tradies. Your Google listing is what appears in Maps and local search results. I set it up properly, optimise it for your services and areas, and help you get reviews. For many trades, this alone brings in consistent leads.</p>
+            
+            <h3>Service Area Pages</h3>
+            <p>If you work across multiple suburbs, you want to appear for searches in each area. A plumber working the inner west might have pages for Balmain, Leichhardt, Annandale. These don't need to be long, just clear about what you do and where you do it.</p>
+            
+            <h3>Service Pages</h3>
+            <p>People search for specific problems. "Blocked drain plumber", "hot water system installation", "switchboard upgrade". Pages for each main service capture these searches and show you know what you're doing.</p>
+            
+            <h3>Reviews</h3>
+            <p>Reviews affect your local ranking and whether people choose you. I help you get more reviews and respond to them professionally. Even a simple "thanks for the review" shows you're active and engaged.</p>
+            
+            <h3>Simple Website</h3>
+            <p>If you don't have a website, or the one you have is embarrassing, I can help. A simple site with your services, areas, and contact details is enough. Doesn't need to be fancy, just needs to work and show up in searches.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Trades I Work With Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Trades I Work With</h2>
+            <p>SEO works for any trade where customers search online. I've worked with:</p>
+            <ul class="content-list">
+                <li><strong>Plumbers:</strong> Emergency, general, hot water, blocked drains</li>
+                <li><strong>Electricians:</strong> Residential, commercial, emergency, solar</li>
+                <li><strong>Builders and Carpenters:</strong> New builds, renovations, decks</li>
+                <li><strong>Painters:</strong> Interior, exterior, commercial</li>
+                <li><strong>Landscapers:</strong> Design, construction, maintenance</li>
+                <li><strong>Locksmiths:</strong> Emergency, residential, commercial</li>
+                <li><strong>Concreters:</strong> Driveways, patios, foundations</li>
+                <li><strong>Air Conditioning:</strong> Installation, service, repair</li>
+                <li><strong>Roofers:</strong> Repairs, replacement, guttering</li>
+            </ul>
+            
+            <p>Each trade has different search patterns and competition. I research what's actually being searched in your trade and area, then build around that.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Trade SEO Pricing</h2>
+            <p>SEO for sole traders and small trade businesses starts from $1,000 per month. I keep pricing realistic because I know trade businesses don't have corporate marketing budgets.</p>
+            
+            <p>What you get for that:</p>
+            <ul class="content-list">
+                <li>Google Business Profile optimisation and management</li>
+                <li>Local SEO for your service areas</li>
+                <li>Service page creation or improvement</li>
+                <li>Review strategy</li>
+                <li>Monthly reporting</li>
+            </ul>
+            
+            <p>Larger operations with multiple locations or services may need more. I'll tell you honestly what you need and what it costs before starting.</p>
+            
+            <p>No lock-in contracts. Month-to-month. You stay because you're getting calls, not because you're locked in.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How does SEO help tradespeople get more jobs?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>SEO helps tradies appear in search results when people search for trade services in their area. This includes 'plumber near me', 'electrician [suburb]', and emergency searches like 'emergency plumber Sydney'. Better visibility means more calls from people who need work done now.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How much does SEO for tradies cost?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>SEO for tradespeople starts from $1,000 per month for sole traders and small operations. Larger businesses with multiple locations or services may need more. I keep pricing realistic for trade businesses because I know you're not made of money.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do I need a website for SEO?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>A website helps but you can get started with just a Google Business Profile. For serious lead generation, a simple website with your services, service areas, and contact details makes a big difference. I can help you set one up if needed.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long until I see results?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Google Business Profile optimisation can show results within weeks. Website SEO typically takes two to four months for trades because local competition is usually lower than other industries. Emergency service keywords can rank faster.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Free SEO Assessment</h2>
+            <p>I can check your current online presence and tell you exactly what would help you get more calls from Google. No obligation, no sales pitch. Just straight answers.</p>
+            <div class="cta-buttons">
+                <a href="/contact" class="btn btn-white btn-large">
+                    Get Free Assessment
+                </a>
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-outline-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

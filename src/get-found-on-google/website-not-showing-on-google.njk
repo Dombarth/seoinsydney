@@ -1,0 +1,307 @@
+---
+layout: base.njk
+title: "Website Not Showing on Google"
+fullTitle: "Website Not Showing on Google: Why It Happens and How to Fix It"
+description: "Your website exists but doesn't appear in Google search results. Common causes and solutions. Free advice from a Sydney SEO consultant on getting your site visible."
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Fix a Website Not Showing on Google",
+    "description": "{{ description }}",
+    "step": [
+        {
+            "@type": "HowToStep",
+            "name": "Check if your site is indexed",
+            "text": "Search Google for 'site:yourdomain.com.au' to see if your pages are in Google's index."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Check for technical blocks",
+            "text": "Look at your robots.txt file and meta tags to ensure Google is allowed to crawl your site."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Check Google Search Console",
+            "text": "Review the Coverage report in Search Console to see what Google can and cannot access."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Fix the identified issues",
+            "text": "Address whatever is blocking Google from finding or indexing your pages."
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Get Found on Google",
+            "item": "{{ site.url }}/get-found-on-google/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Website Not Showing on Google",
+            "item": "{{ site.url }}/get-found-on-google/website-not-showing-on-google/"
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Why can't I find my website on Google?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Your website might not be indexed yet, might be blocked by technical issues, might have no links pointing to it, or might be competing against many other sites for the same search terms. Check Google Search Console to see the specific reason."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do I know if Google has indexed my site?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Search for 'site:yourdomain.com.au' in Google. If results appear, your site is indexed. If no results appear, your site is not in Google's index. You can also check the Index Coverage report in Google Search Console."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Why does my website not appear in search results even though it's indexed?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Being indexed doesn't guarantee visibility. Your site might rank on page 10 or lower for your target keywords. This usually means you need SEO work on content, technical issues, or authority building to improve rankings."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does it take for a new website to show up on Google?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "New websites typically appear in Google within a few days to a few weeks. Submitting a sitemap and requesting indexing through Search Console can speed this up. Rankings for competitive terms take much longer to achieve."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero service-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Website Not Showing on Google</h1>
+                <p class="hero-subtitle">You've got a website but when you search for it, nothing comes up. Here's why that happens and what to do about it.</p>
+                <div class="hero-ctas">
+                    <a href="/contact" class="btn btn-primary btn-large">
+                        Get Help Diagnosing This
+                    </a>
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Check If Indexed Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>First: Is Your Site Actually Not Indexed?</h2>
+            <p>There's a difference between "not indexed" and "not ranking well". Let's figure out which one you have.</p>
+            
+            <p>Go to Google and search for:</p>
+            <p><code>site:yourdomain.com.au</code></p>
+            
+            <p>What happens:</p>
+            <ul class="content-list">
+                <li><strong>Results appear:</strong> Your site is indexed. The problem is rankings, not indexing. Your site exists in Google but doesn't show up for the searches you care about.</li>
+                <li><strong>No results appear:</strong> Your site is not indexed. Google doesn't know it exists or can't access it. This is a different problem with different solutions.</li>
+            </ul>
+            
+            <p>The fix depends on which situation you're in.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Not Indexed Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>If Your Site Is Not Indexed</h2>
+            <p>Google hasn't found your site or can't access it. Here are the common reasons:</p>
+            
+            <h3>New Website</h3>
+            <p>Brand new sites take time to be discovered. Google finds new sites through links from other sites. A new domain with no external links might not be found for weeks. You can speed this up by submitting your site through Google Search Console.</p>
+            
+            <h3>Robots.txt Blocking Google</h3>
+            <p>Robots.txt is a file that tells search engines what they can and can't crawl. Sometimes it's set to block everything, often left over from development. Check <code>yourdomain.com.au/robots.txt</code> and look for "Disallow: /" which means "block everything".</p>
+            
+            <h3>Noindex Tags</h3>
+            <p>Individual pages can have code telling search engines not to index them. This looks like <code><meta name="robots" content="noindex"></code> in the page HTML. Sometimes developers leave this on after testing and forget to remove it.</p>
+            
+            <h3>Password Protection</h3>
+            <p>If your site requires a login to view any content, Google can't see it. This includes coming soon pages and staging sites.</p>
+            
+            <h3>Server Issues</h3>
+            <p>If your site is frequently down or returns errors when Google tries to crawl, it might not get indexed. Check Google Search Console for crawl errors.</p>
+            
+            <h3>Previous Penalty</h3>
+            <p>If the domain was used for spam in the past, it might have a manual action. Check the "Security and Manual Actions" section in Google Search Console.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Indexed But Not Ranking Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>If Your Site Is Indexed But Not Ranking</h2>
+            <p>Your site is in Google but doesn't appear when you search for relevant terms. This is more common than you might think.</p>
+            
+            <h3>Competition</h3>
+            <p>For any search term, there are usually many websites trying to rank. Only ten spots on the first page. If your competitors have stronger websites with more content and more links, they'll rank above you.</p>
+            
+            <h3>Content Doesn't Match Search Intent</h3>
+            <p>Google tries to show results that answer what the searcher is looking for. If someone searches "plumber Sydney" and your page is a generic homepage with no clear indication you're a plumber in Sydney, you won't rank for that term.</p>
+            
+            <h3>Technical Issues</h3>
+            <p>Slow page speed, mobile usability problems, duplicate content, and other technical issues can hold back rankings even for indexed sites.</p>
+            
+            <h3>Weak Authority</h3>
+            <p>Google uses links from other sites as a signal of quality. A new site with no external links has less authority than an established site with many quality links. Building authority takes time and effort.</p>
+            
+            <h3>Search Personalisation</h3>
+            <p>Google shows different results to different people based on location, search history, and other factors. Just because you don't see your site doesn't mean no one does. Try searching in an incognito window or from a different device.</p>
+        </div>
+    </div>
+</section>
+
+<!-- How to Fix Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>How to Fix It</h2>
+            
+            <h3>For Indexing Issues</h3>
+            <ol class="content-list">
+                <li>Set up Google Search Console and verify your site</li>
+                <li>Submit your sitemap</li>
+                <li>Request indexing for important pages</li>
+                <li>Fix any robots.txt or noindex issues</li>
+                <li>Get some external links to help Google discover your site</li>
+            </ol>
+            
+            <h3>For Ranking Issues</h3>
+            <ol class="content-list">
+                <li>Identify what terms you actually want to rank for</li>
+                <li>Create or improve content targeting those terms</li>
+                <li>Fix technical issues affecting performance</li>
+                <li>Build links from relevant, quality websites</li>
+                <li>Improve user signals like bounce rate and time on site</li>
+            </ol>
+            
+            <p>Ranking improvements take time. Expect months rather than weeks for meaningful movement on competitive terms.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Getting Help Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Getting Help</h2>
+            <p>Diagnosing why a site isn't showing in Google can be straightforward or complex depending on the cause. If you've tried the basics and your site still isn't appearing, there's probably a technical issue that needs proper investigation.</p>
+            
+            <p>I help Sydney businesses with this regularly. I can check your site, identify exactly what's wrong, and either tell you how to fix it or fix it for you. Most diagnoses take about an hour.</p>
+            
+            <p>Call me on {{ site.phone }} or use the contact form below. No obligation, just a clear explanation of what's going on.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Why can't I find my website on Google?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Your website might not be indexed yet, might be blocked by technical issues, might have no links pointing to it, or might be competing against many other sites for the same search terms. Check Google Search Console to see the specific reason.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How do I know if Google has indexed my site?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Search for 'site:yourdomain.com.au' in Google. If results appear, your site is indexed. If no results appear, your site is not in Google's index. You can also check the Index Coverage report in Google Search Console.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Why does my website not appear in search results even though it's indexed?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Being indexed doesn't guarantee visibility. Your site might rank on page 10 or lower for your target keywords. This usually means you need SEO work on content, technical issues, or authority building to improve rankings.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long does it take for a new website to show up on Google?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>New websites typically appear in Google within a few days to a few weeks. Submitting a sitemap and requesting indexing through Search Console can speed this up. Rankings for competitive terms take much longer to achieve.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Need Help Figuring Out Why Your Site Isn't Showing?</h2>
+            <p>I can diagnose exactly what's preventing your site from appearing in Google and tell you what it would take to fix it.</p>
+            <div class="cta-buttons">
+                <a href="/contact" class="btn btn-white btn-large">
+                    Get Diagnosis
+                </a>
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-outline-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

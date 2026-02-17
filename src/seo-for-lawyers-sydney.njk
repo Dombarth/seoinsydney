@@ -1,0 +1,267 @@
+---
+layout: base.njk
+title: "SEO for Lawyers Sydney"
+fullTitle: "SEO for Lawyers Sydney: Get More Clients From Google Search"
+description: "SEO services for Sydney law firms. Rank for practice area searches, build authority, and attract more clients. Month-to-month from $1,500. Free SEO audit available."
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "SEO for Lawyers Sydney",
+    "description": "{{ description }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "{{ site.name }}",
+        "telephone": "{{ site.phone }}",
+        "url": "{{ site.url }}",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "{{ site.location.latitude }}",
+            "longitude": "{{ site.location.longitude }}"
+        }
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Sydney"
+    },
+    "serviceType": "Legal SEO Services",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SEO Services Sydney",
+            "item": "{{ site.url }}/seo-services-sydney/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SEO for Lawyers",
+            "item": "{{ site.url }}/seo-for-lawyers-sydney/"
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How does SEO help law firms get clients?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO helps law firms appear in search results when potential clients search for legal services. This includes practice area searches like 'family lawyer Sydney', problem-based searches like 'divorce lawyer near me', and informational searches about legal issues. Better visibility means more enquiries from people who need legal help."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How much does SEO for lawyers cost?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO for law firms starts from $1,500 per month. Legal SEO is typically more competitive than other industries, requiring more content and authority building. Large firms or those targeting multiple practice areas may need larger campaigns. Fixed quote provided after assessment."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does legal SEO take?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Legal SEO typically takes four to eight months to show meaningful results. The legal industry is competitive online, and building authority takes time. Informational content can rank faster than competitive commercial terms. I provide realistic timelines based on your specific situation."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What practice areas do you work with?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I work with law firms across practice areas including family law, criminal law, personal injury, commercial law, property law, wills and estates, and employment law. Each practice area has different search behaviour and competition levels."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero service-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>SEO for Lawyers Sydney</h1>
+                <p class="hero-subtitle">I help Sydney law firms get more clients from Google search. Practice area pages, authority building, and content that brings in enquiries. Month-to-month.</p>
+                <div class="hero-ctas">
+                    <a href="/contact" class="btn btn-primary btn-large">
+                        Free Legal SEO Audit
+                    </a>
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How Clients Find Lawyers Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>How Clients Find Lawyers Online</h2>
+            <p>When someone needs a lawyer, they usually start with Google. The search might be practice-specific like "family lawyer Sydney" or "criminal lawyer Parramatta". It might be problem-based like "divorce lawyer near me" or "what happens if I get a DUI".</p>
+            
+            <p>The firms that appear in those searches get the enquiries. The ones that don't appear, miss out. Even referrals often Google the firm name first to check them out.</p>
+            
+            <p>Legal SEO is about appearing when potential clients search for the legal services you offer. Not just for your firm name, but for the practice areas and problems you solve.</p>
+        </div>
+    </div>
+</section>
+
+<!-- What Legal SEO Includes Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>What Legal SEO Includes</h2>
+            
+            <h3>Practice Area Pages</h3>
+            <p>Each practice area needs its own page. Family law, criminal law, commercial litigation. These pages should explain what you do, who you help, and what to expect. They target searches like "family lawyer Sydney" and "commercial litigation firm".</p>
+            
+            <h3>Problem-Based Content</h3>
+            <p>Clients search for problems, not just practice areas. "How to file for divorce in Australia", "what are my rights if I'm fired", "contesting a will NSW". Content answering these questions captures clients at the research stage and builds trust before they contact you.</p>
+            
+            <h3>Local SEO</h3>
+            <p>For firms serving specific areas, local SEO helps you appear in location-based searches. A firm in Parramatta wants to appear for "lawyer Parramatta". A CBD firm might target broader Sydney searches. I optimise for the geographic reach you actually serve.</p>
+            
+            <h3>Authority Building</h3>
+            <p>Legal SEO requires authority. Links from legal directories, industry publications, and relevant websites signal that your firm is credible. I build links through legitimate outreach and content, not spammy tactics that risk your reputation.</p>
+            
+            <h3>Technical SEO</h3>
+            <p>Site speed, mobile usability, and technical issues affect rankings. Legal websites often have large amounts of content that needs proper structure. I fix technical problems and ensure search engines can find and understand all your pages.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Competition Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Legal SEO Competition in Sydney</h2>
+            <p>Legal is one of the most competitive industries for SEO. Many firms have been investing in SEO for years. Large firms have marketing teams and big budgets. But that doesn't mean smaller firms can't compete.</p>
+            
+            <p>What matters:</p>
+            <ul class="content-list">
+                <li><strong>Practice area focus:</strong> A firm specialising in family law can outrank generalist firms for family law searches by having deeper, more relevant content.</li>
+                <li><strong>Location:</strong> A firm in North Sydney competes with other North Sydney firms for local searches, not every firm in Sydney.</li>
+                <li><strong>Content quality:</strong> Generic content doesn't rank well. Detailed, helpful content that actually answers questions does.</li>
+                <li><strong>Authority:</strong> Quality links from legal and business sources matter more than quantity.</li>
+            </ul>
+            
+            <p>I research your specific competitive landscape and build a strategy around realistic opportunities.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Legal SEO Pricing</h2>
+            <p>SEO for law firms starts from $1,500 per month. Legal SEO is typically more competitive than other industries, requiring more content and authority building.</p>
+            
+            <p>Factors affecting pricing:</p>
+            <ul class="content-list">
+                <li>Number of practice areas you want to target</li>
+                <li>Competitiveness of those practice areas</li>
+                <li>Geographic reach (single location vs all of Sydney)</li>
+                <li>Current state of your website and online presence</li>
+            </ul>
+            
+            <p>I assess your specific situation and provide a fixed quote before starting. No lock-in contracts. Month-to-month with 30 days notice.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How does SEO help law firms get clients?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>SEO helps law firms appear in search results when potential clients search for legal services. This includes practice area searches like 'family lawyer Sydney', problem-based searches like 'divorce lawyer near me', and informational searches about legal issues. Better visibility means more enquiries from people who need legal help.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How much does SEO for lawyers cost?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>SEO for law firms starts from $1,500 per month. Legal SEO is typically more competitive than other industries, requiring more content and authority building. Large firms or those targeting multiple practice areas may need larger campaigns. Fixed quote provided after assessment.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long does legal SEO take?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Legal SEO typically takes four to eight months to show meaningful results. The legal industry is competitive online, and building authority takes time. Informational content can rank faster than competitive commercial terms. I provide realistic timelines based on your specific situation.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What practice areas do you work with?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>I work with law firms across practice areas including family law, criminal law, personal injury, commercial law, property law, wills and estates, and employment law. Each practice area has different search behaviour and competition levels.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Free Legal SEO Audit</h2>
+            <p>I can assess your firm's current search visibility and explain exactly what would help you attract more clients from Google. No obligation, no sales pitch.</p>
+            <div class="cta-buttons">
+                <a href="/contact" class="btn btn-white btn-large">
+                    Request Free Audit
+                </a>
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-outline-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

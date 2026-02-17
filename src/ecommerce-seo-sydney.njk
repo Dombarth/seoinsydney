@@ -1,0 +1,308 @@
+---
+layout: base.njk
+title: "Ecommerce SEO Sydney"
+fullTitle: "Ecommerce SEO Sydney: Get More Sales From Organic Search"
+description: "Ecommerce SEO services for Sydney online stores. Product page optimisation, category structure, schema markup, technical fixes. Month-to-month from $1,500. Free audit available."
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Ecommerce SEO Services Sydney",
+    "description": "{{ description }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "{{ site.name }}",
+        "telephone": "{{ site.phone }}",
+        "url": "{{ site.url }}",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "{{ site.location.latitude }}",
+            "longitude": "{{ site.location.longitude }}"
+        }
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Sydney"
+    },
+    "serviceType": "Ecommerce SEO Services",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SEO Services Sydney",
+            "item": "{{ site.url }}/seo-services-sydney/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ecommerce SEO",
+            "item": "{{ site.url }}/ecommerce-seo-sydney/"
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How much does ecommerce SEO cost?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ecommerce SEO campaigns start from $1,500 per month for small to medium online stores. Larger stores with extensive product catalogues range from $2,500 to $5,000+ per month. Pricing depends on the number of products, platform complexity, and competitive landscape."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How is ecommerce SEO different from regular SEO?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ecommerce SEO focuses on product and category pages rather than service pages. It involves unique challenges like duplicate content from product variations, faceted navigation, product schema markup, and optimising for transactional search intent. The goal is sales, not just traffic."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What platforms do you work with?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I work with Shopify, WooCommerce, Magento, BigCommerce, and custom ecommerce platforms. Each platform has different SEO capabilities and limitations. I work within your platform's constraints to maximise what's possible."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does ecommerce SEO take?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Product pages can start ranking within weeks for long-tail searches. Category pages and competitive terms typically take three to six months. Ecommerce SEO is ongoing because product catalogues change, competitors adapt, and search behaviour shifts."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero service-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Ecommerce SEO Sydney</h1>
+                <p class="hero-subtitle">I help Sydney online stores get more sales from organic search. Product page optimisation, category structure, technical fixes, and content that converts. Month-to-month campaigns.</p>
+                <div class="hero-ctas">
+                    <a href="/contact" class="btn btn-primary btn-large">
+                        Free Ecommerce Audit
+                    </a>
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What Ecommerce SEO Includes Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>What Ecommerce SEO Includes</h2>
+            <p>Ecommerce SEO is different from service business SEO. You're optimising dozens or hundreds of product pages, managing category structures, handling faceted navigation, and trying to rank for transactional searches where the competition is fierce.</p>
+            
+            <p>The goal isn't just traffic. It's sales. A thousand visitors who don't buy is worse than a hundred visitors who do. I focus on commercial intent keywords and pages that actually convert.</p>
+            
+            <p>Key areas I work on:</p>
+            <ul class="content-list">
+                <li><strong>Product page optimisation:</strong> Titles, descriptions, images, schema markup, and content that helps ranking and conversion</li>
+                <li><strong>Category page structure:</strong> How products are organised, how categories target search terms, internal linking between categories</li>
+                <li><strong>Technical ecommerce issues:</strong> Faceted navigation, pagination, duplicate content from product variations, crawl budget</li>
+                <li><strong>Schema markup:</strong> Product schema, review schema, availability status, pricing information in search results</li>
+                <li><strong>Content strategy:</strong> Buying guides, comparison content, and informational pages that capture research-stage searches</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Product Page SEO Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Product Page SEO</h2>
+            <p>Product pages are where sales happen. They need to rank for product-specific searches and convert visitors once they arrive.</p>
+            
+            <p>Common product page issues I see on Sydney ecommerce sites:</p>
+            <ul class="content-list">
+                <li>Thin or manufacturer-supplied product descriptions that appear on hundreds of other sites</li>
+                <li>Missing or incorrect product schema preventing rich results</li>
+                <li>Poor image optimisation slowing page load</li>
+                <li>No internal links from related products or category pages</li>
+                <li>Missing reviews or user-generated content</li>
+            </ul>
+            
+            <p>I optimise product pages for both search visibility and conversion. This means unique descriptions, proper schema implementation, image optimisation, and internal linking structures that distribute authority to your best products.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Category Page SEO Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Category Page SEO</h2>
+            <p>Category pages often target your most valuable commercial keywords. "Women's running shoes Sydney" or "outdoor furniture Australia" are typically category-level searches, not product-level.</p>
+            
+            <p>Category page optimisation includes:</p>
+            <ul class="content-list">
+                <li>Keyword research to understand how people search for your product categories</li>
+                <li>Category descriptions that help ranking without pushing products below the fold</li>
+                <li>Internal linking between related categories</li>
+                <li>Faceted navigation handling so filter combinations don't create duplicate content</li>
+                <li>Pagination or load-more implementation for search engines</li>
+            </ul>
+            
+            <p>The structure of your categories affects how authority flows through your site. I make sure your most important category pages get the internal links they need to rank.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Technical Ecommerce Issues Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Technical Ecommerce Issues</h2>
+            <p>Ecommerce sites have technical challenges that service sites don't. The bigger your catalogue, the more these issues matter.</p>
+            
+            <h3>Faceted Navigation</h3>
+            <p>Filters create URLs. Colour, size, price range, brand. A store with 20 filters can generate thousands of URL combinations. Most of these shouldn't be indexed. I configure faceted navigation so search engines crawl what matters and ignore what doesn't.</p>
+            
+            <h3>Duplicate Content</h3>
+            <p>Products often appear in multiple categories. Variations like colour or size can create near-identical pages. Manufacturer descriptions appear on your site and dozens of competitors. I implement canonical tags, unique content, and consolidation strategies to handle duplicate content properly.</p>
+            
+            <h3>Crawl Budget</h3>
+            <p>Large catalogues mean lots of pages. If Google wastes crawl budget on low-value pages, your important products might not get indexed. I optimise crawl efficiency through sitemap configuration, internal linking, and robots directives.</p>
+            
+            <h3>Site Speed</h3>
+            <p>Ecommerce sites are heavy. Multiple images, scripts for reviews and payments, third-party apps. Every second of load time costs sales. I identify and fix speed issues specific to ecommerce platforms.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Platform Experience Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Ecommerce Platforms I Work With</h2>
+            
+            <h3>Shopify</h3>
+            <p>Shopify is the most common platform for Sydney ecommerce stores. It has limitations around URL structure, canonical tags, and schema markup. I work within these constraints to optimise what's possible. This includes theme modifications, metafield implementations, and app configurations for SEO.</p>
+            
+            <h3>WooCommerce</h3>
+            <p>WooCommerce gives more control than Shopify but requires more technical management. Plugin conflicts, database performance, and configuration issues are common. I handle WooCommerce SEO directly and can implement most fixes without developer involvement.</p>
+            
+            <h3>Magento and BigCommerce</h3>
+            <p>These platforms serve larger catalogues and have different technical requirements. I work with your developer to implement recommendations or make changes directly where platform access allows.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Ecommerce SEO Pricing</h2>
+            <p>Ecommerce SEO campaigns start from $1,500 per month for small to medium online stores. This covers product page optimisation, category structure work, technical fixes, and monthly reporting.</p>
+            
+            <p>Larger stores with extensive product catalogues range from $2,500 to $5,000+ per month. Pricing depends on catalogue size, platform complexity, and competitive landscape.</p>
+            
+            <p>One-off ecommerce SEO audits start at $2,000. This includes technical analysis, content review, competitor comparison, and a prioritised action plan.</p>
+            
+            <p>No lock-in contracts. Month-to-month with 30 days notice. Written quote before any work starts.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How much does ecommerce SEO cost?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Ecommerce SEO campaigns start from $1,500 per month for small to medium online stores. Larger stores with extensive product catalogues range from $2,500 to $5,000+ per month. Pricing depends on the number of products, platform complexity, and competitive landscape.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How is ecommerce SEO different from regular SEO?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Ecommerce SEO focuses on product and category pages rather than service pages. It involves unique challenges like duplicate content from product variations, faceted navigation, product schema markup, and optimising for transactional search intent. The goal is sales, not just traffic.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What platforms do you work with?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>I work with Shopify, WooCommerce, Magento, BigCommerce, and custom ecommerce platforms. Each platform has different SEO capabilities and limitations. I work within your platform's constraints to maximise what's possible.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long does ecommerce SEO take?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Product pages can start ranking within weeks for long-tail searches. Category pages and competitive terms typically take three to six months. Ecommerce SEO is ongoing because product catalogues change, competitors adapt, and search behaviour shifts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Free Ecommerce SEO Audit</h2>
+            <p>I can assess your online store's current search visibility and identify the highest-impact opportunities for improvement. No obligation, no sales pitch. Just actionable insights.</p>
+            <div class="cta-buttons">
+                <a href="/contact" class="btn btn-white btn-large">
+                    Request Free Audit
+                </a>
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-outline-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

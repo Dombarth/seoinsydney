@@ -1,0 +1,269 @@
+---
+layout: base.njk
+title: "SEO for Real Estate Sydney"
+fullTitle: "SEO for Real Estate Sydney: Get More Vendor Enquiries From Google"
+description: "SEO services for Sydney real estate agents and agencies. Rank for suburb searches, attract vendor leads, and build your brand online. Month-to-month from $1,500."
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "SEO for Real Estate Sydney",
+    "description": "{{ description }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "{{ site.name }}",
+        "telephone": "{{ site.phone }}",
+        "url": "{{ site.url }}",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "{{ site.location.latitude }}",
+            "longitude": "{{ site.location.longitude }}"
+        }
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Sydney"
+    },
+    "serviceType": "Real Estate SEO Services",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SEO Services Sydney",
+            "item": "{{ site.url }}/seo-services-sydney/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SEO for Real Estate",
+            "item": "{{ site.url }}/seo-for-real-estate-sydney/"
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How does SEO help real estate agents?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO helps real estate agents appear when potential vendors search for agents in their area. This includes 'real estate agent [suburb]', 'property manager [suburb]', and 'how to sell my house' searches. Better visibility means more vendor enquiries and more listings."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How much does real estate SEO cost?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO for real estate agencies starts from $1,500 per month. Pricing depends on the number of suburbs you target, competition in your area, and whether you need property management SEO as well as sales. Fixed quote provided after assessment."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does real estate SEO take?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Real estate SEO typically takes three to six months to show meaningful results. Suburb pages can rank faster than competitive terms like 'real estate agent Sydney'. The timeline depends on your current online presence and local competition."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you work with individual agents or whole agencies?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I work with both. Individual agents who want to build their personal brand, and whole agencies that want to dominate their local area. The approach differs based on whether we're building an agent's profile or an agency's presence."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero service-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>SEO for Real Estate Sydney</h1>
+                <p class="hero-subtitle">I help Sydney real estate agents and agencies get more vendor enquiries from Google. Suburb pages, local SEO, and content that attracts sellers. Month-to-month.</p>
+                <div class="hero-ctas">
+                    <a href="/contact" class="btn btn-primary btn-large">
+                        Free Real Estate SEO Audit
+                    </a>
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How Vendors Find Agents Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>How Vendors Find Real Estate Agents Online</h2>
+            <p>When someone decides to sell, they often start with Google. "Real estate agent [suburb]", "who sells the most in [area]", "property appraisal [suburb]". The agents who appear in those searches get considered.</p>
+            
+            <p>Buyers search on Domain and Realestate.com.au. But vendors, the ones who give you listings, search Google. They're researching who to trust with their biggest asset.</p>
+            
+            <p>Real estate SEO is about appearing when potential vendors in your area search for agents. Not just for your brand name, but for the suburb and service searches that indicate someone is looking to sell.</p>
+        </div>
+    </div>
+</section>
+
+<!-- What Real Estate SEO Includes Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>What Real Estate SEO Includes</h2>
+            
+            <h3>Suburb Pages</h3>
+            <p>Each suburb you work in deserves its own page. Not just a list of current listings, but actual content about the area, recent sales, and why you're the local expert. These pages target "real estate agent [suburb]" searches.</p>
+            
+            <h3>Vendor-Focused Content</h3>
+            <p>Content that answers vendor questions: "How to prepare my house for sale", "What is my property worth", "When is the best time to sell in Sydney". This captures people considering selling before they've chosen an agent.</p>
+            
+            <h3>Google Business Profile</h3>
+            <p>Your Google listing appears in local searches and Maps. Reviews here matter enormously. I optimise your profile and help you get more reviews from happy vendors.</p>
+            
+            <h3>Local SEO</h3>
+            <p>For agencies with specific geographic focus, local SEO ensures you appear for searches in your area. This includes local citations, consistent business information, and location-based content.</p>
+            
+            <h3>Agent Profile Pages</h3>
+            <p>For individual agents building their personal brand, profile pages that rank for their name and area. This supports referral checking and builds credibility.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Competition Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Real Estate SEO Competition in Sydney</h2>
+            <p>Sydney real estate is competitive online. Major agencies have marketing teams and big budgets. But local searches are still winnable.</p>
+            
+            <p>What matters:</p>
+            <ul class="content-list">
+                <li><strong>Local focus:</strong> An agency in Paddington competes for Paddington searches, not against every agency in Sydney.</li>
+                <li><strong>Content quality:</strong> Generic suburb pages don't rank. Pages with actual local knowledge and recent data do.</li>
+                <li><strong>Reviews:</strong> More positive reviews than competitors in your area makes a real difference.</li>
+                <li><strong>Consistency:</strong> Regular content and updates signal an active, engaged agency.</li>
+            </ul>
+            
+            <p>The big agencies dominate broad searches like "Sydney real estate agent". But suburb-specific searches are still very winnable for local agencies who invest in proper SEO.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Real Estate SEO Pricing</h2>
+            <p>SEO for real estate agencies starts from $1,500 per month. This includes suburb page creation, Google Business Profile management, content development, and monthly reporting.</p>
+            
+            <p>Factors affecting pricing:</p>
+            <ul class="content-list">
+                <li>Number of suburbs you want to target</li>
+                <li>Whether you need sales, property management, or both</li>
+                <li>Current state of your website and online presence</li>
+                <li>Competition level in your area</li>
+            </ul>
+            
+            <p>Individual agents building personal brands may need less than whole agencies. I assess your specific situation and provide a fixed quote before starting.</p>
+            
+            <p>No lock-in contracts. Month-to-month with 30 days notice.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How does SEO help real estate agents?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>SEO helps real estate agents appear when potential vendors search for agents in their area. This includes 'real estate agent [suburb]', 'property manager [suburb]', and 'how to sell my house' searches. Better visibility means more vendor enquiries and more listings.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How much does real estate SEO cost?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>SEO for real estate agencies starts from $1,500 per month. Pricing depends on the number of suburbs you target, competition in your area, and whether you need property management SEO as well as sales. Fixed quote provided after assessment.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long does real estate SEO take?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Real estate SEO typically takes three to six months to show meaningful results. Suburb pages can rank faster than competitive terms like 'real estate agent Sydney'. The timeline depends on your current online presence and local competition.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do you work with individual agents or whole agencies?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>I work with both. Individual agents who want to build their personal brand, and whole agencies that want to dominate their local area. The approach differs based on whether we're building an agent's profile or an agency's presence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Free Real Estate SEO Audit</h2>
+            <p>I can assess your current online presence and explain exactly what would help you attract more vendor enquiries from Google. No obligation, no sales pitch.</p>
+            <div class="cta-buttons">
+                <a href="/contact" class="btn btn-white btn-large">
+                    Request Free Audit
+                </a>
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-outline-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

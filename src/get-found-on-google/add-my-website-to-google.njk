@@ -1,0 +1,307 @@
+---
+layout: base.njk
+title: "Add My Website to Google"
+fullTitle: "Add My Website to Google: A Simple Guide for Business Owners"
+description: "How to get your website appearing in Google search results. Step-by-step guide to submitting your site, verifying ownership, and getting indexed. Free advice from a Sydney SEO consultant."
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Add Your Website to Google",
+    "description": "{{ description }}",
+    "step": [
+        {
+            "@type": "HowToStep",
+            "name": "Check if your site is already indexed",
+            "text": "Search Google for 'site:yourdomain.com.au' to see if your pages are already in Google's index."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Set up Google Search Console",
+            "text": "Create a Google Search Console account and verify ownership of your website."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Submit your sitemap",
+            "text": "Upload your XML sitemap to Google Search Console to tell Google about all your pages."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Request indexing",
+            "text": "Use the URL inspection tool in Search Console to request indexing of important pages."
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Get Found on Google",
+            "item": "{{ site.url }}/get-found-on-google/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Add My Website to Google",
+            "item": "{{ site.url }}/get-found-on-google/add-my-website-to-google/"
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How do I add my website to Google for free?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Google doesn't charge to list websites. You add your site through Google Search Console, which is free. Verify ownership, submit your sitemap, and Google will crawl your pages. No payment required."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does it take for Google to find my website?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "New websites can take anywhere from a few days to a few weeks to appear in Google. Submitting a sitemap through Search Console speeds this up. Requesting indexing for specific pages can get them crawled within hours."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Why isn't my website showing up on Google?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Common reasons include: the site is new and hasn't been crawled yet, technical issues blocking Google, the site has no links pointing to it, or Google has penalised the domain. Check Search Console for specific issues."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do I need to pay to be on Google?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Organic search listings are free. You can pay for Google Ads to appear at the top of results immediately, but the regular search results don't cost anything. SEO helps you rank better in the free results."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero service-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Add My Website to Google</h1>
+                <p class="hero-subtitle">You've got a website but it's not showing in Google. Here's how to fix that. Step-by-step instructions that don't require technical knowledge.</p>
+                <div class="hero-ctas">
+                    <a href="/contact" class="btn btn-primary btn-large">
+                        Get Help With This
+                    </a>
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Check If Indexed Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>First: Check If Google Already Knows About Your Site</h2>
+            <p>Before you do anything, check whether your site is already in Google's index. Go to Google and search for:</p>
+            
+            <p><code>site:yourdomain.com.au</code></p>
+            
+            <p>Replace "yourdomain.com.au" with your actual domain. If you see results, Google has already found your site. The problem might be something else, like low rankings or technical issues.</p>
+            
+            <p>If you see no results, your site isn't indexed yet. The steps below will fix that.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Google Search Console Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Step 1: Set Up Google Search Console</h2>
+            <p>Google Search Console is a free tool that lets you see how Google views your site. It's also how you tell Google your site exists.</p>
+            
+            <p>Here's what to do:</p>
+            <ol class="content-list">
+                <li>Go to <a href="https://search.google.com/search-console" target="_blank" rel="noopener">search.google.com/search-console</a></li>
+                <li>Sign in with a Google account</li>
+                <li>Click "Add a property" and enter your website URL</li>
+                <li>Verify you own the site (there are several methods, the easiest is usually adding a record to your domain DNS or uploading a file to your website)</li>
+            </ol>
+            
+            <p>If the verification steps sound complicated, your web developer can do this in about five minutes. Or I can help you set it up.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Submit Sitemap Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Step 2: Submit Your Sitemap</h2>
+            <p>A sitemap is a file that lists all the pages on your website. It helps Google find everything quickly.</p>
+            
+            <p>Most websites have a sitemap already. Try going to:</p>
+            <p><code>yourdomain.com.au/sitemap.xml</code></p>
+            
+            <p>If you see a file with a list of URLs, you have a sitemap. If not, you'll need to create one. Most website platforms can generate this automatically.</p>
+            
+            <p>Once you have a sitemap:</p>
+            <ol class="content-list">
+                <li>Open Google Search Console</li>
+                <li>Go to "Sitemaps" in the left menu</li>
+                <li>Enter your sitemap URL (usually sitemap.xml)</li>
+                <li>Click "Submit"</li>
+            </ol>
+            
+            <p>This tells Google where to find all your pages. Google will queue them for crawling.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Request Indexing Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Step 3: Request Indexing for Important Pages</h2>
+            <p>You can ask Google to crawl specific pages immediately rather than waiting for them to be discovered naturally.</p>
+            
+            <p>In Google Search Console:</p>
+            <ol class="content-list">
+                <li>Copy the URL of an important page (like your homepage)</li>
+                <li>Paste it into the search bar at the top of Search Console</li>
+                <li>Click "Request indexing"</li>
+            </ol>
+            
+            <p>Google will queue the page for crawling. This usually happens within hours to a few days. You can do this for up to about 10 pages per day.</p>
+            
+            <p>Focus on your most important pages first. Homepage, main service pages, contact page. Google will find the rest through links on those pages.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Why Site May Not Be Indexed Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Why Your Site Might Not Be Getting Indexed</h2>
+            <p>If you've done the steps above and your site still isn't showing up, there might be a technical problem blocking Google.</p>
+            
+            <p>Common issues:</p>
+            <ul class="content-list">
+                <li><strong>Robots.txt blocking Google:</strong> This file tells search engines what not to crawl. Sometimes it's configured incorrectly and blocks everything.</li>
+                <li><strong>Noindex tags:</strong> Code on your pages telling search engines not to index them. Sometimes left over from development.</li>
+                <li><strong>Password protection:</strong> If your site requires a login, Google can't see it.</li>
+                <li><strong>Very new domain:</strong> Brand new domains with no links can take longer to be discovered.</li>
+                <li><strong>Previous penalty:</strong> If the domain was used for spam in the past, it might have a manual action.</li>
+            </ul>
+            
+            <p>Google Search Console will show you if there are coverage issues. Look under "Index" then "Coverage" to see what's blocked and why.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Getting Help Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Getting Help</h2>
+            <p>If your site isn't being indexed and you can't work out why, there's probably a technical issue that needs fixing. This is something I help Sydney businesses with regularly.</p>
+            
+            <p>I can check your site, identify what's blocking Google, and fix it. Usually takes about an hour for straightforward issues. More complex problems take longer.</p>
+            
+            <p>Call me on {{ site.phone }} or use the contact form below. I'll tell you what's wrong and what it would cost to fix. No obligation.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How do I add my website to Google for free?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Google doesn't charge to list websites. You add your site through Google Search Console, which is free. Verify ownership, submit your sitemap, and Google will crawl your pages. No payment required.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long does it take for Google to find my website?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>New websites can take anywhere from a few days to a few weeks to appear in Google. Submitting a sitemap through Search Console speeds this up. Requesting indexing for specific pages can get them crawled within hours.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Why isn't my website showing up on Google?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Common reasons include: the site is new and hasn't been crawled yet, technical issues blocking Google, the site has no links pointing to it, or Google has penalised the domain. Check Search Console for specific issues.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do I need to pay to be on Google?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>No. Organic search listings are free. You can pay for Google Ads to appear at the top of results immediately, but the regular search results don't cost anything. SEO helps you rank better in the free results.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Need Help Getting Your Site on Google?</h2>
+            <p>I can check what's blocking your site from appearing in search results and fix it. Quick diagnosis, clear explanation, fixed price.</p>
+            <div class="cta-buttons">
+                <a href="/contact" class="btn btn-white btn-large">
+                    Get Help
+                </a>
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-outline-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

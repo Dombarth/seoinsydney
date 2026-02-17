@@ -5,14 +5,55 @@
             <img src="/assets/seo-in-sydney-logo.png" alt="SEOinSydney - SEO Agency Sydney Logo" width="160" height="50">
         </a>
         <ul class="nav-links">
-            <li><a href="/#services">Services</a></li>
-            <li><a href="/#pricing">Pricing</a></li>
+            <li class="has-dropdown">
+                <a href="/seo-services-sydney">SEO Services</a>
+                <ul class="dropdown">
+                    <li><a href="/seo-services-sydney">SEO Services Overview</a></li>
+                    <li><a href="/local-seo">Local SEO</a></li>
+                    <li><a href="/technical-seo-services">Technical SEO</a></li>
+                    <li><a href="/seo-audit">SEO Audits</a></li>
+                    <li><a href="/keyword-research">Keyword Research</a></li>
+                    <li><a href="/ecommerce-seo-sydney">Ecommerce SEO</a></li>
+                    <li><a href="/seo-consultant-sydney">SEO Consulting</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/parramatta">Locations</a>
+                <ul class="dropdown">
+                    <li><a href="/sydney-cbd">Sydney CBD</a></li>
+                    <li><a href="/parramatta">Parramatta</a></li>
+                    <li><a href="/north-sydney">North Sydney</a></li>
+                    <li><a href="/bondi">Bondi</a></li>
+                    <li><a href="/chatswood">Chatswood</a></li>
+                    <li><a href="/manly">Manly</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/seo-for-small-business-sydney">Industries</a>
+                <ul class="dropdown">
+                    <li><a href="/seo-for-dentists-sydney">Dentists</a></li>
+                    <li><a href="/seo-for-lawyers-sydney">Lawyers</a></li>
+                    <li><a href="/seo-for-tradies-sydney">Tradies</a></li>
+                    <li><a href="/seo-for-real-estate-sydney">Real Estate</a></li>
+                    <li><a href="/seo-for-small-business-sydney">Small Business</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="/get-found-on-google/add-my-website-to-google">Get Found on Google</a>
+                <ul class="dropdown">
+                    <li><a href="/get-found-on-google/add-my-website-to-google">Add Website to Google</a></li>
+                    <li><a href="/get-found-on-google/website-not-showing-on-google">Website Not Showing</a></li>
+                    <li><a href="/get-found-on-google/get-more-customers-from-google">Get More Customers</a></li>
+                    <li><a href="/get-found-on-google/google-business-listing-help">Google Business Help</a></li>
+                    <li><a href="/get-found-on-google/promote-my-website">Promote My Website</a></li>
+                </ul>
+            </li>
             <li><a href="/blog/">Resources</a></li>
-            <li><a href="/about">About</a></li>
+            <li><a href="/seo-pricing-sydney">Pricing</a></li>
             <li><a href="/contact">Contact</a></li>
         </ul>
-        <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-primary nav-cta">
-            <i class="fas fa-phone"></i> {{ site.phone }}
+        <a href="/contact" class="btn btn-primary nav-cta">
+            Free SEO Audit
         </a>
         <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
             <i class="fas fa-bars"></i>
@@ -22,10 +63,40 @@
 
 <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
-    <a href="/#services">Services</a>
-    <a href="/#pricing">Pricing</a>
-    <a href="/blog/">Resources</a>
-    <a href="/about">About</a>
-    <a href="/contact">Contact</a>
-    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-primary">Call {{ site.phone }}</a>
+    <div class="mobile-menu-section">
+        <strong>SEO Services</strong>
+        <a href="/seo-services-sydney">SEO Services Overview</a>
+        <a href="/local-seo">Local SEO</a>
+        <a href="/technical-seo-services">Technical SEO</a>
+        <a href="/seo-audit">SEO Audits</a>
+        <a href="/ecommerce-seo-sydney">Ecommerce SEO</a>
+    </div>
+    <div class="mobile-menu-section">
+        <strong>Locations</strong>
+        <a href="/sydney-cbd">Sydney CBD</a>
+        <a href="/parramatta">Parramatta</a>
+        <a href="/north-sydney">North Sydney</a>
+        <a href="/bondi">Bondi</a>
+    </div>
+    <div class="mobile-menu-section">
+        <strong>Industries</strong>
+        <a href="/seo-for-dentists-sydney">Dentists</a>
+        <a href="/seo-for-lawyers-sydney">Lawyers</a>
+        <a href="/seo-for-tradies-sydney">Tradies</a>
+        <a href="/seo-for-small-business-sydney">Small Business</a>
+    </div>
+    <div class="mobile-menu-section">
+        <strong>Get Found on Google</strong>
+        <a href="/get-found-on-google/add-my-website-to-google">Add Website to Google</a>
+        <a href="/get-found-on-google/website-not-showing-on-google">Website Not Showing</a>
+        <a href="/get-found-on-google/google-business-listing-help">Google Business Help</a>
+    </div>
+    <div class="mobile-menu-section">
+        <strong>Resources</strong>
+        <a href="/blog/">Blog</a>
+        <a href="/seo-pricing-sydney">Pricing</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </div>
+    <a href="/contact" class="btn btn-primary">Free SEO Audit</a>
 </div>

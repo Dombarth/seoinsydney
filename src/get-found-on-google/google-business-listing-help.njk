@@ -1,0 +1,291 @@
+---
+layout: base.njk
+title: "Google Business Listing Help"
+fullTitle: "Google Business Listing Help: How to Set Up and Optimise Your Profile"
+description: "Step-by-step help for setting up your Google Business Profile. Get your business appearing in Google Maps and local search results. Free advice from a Sydney SEO consultant."
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Set Up Your Google Business Profile",
+    "description": "{{ description }}",
+    "step": [
+        {
+            "@type": "HowToStep",
+            "name": "Claim or create your listing",
+            "text": "Go to business.google.com and either claim an existing listing for your business or create a new one."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Verify your business",
+            "text": "Complete the verification process, usually by receiving a postcard with a code at your business address."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Complete all information",
+            "text": "Fill out every section: business name, address, phone, hours, categories, services, and photos."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Get reviews and post updates",
+            "text": "Ask customers for reviews and post regular updates to keep your profile active."
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Get Found on Google",
+            "item": "{{ site.url }}/get-found-on-google/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Google Business Listing Help",
+            "item": "{{ site.url }}/get-found-on-google/google-business-listing-help/"
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How do I get my business listed on Google?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Go to business.google.com, sign in with a Google account, and either claim an existing listing for your business or create a new one. You'll need to verify your business, usually by receiving a postcard at your business address."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is Google Business Profile free?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, Google Business Profile is completely free. You don't pay to create or maintain your listing. It's separate from Google Ads, which is the paid advertising platform."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does verification take?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Postcard verification typically takes 5 to 14 days to arrive. Some businesses qualify for instant verification via phone or email. Video verification is also available for some business types."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I list my business if I don't have a physical address?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, service-area businesses can list without showing their address. You verify from your home or office address, then hide that address and specify the geographic areas you serve. This is common for trades and mobile services."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero service-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Google Business Listing Help</h1>
+                <p class="hero-subtitle">How to set up and optimise your Google Business Profile so your business appears in Google Maps and local search results. Step-by-step instructions.</p>
+                <div class="hero-ctas">
+                    <a href="/contact" class="btn btn-primary btn-large">
+                        Get Help With This
+                    </a>
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What Is Google Business Profile Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>What Is a Google Business Profile?</h2>
+            <p>Google Business Profile (formerly Google My Business) is the listing that appears in Google Maps and the local section of search results. When someone searches "dentist near me" or "plumber Parramatta", the results include a map with pinned businesses and a list of local options. Those are Google Business Profile listings.</p>
+            
+            <p>For local businesses, this is often the most important place to appear. It's free, it's prominent, and it captures people actively looking for services in their area.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Setting Up Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Setting Up Your Google Business Profile</h2>
+            
+            <h3>Step 1: Claim or Create Your Listing</h3>
+            <p>Go to <a href="https://business.google.com" target="_blank" rel="noopener">business.google.com</a> and sign in with a Google account. Search for your business name. If it already exists (Google often creates listings from various sources), claim it. If not, create a new listing.</p>
+            
+            <h3>Step 2: Verify Your Business</h3>
+            <p>Google needs to confirm you're authorised to manage the business. The most common method is a postcard sent to your business address with a verification code. This typically takes 5 to 14 days to arrive.</p>
+            <p>Some businesses qualify for instant verification via phone or email. Video verification is also available for some business types, where you record a short video showing your business location and equipment.</p>
+            
+            <h3>Step 3: Complete Your Information</h3>
+            <p>Fill out every section of your profile:</p>
+            <ul class="content-list">
+                <li><strong>Business name:</strong> Use your actual business name, don't stuff keywords into it</li>
+                <li><strong>Address:</strong> Your physical location, or service areas if you travel to customers</li>
+                <li><strong>Phone number:</strong> Use a local number if possible, not a 1300 or 1800</li>
+                <li><strong>Hours:</strong> Keep these accurate and update for holidays</li>
+                <li><strong>Categories:</strong> Choose the most specific category that fits your business</li>
+                <li><strong>Services:</strong> List what you offer</li>
+                <li><strong>Photos:</strong> Add photos of your business, work, and team</li>
+            </ul>
+            
+            <h3>Step 4: Get Reviews</h3>
+            <p>Reviews affect your visibility in local search. Ask satisfied customers to leave reviews. Respond to all reviews, positive and negative. A professional response to a negative review can actually build trust.</p>
+            
+            <h3>Step 5: Post Updates</h3>
+            <p>Google Business Profile lets you post updates, offers, and events. Regular posting shows your profile is active and gives you more content to appear in searches.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Service Area Businesses Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>For Businesses Without a Customer-Facing Address</h2>
+            <p>If you travel to customers rather than having them come to you, you can still have a Google Business Profile. This is common for trades, mobile services, and home-based businesses.</p>
+            
+            <p>Here's how it works:</p>
+            <ul class="content-list">
+                <li>You still need an address for verification (your home or office)</li>
+                <li>After verification, you can hide your address</li>
+                <li>You specify service areas instead (suburbs, postcodes, or radius from your location)</li>
+                <li>Your listing shows "Serves [area]" instead of a specific address</li>
+            </ul>
+            
+            <p>Don't use a virtual office or PO box as your address. Google can detect these and may suspend your listing.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Common Problems Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Common Problems and Solutions</h2>
+            
+            <h3>Verification Postcard Not Arriving</h3>
+            <p>If your postcard doesn't arrive after 14 days, you can request another one. Make sure your address is formatted correctly and matches what's on your building or mailbox. If you've tried multiple times, contact Google Business support directly.</p>
+            
+            <h3>Suspended Listing</h3>
+            <p>Listings get suspended for guideline violations. Common causes include using a keyword-stuffed business name, listing a virtual office as your address, or having multiple listings for the same business. Fix the issue and submit for reinstatement.</p>
+            
+            <h3>Duplicate Listings</h3>
+            <p>If there are multiple listings for your business, merge them. Multiple listings split your reviews and confuse customers. Mark duplicates as closed or request they be merged with your main listing.</p>
+            
+            <h3>Not Appearing in Local Results</h3>
+            <p>Having a profile doesn't guarantee visibility. Local rankings depend on relevance, distance, and prominence. Complete your profile fully, get reviews, post regularly, and make sure your website is optimised for local search.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Getting Help Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Getting Help</h2>
+            <p>Setting up a Google Business Profile is straightforward for most businesses. But if you run into verification problems, suspensions, or your listing just isn't appearing in local results, it can be frustrating.</p>
+            
+            <p>I help Sydney businesses with Google Business Profile issues regularly. Whether it's initial setup, recovering a suspended listing, or improving local visibility, I can work out what's going wrong and fix it.</p>
+            
+            <p>Call me on {{ site.phone }} or use the contact form below. I'll tell you what's happening and what it would take to fix it.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How do I get my business listed on Google?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Go to business.google.com, sign in with a Google account, and either claim an existing listing for your business or create a new one. You'll need to verify your business, usually by receiving a postcard at your business address.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Is Google Business Profile free?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, Google Business Profile is completely free. You don't pay to create or maintain your listing. It's separate from Google Ads, which is the paid advertising platform.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long does verification take?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Postcard verification typically takes 5 to 14 days to arrive. Some businesses qualify for instant verification via phone or email. Video verification is also available for some business types.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can I list my business if I don't have a physical address?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, service-area businesses can list without showing their address. You verify from your home or office address, then hide that address and specify the geographic areas you serve. This is common for trades and mobile services.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Need Help With Your Google Business Listing?</h2>
+            <p>I can help set up, fix, or optimise your Google Business Profile. Whether it's verification issues, suspensions, or just not appearing in local results.</p>
+            <div class="cta-buttons">
+                <a href="/contact" class="btn btn-white btn-large">
+                    Get Help
+                </a>
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-outline-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

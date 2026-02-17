@@ -1,0 +1,321 @@
+Below is the **complete final Product Requirements Document (PRD)** for the next full build phase of **seoinsydney.com**, incorporating the existing sitemap, identified gaps, conversion funnel architecture, keyword targeting, and long-term scalability. This document is intended to be implementation-ready for design, development, SEO, and content teams.
+
+---
+
+# Product Requirements Document
+
+## Project
+
+SEOInSydney.com Lead Acquisition Platform Expansion
+
+## Objective
+
+Transform the website from a location-based SEO presence into a full local acquisition system that:
+
+1. Captures high-intent “SEO services Sydney” searches
+2. Captures beginner users who do not know SEO terminology
+3. Converts suburb traffic into service enquiries
+4. Establishes authority in both commercial and informational search clusters
+5. Creates scalable internal linking architecture to dominate Sydney SEO search results
+
+Primary KPI targets (12 months):
+
+* 3× increase in organic enquiries
+* Top 3 rankings for “SEO Sydney” core cluster
+* 2× increase in non-brand organic traffic
+* 5%+ sitewide enquiry conversion rate
+* Ranking presence across suburb + industry + beginner keyword clusters
+
+---
+
+# 1. Information Architecture
+
+## 1.1 Core navigation (top level)
+
+Navigation must contain:
+
+* SEO Services
+* Locations
+* Industries
+* Get Found on Google
+* Resources
+* Case Studies
+* Pricing
+* Contact
+
+---
+
+## 1.2 Core commercial pillar pages
+
+Create or upgrade the following primary pages:
+
+* /seo-services-sydney (main commercial pillar)
+* /local-seo
+* /seo-audit
+* /keyword-research
+* /technical-seo-services (new)
+* /ecommerce-seo-sydney (new)
+* /seo-consultant-sydney (new)
+
+All service pages must include:
+
+* Keyword-targeted H1
+* Sydney local authority signals
+* Results / proof sections
+* Service process section
+* FAQ structured data
+* Persistent CTA blocks
+* Internal links to suburb pages
+* Internal links to beginner hub
+
+---
+
+## 1.3 Beginner acquisition hub
+
+Create directory:
+
+/get-found-on-google/
+
+Subpages:
+
+* /get-found-on-google/add-my-website-to-google
+* /get-found-on-google/website-not-showing-on-google
+* /get-found-on-google/get-more-customers-from-google
+* /get-found-on-google/google-business-listing-help
+* /get-found-on-google/promote-my-website
+
+Each page must:
+
+* Use plain language titles
+* Explain the problem simply
+* Introduce SEO naturally as the solution
+* Funnel visitors to:
+
+  * /seo-services-sydney
+  * /seo-audit
+
+---
+
+## 1.4 Industry landing pages
+
+Create:
+
+* /seo-for-dentists-sydney
+* /seo-for-lawyers-sydney
+* /seo-for-tradies-sydney
+* /seo-for-real-estate-sydney
+* /seo-for-small-business-sydney
+* /seo-for-ecommerce-sydney
+
+Each must include:
+
+* Industry ranking strategy examples
+* Local competition discussion
+* Sample keyword opportunities
+* Conversion CTA
+* Internal links to relevant suburb pages
+
+---
+
+## 1.5 Location pages (existing suburb pages)
+
+All suburb pages must:
+
+* Link to /seo-services-sydney
+* Link to /local-seo
+* Link to /seo-audit
+* Link to beginner hub
+* Contain unique localized copy
+* Include suburb-specific search intent phrasing
+* Include internal links to nearby suburb pages
+
+Purpose: funnel local ranking authority to the main pillar.
+
+---
+
+## 1.6 Decision-stage conversion pages
+
+Create:
+
+* /seo-pricing-sydney
+* /how-to-choose-seo-agency-sydney
+* /seo-agency-vs-consultant
+* /what-to-expect-from-seo-services
+
+Purpose: capture high-intent comparison traffic.
+
+---
+
+# 2. Content Strategy Requirements
+
+## 2.1 Keyword targeting clusters
+
+### Commercial cluster
+
+* SEO Sydney
+* SEO services Sydney
+* SEO agency Sydney
+* hire SEO consultant Sydney
+
+### Beginner cluster
+
+* get my website on Google
+* website not showing on Google
+* list my business on Google
+* how to promote my website
+
+### Problem cluster
+
+* why my website is not ranking
+* increase website traffic small business
+* improve online visibility business
+
+### Industry cluster
+
+* dentist SEO Sydney
+* lawyer SEO Sydney
+* tradie SEO Sydney
+* ecommerce SEO Sydney
+
+---
+
+## 2.2 Publishing cadence
+
+First 90 days:
+
+* Launch SEO services pillar
+* Launch beginner hub (5 pages)
+* Launch 5 industry pages
+* Publish 12 supporting blog articles
+* Publish 3 case studies
+
+Ongoing:
+
+* 4 blog articles monthly
+* 1 case study monthly
+* 1 new industry page quarterly
+
+---
+
+# 3. Conversion System Requirements
+
+Every page must include:
+
+Primary CTA:
+
+* Free SEO Audit
+
+Secondary CTA:
+
+* Request SEO Strategy
+
+Placement:
+
+* Hero section
+* Mid-content block
+* End-of-page CTA
+* Sticky header CTA
+* Footer enquiry form
+
+Lead forms must:
+
+* Submit to CRM automatically
+* Trigger automated response email
+* Allow quick submission (name, email, website)
+
+---
+
+# 4. Internal Linking Architecture
+
+Rules:
+
+* Suburb pages link upward to service pillar
+* Blog pages link to both beginner hub and service pages
+* Industry pages link to both service pages and suburb pages
+* Beginner pages link to service conversion pages
+* Service pages link downward to suburbs and industries
+
+Goal: create a hierarchical authority funnel directing ranking signals to commercial pages.
+
+---
+
+# 5. Technical SEO Requirements
+
+* Core Web Vitals compliance
+* Page load under 2 seconds
+* Schema markup:
+
+  * LocalBusiness
+  * Service
+  * FAQ
+* Auto-generated XML sitemap updates
+* Internal linking automation support
+* Mobile-first responsive design
+* Structured breadcrumb navigation
+
+---
+
+# 6. UX Requirements
+
+* Mobile-optimized layout
+* Above-fold CTA visibility
+* Client results proof sections
+* Review/testimonial display
+* Clear service explanation diagrams
+* Simple navigation structure
+* Local credibility indicators (Sydney presence)
+
+---
+
+# 7. Analytics & Tracking
+
+Implement:
+
+* Form submission conversion tracking
+* Phone call tracking
+* Landing page conversion dashboards
+* Keyword ranking tracking for:
+
+  * Core Sydney keywords
+  * Beginner cluster
+  * Industry cluster
+  * Suburb cluster
+
+---
+
+# 8. Implementation Roadmap
+
+## Phase 1 — Foundation (0–30 days)
+
+* Launch SEO services pillar
+* Add CTAs to all pages
+* Build beginner hub
+* Implement tracking systems
+
+## Phase 2 — Expansion (30–90 days)
+
+* Launch industry landing pages
+* Add internal linking system
+* Publish blog cluster
+* Create pricing and decision pages
+
+## Phase 3 — Market Domination (90–180 days)
+
+* Expand industry vertical coverage
+* Add additional suburbs
+* Launch advanced authority resources
+* Scale case study library
+
+---
+
+# 9. Strategic Outcome
+
+After full deployment the website will function as:
+
+* A high-intent commercial SEO service funnel
+* A beginner acquisition channel capturing users before competitors
+* A suburb-level local ranking network feeding authority upward
+* A scalable authority content ecosystem
+* A continuously compounding organic lead generation system
+
+This structure positions the domain to dominate both **“SEO Sydney” commercial searches** and **plain-language beginner searches**, ensuring long-term compounding growth in rankings, authority, and lead volume.

@@ -1,0 +1,335 @@
+---
+layout: base.njk
+title: "Promote My Website"
+fullTitle: "Promote My Website: How to Get More Visibility Online"
+description: "Practical ways to promote your website and get more visibility. SEO, content, local listings, and strategies that work for small businesses. Free advice from a Sydney SEO consultant."
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Promote Your Website",
+    "description": "{{ description }}",
+    "step": [
+        {
+            "@type": "HowToStep",
+            "name": "Get the basics right",
+            "text": "Make sure your site works well, loads fast, and clearly explains what you offer."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Optimise for search engines",
+            "text": "Create content that matches what people search for and fix technical issues."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Set up local listings",
+            "text": "Claim your Google Business Profile and list on relevant directories."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Build authority",
+            "text": "Get links from other websites and create content worth sharing."
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Get Found on Google",
+            "item": "{{ site.url }}/get-found-on-google/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Promote My Website",
+            "item": "{{ site.url }}/get-found-on-google/promote-my-website/"
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How can I promote my website for free?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Free promotion methods include SEO (optimising for search engines), setting up a Google Business Profile, listing on relevant directories, creating useful content, and engaging on social media. These take time but don't require advertising spend."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is the best way to promote a website?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The best approach depends on your business type. For most local businesses, a combination of SEO, Google Business Profile optimisation, and local directory listings works well. Content marketing and social media can support these efforts."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does it take to promote a website?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO and organic promotion typically take three to six months to show meaningful results. Paid advertising works immediately but stops when you stop paying. The timeline depends on competition, your starting point, and how much effort you put in."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do I need to pay for advertising to promote my website?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Many businesses get all the traffic they need through organic search, local listings, and word of mouth. Paid advertising can accelerate results but isn't necessary for every business. It depends on your goals, timeline, and budget."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero service-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Promote My Website</h1>
+                <p class="hero-subtitle">You've got a website but not enough people are seeing it. Here are practical ways to get more visibility without spending a fortune on ads.</p>
+                <div class="hero-ctas">
+                    <a href="/contact" class="btn btn-primary btn-large">
+                        Get Help Promoting Your Site
+                    </a>
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Start With the Basics Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Start With the Basics</h2>
+            <p>Before promoting your website, make sure it's worth promoting. A site that doesn't work well, doesn't explain what you offer, or doesn't convert visitors into customers will waste your promotion efforts.</p>
+            
+            <p>Check these first:</p>
+            <ul class="content-list">
+                <li><strong>Does it load quickly?</strong> Under 3 seconds is the target. Slow sites lose visitors before they see anything.</li>
+                <li><strong>Does it work on mobile?</strong> Most people browse on phones. If your site is hard to use on mobile, you're losing them.</li>
+                <li><strong>Is it clear what you do?</strong> Someone landing on your homepage should understand within seconds what you offer and who it's for.</li>
+                <li><strong>Is there a clear next step?</strong> Contact form, phone number, booking button. Make it easy for visitors to become customers.</li>
+            </ul>
+            
+            <p>Fixing these issues first means your promotion efforts won't be wasted on a site that doesn't convert.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Search Engine Optimisation Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Search Engine Optimisation</h2>
+            <p>SEO is about appearing in search results when people look for what you offer. It's not instant, but it produces lasting results without per-click costs.</p>
+            
+            <h3>What SEO Involves</h3>
+            <ul class="content-list">
+                <li><strong>Keyword research:</strong> Finding out what your potential customers actually search for</li>
+                <li><strong>Content creation:</strong> Pages that answer those searches and explain your services</li>
+                <li><strong>Technical optimisation:</strong> Making sure search engines can find and understand your site</li>
+                <li><strong>Link building:</strong> Getting other websites to link to yours, building authority</li>
+            </ul>
+            
+            <h3>Timeline for SEO</h3>
+            <p>SEO takes time. Expect three to six months to see meaningful results for most businesses. Some technical fixes can show improvements faster. Competitive industries take longer.</p>
+            
+            <p>The advantage of SEO is that once you rank well, you get consistent traffic without paying for each click. It compounds over time.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Local Visibility Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Local Visibility</h2>
+            <p>For businesses serving local customers, appearing in local search results is essential.</p>
+            
+            <h3>Google Business Profile</h3>
+            <p>This is the listing that appears in Google Maps and local search results. Set it up at <a href="https://business.google.com" target="_blank" rel="noopener">business.google.com</a>. Fill out every section, add photos, get reviews, and post updates regularly.</p>
+            
+            <h3>Local Directories</h3>
+            <p>List your business on relevant directories. For Australian businesses, this includes True Local, Yellow Pages, Hotfrog, and industry-specific directories. Keep your business name, address, and phone number consistent across all listings.</p>
+            
+            <h3>Location Pages on Your Site</h3>
+            <p>If you serve multiple areas, create pages for each location. A plumber serving all of Sydney might have pages for Parramatta, North Sydney, and other key areas. These pages should have genuine, useful content, not just duplicate text with the suburb name changed.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Content Marketing Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Content Marketing</h2>
+            <p>Creating useful content attracts visitors who are researching before they're ready to buy. It also builds authority and gives search engines more pages to rank.</p>
+            
+            <h3>What Content to Create</h3>
+            <ul class="content-list">
+                <li><strong>Answer common questions:</strong> What do customers ask you? Write pages answering those questions.</li>
+                <li><strong>Explain your services:</strong> Detailed pages about what each service involves, who it's for, and what to expect.</li>
+                <li><strong>Share your expertise:</strong> Guides, how-tos, and insights that demonstrate you know your field.</li>
+                <li><strong>Case studies:</strong> Real examples of problems you've solved for customers.</li>
+            </ul>
+            
+            <h3>Quality Over Quantity</h3>
+            <p>One genuinely useful page is worth more than ten thin pages. Write enough to actually answer the question or explain the topic. If you're not sure what to write, look at what already ranks for your target searches and create something better.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Building Authority Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Building Authority</h2>
+            <p>Search engines prefer websites that appear trustworthy and authoritative. Building authority takes time but improves all your search rankings.</p>
+            
+            <h3>Getting Links</h3>
+            <p>Links from other websites tell search engines your site is worth referencing. Focus on quality over quantity. A few links from relevant, reputable sites are worth more than many links from low-quality directories.</p>
+            <p>Ways to get links:</p>
+            <ul class="content-list">
+                <li>Industry associations and business groups</li>
+                <li>Local business directories and chambers of commerce</li>
+                <li>Guest posts on relevant blogs</li>
+                <li>Sponsorships and community involvement</li>
+                <li>Creating content worth linking to</li>
+            </ul>
+            
+            <h3>Being Mentioned Online</h3>
+            <p>Even without links, being mentioned on other sites, in reviews, and on social media contributes to your online presence. It all adds up.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Paid Advertising Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Paid Advertising</h2>
+            <p>You don't need to pay for ads to promote your website, but they can be useful in some situations.</p>
+            
+            <h3>Google Ads</h3>
+            <p>Pay-per-click advertising puts you at the top of search results immediately. You pay each time someone clicks. This works well for:</p>
+            <ul class="content-list">
+                <li>New websites waiting for SEO to take effect</li>
+                <li>Highly competitive searches where organic ranking is difficult</li>
+                <li>Time-sensitive promotions or offers</li>
+            </ul>
+            
+            <h3>Social Media Ads</h3>
+            <p>Facebook, Instagram, and LinkedIn ads can drive traffic and build awareness. These work better for some businesses than others. Test with a small budget before committing heavily.</p>
+            
+            <h3>The Trade-Off</h3>
+            <p>Paid ads work immediately but stop when you stop paying. SEO takes time but produces lasting results. Most businesses benefit from a combination, with the mix depending on goals and budget.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Getting Help Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Getting Help</h2>
+            <p>Promoting a website effectively requires consistent effort across multiple areas. The specific approach that works best depends on your business type, competition, and goals.</p>
+            
+            <p>I help Sydney businesses work out what will actually make a difference for them. Sometimes it's SEO. Sometimes it's local visibility. Sometimes it's fixing the website first. The right approach depends on the situation.</p>
+            
+            <p>If you want to understand what would help your specific business, call me on {{ site.phone }} or use the contact form below. I can look at your current situation and explain what would make a difference.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How can I promote my website for free?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Free promotion methods include SEO (optimising for search engines), setting up a Google Business Profile, listing on relevant directories, creating useful content, and engaging on social media. These take time but don't require advertising spend.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is the best way to promote a website?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>The best approach depends on your business type. For most local businesses, a combination of SEO, Google Business Profile optimisation, and local directory listings works well. Content marketing and social media can support these efforts.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long does it take to promote a website?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>SEO and organic promotion typically take three to six months to show meaningful results. Paid advertising works immediately but stops when you stop paying. The timeline depends on competition, your starting point, and how much effort you put in.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do I need to pay for advertising to promote my website?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>No. Many businesses get all the traffic they need through organic search, local listings, and word of mouth. Paid advertising can accelerate results but isn't necessary for every business. It depends on your goals, timeline, and budget.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Want Help Promoting Your Website?</h2>
+            <p>I can assess your current situation and explain exactly what would help your website get more visibility and traffic.</p>
+            <div class="cta-buttons">
+                <a href="/contact" class="btn btn-white btn-large">
+                    Get Free Assessment
+                </a>
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-outline-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

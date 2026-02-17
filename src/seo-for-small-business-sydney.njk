@@ -1,0 +1,274 @@
+---
+layout: base.njk
+title: "SEO for Small Business Sydney"
+fullTitle: "SEO for Small Business Sydney: Affordable SEO That Works"
+description: "SEO services for Sydney small businesses. Local SEO, simple websites, and strategies that fit small business budgets. Month-to-month from $1,000. Free assessment available."
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "SEO for Small Business Sydney",
+    "description": "{{ description }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "{{ site.name }}",
+        "telephone": "{{ site.phone }}",
+        "url": "{{ site.url }}",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "{{ site.location.latitude }}",
+            "longitude": "{{ site.location.longitude }}"
+        }
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Sydney"
+    },
+    "serviceType": "Small Business SEO Services",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SEO Services Sydney",
+            "item": "{{ site.url }}/seo-services-sydney/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SEO for Small Business",
+            "item": "{{ site.url }}/seo-for-small-business-sydney/"
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How much does SEO cost for a small business?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SEO for small businesses starts from $1,000 per month. I keep pricing realistic because I know small businesses don't have corporate marketing budgets. The exact cost depends on what you need, your industry, and your competition. Fixed quote provided before starting."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can small businesses compete with larger competitors in search?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, especially for local searches. A small business in a specific suburb competes with other local businesses for that suburb's searches, not with national chains. Local SEO often favours businesses with strong local presence over big national brands."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does SEO take for small businesses?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most small businesses see meaningful improvements within three to six months. Local SEO can show results faster, sometimes within weeks for Google Business Profile optimisation. The timeline depends on your starting point and competition level."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do I need a big website for SEO?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. A small website with the right pages can rank well. You need pages for your main services, your location, and answers to common customer questions. Quality matters more than quantity. A five-page site can outperform a fifty-page site if the content is better."
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+<!-- Hero Section -->
+<section class="hero service-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>SEO for Small Business Sydney</h1>
+                <p class="hero-subtitle">I help Sydney small businesses get more customers from Google. Local SEO, simple strategies, and pricing that fits small business budgets. Month-to-month.</p>
+                <div class="hero-ctas">
+                    <a href="/contact" class="btn btn-primary btn-large">
+                        Free SEO Assessment
+                    </a>
+                    <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i> {{ site.phone }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Small Business SEO Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>SEO That Works for Small Businesses</h2>
+            <p>Small businesses don't have corporate marketing budgets. You need SEO that actually works without costing a fortune. I keep things practical and focused on what matters for your business.</p>
+            
+            <p>What that means:</p>
+            <ul class="content-list">
+                <li><strong>Focus on local:</strong> Most small businesses serve specific areas. Local SEO targets the people who can actually become customers.</li>
+                <li><strong>Simple websites work:</strong> You don't need a massive website. You need the right pages, with the right content, that work well on mobile.</li>
+                <li><strong>Realistic timelines:</strong> I tell you honestly how long things take. No promises of instant results, but steady progress you can see.</li>
+                <li><strong>Month-to-month:</strong> No lock-in contracts. You stay because you're getting results, not because you're trapped.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- What Small Business SEO Includes Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>What Small Business SEO Includes</h2>
+            
+            <h3>Google Business Profile</h3>
+            <p>For local businesses, this is often the most important thing. Your Google listing appears in Maps and local search results. I set it up properly, optimise it, and help you get reviews.</p>
+            
+            <h3>Local SEO</h3>
+            <p>Appearing when people in your area search for what you do. A cafe in Newtown wants to appear for "cafe Newtown", not compete with every cafe in Sydney.</p>
+            
+            <h3>Service Pages</h3>
+            <p>Pages for each main service you offer. These capture searches for specific services and explain what you do. A mechanic might have pages for "log book servicing", "brake repair", "air conditioning regas".</p>
+            
+            <h3>Technical Basics</h3>
+            <p>Site speed, mobile usability, and making sure search engines can find your pages. You don't need a perfect website, but you need one that works.</p>
+            
+            <h3>Content That Answers Questions</h3>
+            <p>Pages answering common customer questions capture research-stage searches and build trust. "How much does X cost", "How long does X take", "What's the difference between X and Y".</p>
+        </div>
+    </div>
+</section>
+
+<!-- Types of Businesses Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-block">
+            <h2>Types of Businesses I Work With</h2>
+            <p>SEO works for any business where customers search online. I work with small businesses across Sydney:</p>
+            <ul class="content-list">
+                <li><strong>Retail and hospitality:</strong> Cafes, restaurants, retail shops, salons</li>
+                <li><strong>Professional services:</strong> Accountants, consultants, coaches</li>
+                <li><strong>Health and wellness:</strong> Gyms, yoga studios, massage therapists, psychologists</li>
+                <li><strong>Home services:</strong> Cleaners, landscapers, pest control</li>
+                <li><strong>Trades:</strong> Plumbers, electricians, builders, painters</li>
+                <li><strong>Creative services:</strong> Photographers, designers, videographers</li>
+            </ul>
+            
+            <p>Each business type has different search patterns and competition. I research what's actually being searched in your industry and area, then build around that.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="content-section alt-bg">
+    <div class="container">
+        <div class="content-block">
+            <h2>Small Business SEO Pricing</h2>
+            <p>SEO for small businesses starts from $1,000 per month. I keep pricing realistic because I know small businesses don't have corporate marketing budgets.</p>
+            
+            <p>What you get:</p>
+            <ul class="content-list">
+                <li>Google Business Profile optimisation and management</li>
+                <li>Local SEO for your service area</li>
+                <li>Service page creation or improvement</li>
+                <li>Technical fixes as needed</li>
+                <li>Monthly reporting in plain English</li>
+            </ul>
+            
+            <p>The exact cost depends on what you need, your industry, and your competition. I assess your situation and provide a fixed quote before starting. No surprise costs.</p>
+            
+            <p>No lock-in contracts. Month-to-month with 30 days notice. You stay because you're getting results.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How much does SEO cost for a small business?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>SEO for small businesses starts from $1,000 per month. I keep pricing realistic because I know small businesses don't have corporate marketing budgets. The exact cost depends on what you need, your industry, and your competition. Fixed quote provided before starting.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can small businesses compete with larger competitors in search?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, especially for local searches. A small business in a specific suburb competes with other local businesses for that suburb's searches, not with national chains. Local SEO often favours businesses with strong local presence over big national brands.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long does SEO take for small businesses?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Most small businesses see meaningful improvements within three to six months. Local SEO can show results faster, sometimes within weeks for Google Business Profile optimisation. The timeline depends on your starting point and competition level.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do I need a big website for SEO?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>No. A small website with the right pages can rank well. You need pages for your main services, your location, and answers to common customer questions. Quality matters more than quantity. A five-page site can outperform a fifty-page site if the content is better.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Free SEO Assessment</h2>
+            <p>I can check your current online presence and tell you exactly what would help your business get more customers from Google. No obligation, no sales pitch. Just straight answers.</p>
+            <div class="cta-buttons">
+                <a href="/contact" class="btn btn-white btn-large">
+                    Get Free Assessment
+                </a>
+                <a href="tel:{{ site.phone | phoneLink }}" class="btn btn-outline-white btn-large">
+                    <i class="fas fa-phone"></i> {{ site.phone }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
