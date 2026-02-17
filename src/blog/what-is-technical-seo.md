@@ -17,7 +17,7 @@ Without a sound technical foundation, content quality and backlink profiles have
 
 Search engines like Google use automated programs called crawlers (also known as spiders or bots) to discover web pages. These crawlers follow links, read page content, and send information back to Google's index.
 
-If a crawler encounters technical barriers — slow load times, broken links, blocked resources, or confusing site architecture — it may not index some pages, may index them incorrectly, or may deprioritise the entire website.
+If a crawler encounters technical barriers such as slow load times, broken links, blocked resources, or confusing site architecture, it may not index some pages, may index them incorrectly, or may deprioritise the entire website.
 
 Technical SEO ensures that nothing prevents search engines from doing their job. It removes friction from the crawling and indexing process and ensures the website meets Google's performance standards.
 
@@ -47,7 +47,7 @@ Common causes of poor INP include:
 
 ### Cumulative Layout Shift (CLS)
 
-CLS measures visual stability — how much the page content moves around while loading. Google considers CLS good when the score is below 0.1.
+CLS measures visual stability: how much the page content moves around while loading. Google considers CLS good when the score is below 0.1.
 
 Common causes of poor CLS include:
 - Images without specified dimensions

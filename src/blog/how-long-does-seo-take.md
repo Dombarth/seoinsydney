@@ -90,7 +90,7 @@ Industries like legal services, finance, real estate, and healthcare are among t
 
 ### Technical Starting Point
 
-A website with significant technical problems — slow load times, mobile usability issues, crawl errors, or poor site architecture — requires remediation before forward progress can be made. This adds weeks or months to the timeline before ranking improvements begin.
+A website with significant technical problems such as slow load times, mobile usability issues, crawl errors, or poor site architecture requires remediation before forward progress can be made. This adds weeks or months to the timeline before ranking improvements begin.
 
 ### Content Quality and Volume
 
