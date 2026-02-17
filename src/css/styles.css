@@ -256,27 +256,33 @@ ul, ol {
     display: flex;
     align-items: center;
     gap: 4px;
+    padding-right: 4px;
 }
 
 .nav-links .has-dropdown > a::after {
-    content: '\f078';
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    font-size: 10px;
-    opacity: 0.5;
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid var(--text-secondary);
     transition: var(--transition);
 }
 
 .nav-links .has-dropdown:hover > a::after {
-    opacity: 1;
+    border-top-color: var(--primary);
     transform: rotate(180deg);
 }
 
 .nav-links .dropdown {
     position: absolute;
     top: 100%;
-    left: 0;
-    min-width: 220px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    min-width: 200px;
     background-color: var(--white);
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -284,7 +290,6 @@ ul, ol {
     padding: 8px 0;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(10px);
     transition: all 0.2s ease;
     list-style: none;
     margin: 0;
@@ -294,7 +299,7 @@ ul, ol {
 .nav-links .has-dropdown:hover .dropdown {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translateX(-50%) translateY(0);
 }
 
 .nav-links .dropdown li {
@@ -307,6 +312,7 @@ ul, ol {
     font-size: 14px;
     color: var(--text-secondary);
     transition: var(--transition);
+    white-space: nowrap;
 }
 
 .nav-links .dropdown a:hover {
@@ -336,12 +342,14 @@ ul, ol {
     top: 64px;
     left: 0;
     right: 0;
+    bottom: 0;
     background-color: var(--white);
     padding: 20px 24px;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
     z-index: 999;
-    border-bottom: 1px solid var(--border);
+    overflow-y: auto;
+    border-top: 1px solid var(--border);
 }
 
 .mobile-menu.active {
@@ -349,42 +357,47 @@ ul, ol {
 }
 
 .mobile-menu a {
-    font-size: 16px;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--border);
+    font-size: 15px;
+    padding: 8px 0;
     text-decoration: none;
     color: var(--text-primary);
 }
 
+.mobile-menu a:hover {
+    color: var(--primary);
+}
+
 .mobile-menu .btn-primary {
     color: #ffffff !important;
+    margin-top: 8px;
 }
 
 .mobile-menu-section {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    padding-bottom: 16px;
+    gap: 2px;
+    padding-bottom: 12px;
     border-bottom: 1px solid var(--border);
 }
 
-.mobile-menu-section:last-child {
+.mobile-menu-section:last-of-type {
     border-bottom: none;
+    padding-bottom: 0;
 }
 
 .mobile-menu-section strong {
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: var(--text-tertiary);
     margin-bottom: 4px;
+    margin-top: 4px;
 }
 
 .mobile-menu-section a {
     font-size: 15px;
-    padding: 8px 0;
-    border-bottom: none;
-    color: var(--text-primary);
+    padding: 6px 0;
+    color: var(--text-secondary);
 }
 
 .mobile-menu-section a:hover {
