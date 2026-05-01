@@ -1,7 +1,7 @@
 ﻿---
-title: "What Is Technical SEO: A Complete Beginner's Guide"
-fullTitle: "What Is Technical SEO and Why Does It Matter"
-description: A comprehensive reference guide to technical SEO covering site speed, Core Web Vitals, crawlability, indexation, structured data, mobile optimisation, and how technical foundations affect search rankings.
+title: "What Is Technical Optimisation: A Complete Beginner's Guide"
+fullTitle: "What Is Technical Search Optimisation and Why Does It Matter"
+description: A comprehensive reference guide to technical optimisation covering site speed, Core Web Vitals, crawlability, indexation, structured data, mobile optimisation, and how technical foundations affect search rankings.
 subtitle: A reference guide to the technical foundations that determine whether a website can be properly crawled, indexed, and ranked by search engines.
 datePublished: "2025-06-01"
 dateModified: "2026-02-07"
@@ -9,17 +9,17 @@ dateModified: "2026-02-07"
 
 ## Definition
 
-Technical SEO is the practice of optimising the infrastructure of a website so that search engines can efficiently crawl, index, and render its pages. It addresses how a website is built rather than what content it contains.
+Technical optimisation is the practice of optimising the infrastructure of a website so that search engines can efficiently crawl, index, and render its pages. It addresses how a website is built rather than what content it contains.
 
 Without a sound technical foundation, content quality and backlink profiles have diminished impact. A website that search engines cannot properly access or understand will not rank to its potential regardless of how good the content is.
 
-## Why Technical SEO Matters
+## Why Technical Optimisation Matters
 
 Search engines like Google use automated programs called crawlers (also known as spiders or bots) to discover web pages. These crawlers follow links, read page content, and send information back to Google's index.
 
 If a crawler encounters technical barriers such as slow load times, broken links, blocked resources, or confusing site architecture, it may not index some pages, may index them incorrectly, or may deprioritise the entire website.
 
-Technical SEO ensures that nothing prevents search engines from doing their job. It removes friction from the crawling and indexing process and ensures the website meets Google's performance standards.
+Technical optimisation ensures that nothing prevents search engines from doing their job. It removes friction from the crawling and indexing process and ensures the website meets Google's performance standards.
 
 ## Core Web Vitals
 
@@ -105,7 +105,7 @@ Flat site architectures (where most pages are close to the homepage) generally p
 
 ## Mobile Optimisation
 
-Google uses mobile-first indexing, which means it primarily evaluates the mobile version of a website when determining rankings. This makes mobile optimisation a critical component of technical SEO.
+Google uses mobile-first indexing, which means it primarily evaluates the mobile version of a website when determining rankings. This makes mobile optimisation a critical component of technical work.
 
 Mobile optimisation includes:
 
@@ -148,18 +148,18 @@ Page speed affects both user experience and search rankings. Common speed optimi
 
 ## JavaScript and Rendering
 
-Websites that rely heavily on JavaScript for rendering content can face SEO challenges. Google can render JavaScript but it does so in a second phase of indexing, which means JavaScript-rendered content may take longer to be indexed.
+Websites that rely heavily on JavaScript for rendering content can face search visibility challenges. Google can render JavaScript but it does so in a second phase of indexing, which means JavaScript-rendered content may take longer to be indexed.
 
-Best practices for JavaScript SEO include:
+Best practices for JavaScript and search optimisation include:
 
 - **Server-side rendering (SSR):** Generating HTML on the server so content is available immediately to crawlers
 - **Pre-rendering:** Creating static HTML versions of JavaScript-rendered pages for search engines
 - **Progressive enhancement:** Ensuring critical content is available in the initial HTML response
 - **Testing with Google Search Console:** Using the URL Inspection tool to verify how Google renders JavaScript pages
 
-## Technical SEO Audit Process
+## Technical Audit Process
 
-A technical SEO audit typically involves:
+A technical optimisation audit typically involves:
 
 1. **Crawl analysis:** Using tools to crawl the website and identify broken links, redirect chains, orphan pages, and duplicate content
 2. **Search Console review:** Analysing indexing errors, crawl stats, and manual actions
@@ -171,6 +171,6 @@ A technical SEO audit typically involves:
 
 ## Summary
 
-Technical SEO is the foundation that supports all other SEO activities. Content quality and backlinks are important, but they cannot overcome fundamental technical problems. A website that loads slowly, blocks crawlers, serves duplicate content, or fails on mobile will not rank to its potential.
+Technical optimisation is the foundation that supports all other organic visibility activities. Content quality and backlinks are important, but they cannot overcome fundamental technical problems. A website that loads slowly, blocks crawlers, serves duplicate content, or fails on mobile will not rank to its potential.
 
-Regular technical auditing and maintenance should be part of any ongoing SEO strategy. Technical issues can emerge from routine website updates, plugin changes, or server configuration modifications, making continuous monitoring essential.
+Regular technical auditing and maintenance should be part of any ongoing optimisation strategy. Technical issues can emerge from routine website updates, plugin changes, or server configuration modifications, making continuous monitoring essential.
