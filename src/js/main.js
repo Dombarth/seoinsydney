@@ -7,27 +7,72 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (mobileMenuBtn && mobileMenu) {
         mobileMenuBtn.addEventListener('click', function() {
-            mobileMenu.classList.toggle('active');
+            const isOpen = mobileMenu.classList.toggle('active');
+            mobileMenuBtn.setAttribute('aria-expanded', isOpen);
+            mobileMenu.setAttribute('aria-hidden', !isOpen);
             const icon = mobileMenuBtn.querySelector('i');
-            if (mobileMenu.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
+            icon.classList.toggle('fa-bars', !isOpen);
+            icon.classList.toggle('fa-times', isOpen);
         });
         
-        // Close mobile menu when clicking a link
+        // Close mobile menu when clicking a link (not accordion btn)
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.remove('active');
-                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
-                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                mobileMenu.setAttribute('aria-hidden', 'true');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
             });
         });
     }
-    
+
+    // Mobile Locations Accordion
+    const accordionBtn = document.querySelector('.mobile-accordion-btn');
+    if (accordionBtn) {
+        accordionBtn.addEventListener('click', function() {
+            const body = this.nextElementSibling;
+            const isOpen = body.classList.toggle('is-open');
+            this.setAttribute('aria-expanded', isOpen);
+        });
+    }
+
+    // Mega menu: close on click outside (desktop)
+    const megamenuItems = document.querySelectorAll('.has-megamenu');
+    document.addEventListener('click', function(e) {
+        megamenuItems.forEach(item => {
+            if (!item.contains(e.target)) {
+                item.classList.remove('is-open');
+            }
+        });
+    });
+
+    // Mega menu: toggle on click (for keyboard/touch users)
+    megamenuItems.forEach(item => {
+        const trigger = item.querySelector(':scope > a');
+        if (trigger) {
+            trigger.addEventListener('click', function(e) {
+                // Only intercept on non-hover capable devices
+                if (window.matchMedia('(hover: none)').matches) {
+                    e.preventDefault();
+                    const isOpen = item.classList.toggle('is-open');
+                    // Close others
+                    megamenuItems.forEach(other => {
+                        if (other !== item) other.classList.remove('is-open');
+                    });
+                }
+            });
+        }
+    });
+
+    // Close mega menu on Escape
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            megamenuItems.forEach(item => item.classList.remove('is-open'));
+        }
+    });
+
     // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
     
@@ -36,14 +81,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (question) {
             question.addEventListener('click', function() {
-                // Close other items
                 faqItems.forEach(otherItem => {
                     if (otherItem !== item && otherItem.classList.contains('active')) {
                         otherItem.classList.remove('active');
                     }
                 });
-                
-                // Toggle current item
                 item.classList.toggle('active');
             });
         }
@@ -62,10 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         backToTop.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
     
@@ -79,10 +118,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     e.preventDefault();
                     const nav = document.querySelector('.nav');
                     const navHeight = nav ? nav.offsetHeight : 0;
-                    const targetPosition = target.offsetTop - navHeight - 20;
-                    
                     window.scrollTo({
-                        top: targetPosition,
+                        top: target.offsetTop - navHeight - 20,
                         behavior: 'smooth'
                     });
                 }
@@ -97,7 +134,6 @@ document.addEventListener('DOMContentLoaded', function() {
         input.addEventListener('focus', function() {
             this.parentElement.classList.add('focused');
         });
-        
         input.addEventListener('blur', function() {
             this.parentElement.classList.remove('focused');
         });
@@ -107,11 +143,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const animateElements = document.querySelectorAll('.service-card, .process-step, .content-block:not(.blog-article)');
     
     if (animateElements.length > 0 && 'IntersectionObserver' in window) {
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-        
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -119,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     entry.target.style.transform = 'translateY(0)';
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
         
         animateElements.forEach(el => {
             el.style.opacity = '0';
@@ -129,3 +160,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+

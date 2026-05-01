@@ -404,6 +404,176 @@ ul, ol {
     color: var(--primary);
 }
 
+/* Mega Menu */
+.nav-container {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    gap: 32px;
+    padding: 0 24px;
+}
+
+.has-megamenu {
+    position: static;
+}
+
+.has-megamenu > a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-right: 4px;
+}
+
+.has-megamenu > a::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid var(--text-secondary);
+    transition: var(--transition);
+}
+
+.has-megamenu:hover > a::after,
+.has-megamenu.is-open > a::after {
+    border-top-color: var(--primary);
+    transform: rotate(180deg);
+}
+
+.megamenu {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border-top: 2px solid var(--primary);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.10);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+    z-index: 1002;
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+}
+
+.has-megamenu:hover .megamenu,
+.has-megamenu.is-open .megamenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.megamenu-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 24px 28px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0 16px;
+}
+
+.megamenu-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    min-width: 0;
+}
+
+.megamenu-heading {
+    display: block;
+    font-family: var(--font-text);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--text-tertiary);
+    margin-bottom: 6px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+}
+
+.megamenu-heading--gap {
+    margin-top: 16px;
+}
+
+.megamenu-col a {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-secondary);
+    padding: 4px 0;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.15s ease;
+    line-height: 1.5;
+}
+
+.megamenu-col a:hover {
+    color: var(--primary);
+}
+
+/* Mobile accordion for Locations */
+.mobile-accordion-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.mobile-accordion-btn strong {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-tertiary);
+    font-weight: 600;
+}
+
+.mobile-accordion-btn i {
+    font-size: 11px;
+    color: var(--text-tertiary);
+    transition: transform 0.2s ease;
+}
+
+.mobile-accordion-btn[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.mobile-accordion-body {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+}
+
+.mobile-accordion-body.is-open {
+    display: flex;
+}
+
+.mobile-region-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-tertiary);
+    margin-top: 12px;
+    margin-bottom: 2px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--border);
+}
+
 /* Hero Section */
 .hero {
     padding: 48px 0;
@@ -2369,6 +2539,10 @@ a.area-tag:hover {
     .nav-links,
     .nav-cta {
         display: none;
+    }
+
+    .megamenu {
+        display: none !important;
     }
 
     .mobile-menu-btn {
